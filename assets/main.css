@@ -133,6 +133,13 @@ table {
   border-spacing: 0;
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'metropolisbold';
   src: url("fonts/metropolis-bold-webfont.eot");
@@ -143,7 +150,7 @@ table {
 
 body > header {
   background-color: #579c87;
-  font-family: "metropolisbold";
+  font-family: "metropolisbold", sans-serif;
   font-size: 2.4rem;
   letter-spacing: -0.1rem;
   color: #fdcb46;
@@ -154,5 +161,29 @@ body > header {
 header a {
   text-decoration: none;
   color: inherit;
+}
+
+body > footer {
+  background-color: #579c87;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 1.1rem 1rem;
+}
+
+body > footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fdcb46;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=main.css.map */
