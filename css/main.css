@@ -88,8 +88,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -103,51 +102,41 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol,
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote,
 q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 @font-face {
   font-family: 'metropolisbold';
   src: url("fonts/metropolis-bold-webfont.eot");
   src: url("fonts/metropolis-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/metropolis-bold-webfont.woff2") format("woff2"), url("fonts/metropolis-bold-webfont.woff") format("woff"), url("fonts/metropolis-bold-webfont.ttf") format("truetype"), url("fonts/metropolis-bold-webfont.svg#metropolisbold") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
-
+  font-style: normal; }
 body > header {
   background-color: #579c87;
   font-family: "metropolisbold", sans-serif;
@@ -155,35 +144,26 @@ body > header {
   letter-spacing: -0.1rem;
   color: #fdcb46;
   padding: 1.5rem;
-  text-align: center;
-}
+  text-align: center; }
 
 header a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
 body > footer {
   background-color: #579c87;
   position: fixed;
   bottom: 0px;
   width: 100%;
-  padding: 1.1rem 1rem;
-}
-
-body > footer nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
+  padding: 1.1rem 1rem; }
+  body > footer nav {
+    display: flex;
+    justify-content: space-between; }
 
 footer a {
   text-decoration: none;
   color: #fdcb46;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
-}
+  font-size: 1.1rem; }
+
 /*# sourceMappingURL=main.css.map */
