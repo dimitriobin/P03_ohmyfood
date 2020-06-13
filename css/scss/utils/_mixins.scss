@@ -1,0 +1,28 @@
+@mixin menu_thumbnails ($bg, $color-logo, $color-menu, $font-logo, $font-menu) {
+
+    background-color: $bg;
+
+    a {
+        text-decoration: none;
+    }
+
+    h2 {
+        font-family: $font-logo;
+        color: $color-logo;
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-family: $font-menu;
+        color: $color-menu;
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+    }
+}
+
+@mixin text-gradient ($direction, $color) {
+
+    background: -webkit-linear-gradient($direction, $color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,6 +132,9 @@ table {
 *::after {
   box-sizing: border-box; }
 
+html {
+  font-size: 100%; }
+
 @font-face {
   font-family: 'alte_haas_groteskbold';
   src: url("../../../assets/fonts/header/altehaas_grotesk/altehaasgroteskbold-webfont.eot");
@@ -145,16 +149,16 @@ table {
   font-style: normal; }
 @font-face {
   font-family: 'devonshireregular';
-  src: url("../../../assets/fonts/la_note_enchantee/devonshire-regular-webfont.eot");
-  src: url("../../../assets/fonts/la_note_enchantee/devonshire-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/la_note_enchantee/devonshire-regular-webfont.woff2") format("woff2"), url("../../../assets/fonts/la_note_enchantee/devonshire-regular-webfont.woff") format("woff"), url("../../../assets/fonts/la_note_enchantee/devonshire-regular-webfont.ttf") format("truetype"), url("../../../assets/fonts/la_note_enchantee/devonshire-regular-webfont.svg#devonshireregular") format("svg");
+  src: url("../../../assets/fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.eot");
+  src: url("../../../assets/fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.woff2") format("woff2"), url("../../../assets/fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.woff") format("woff"), url("../../../assets/fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.ttf") format("truetype"), url("../../../assets/fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.svg#devonshireregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'segoeprint-regular';
-  src: url(../../../assets/fonts/la_note_enchantee/segoepr.ttf); }
+  src: url(../../../assets/fonts/la_note_enchantee/segoeprint/segoepr.ttf); }
 @font-face {
   font-family: 'segoeprint-bold';
-  src: url(../../../assets/fonts/la_note_enchantee/segoeprb.ttf); }
+  src: url(../../../assets/fonts/la_note_enchantee/segoeprint/segoeprb.ttf); }
 @font-face {
   font-family: 'croissant_oneregular';
   src: url("../../../assets/fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.eot");
@@ -214,5 +218,106 @@ footer a {
   color: #fdcb46;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; }
+
+.grid__menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2.5rem;
+  justify-items: center;
+  padding: 2.5rem 4rem; }
+  .grid__menu article {
+    width: 100%;
+    height: 290px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+
+#laNoteEnchantée {
+  background-color: #fcdfdb; }
+  #laNoteEnchantée a {
+    text-decoration: none; }
+  #laNoteEnchantée h2 {
+    font-family: "devonshireregular", sans-serif;
+    color: #3c1218;
+    font-size: 1.2rem; }
+  #laNoteEnchantée p {
+    font-family: "segoeprint-bold", sans-serif;
+    color: #3c1218;
+    font-size: 1.4rem;
+    margin-top: 1.2rem; }
+  #laNoteEnchantée img {
+    width: 1.6rem; }
+  #laNoteEnchantée p {
+    text-transform: uppercase; }
+
+#leChicALaFrancaise {
+  background-color: #fff5feff; }
+  #leChicALaFrancaise a {
+    text-decoration: none; }
+  #leChicALaFrancaise h2 {
+    font-family: "croissant_oneregular", sans-serif;
+    color: #c77412, #8f5aff;
+    font-size: 1.2rem; }
+  #leChicALaFrancaise p {
+    font-family: "serif12_betabold", sans-serif;
+    color: #c77412ff;
+    font-size: 1.4rem;
+    margin-top: 1.2rem; }
+  #leChicALaFrancaise a {
+    font-weight: bold; }
+  #leChicALaFrancaise h2 {
+    font-size: 0.8rem;
+    background: -webkit-linear-gradient(0deg, #c77412, #8f5aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+#leDeliceDesPapilles {
+  background-color: #f9f9f9; }
+  #leDeliceDesPapilles a {
+    text-decoration: none; }
+  #leDeliceDesPapilles h2 {
+    font-family: "dancing_scriptregular", sans-serif;
+    color: #0023db, #0887fb;
+    font-size: 1.2rem; }
+  #leDeliceDesPapilles p {
+    font-family: "segoeprint-regular", sans-serif;
+    color: #0887fb;
+    font-size: 1.4rem;
+    margin-top: 1.2rem; }
+  #leDeliceDesPapilles h2 {
+    font-size: 1.3rem;
+    background: -webkit-linear-gradient(0deg, #0023db, #0887fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+#laPaletteDuGout {
+  background-color: #fdfffd; }
+  #laPaletteDuGout a {
+    text-decoration: none; }
+  #laPaletteDuGout h2 {
+    font-family: "kaushan_scriptregular", sans-serif;
+    color: #3e923a, #bcfd7e;
+    font-size: 1.2rem; }
+  #laPaletteDuGout p {
+    font-family: "segoeprint-regular", sans-serif;
+    color: #72bf56;
+    font-size: 1.4rem;
+    margin-top: 1.2rem; }
+  #laPaletteDuGout h2 {
+    font-size: 1.3rem;
+    background: -webkit-linear-gradient(0deg, #3e923a, #bcfd7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */

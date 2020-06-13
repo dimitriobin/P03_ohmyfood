@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.grid__menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2.5rem;
+    justify-items: center;
+    padding: 2.5rem 4rem;
+
+    article {
+        width: 100%;
+        height: 290px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+#laNoteEnchantée {
+
+    @include menu_thumbnails ($bg-laNoteEnchantee, $color-logo-laNoteEnchantee, $color-menu-laNoteEnchantee, $font-laNoteEnchantee-logo, $font-laNoteEnchantee-menu-title);
+
+    img {
+        width: 1.6rem;
+    }
+
+    p {
+        text-transform: uppercase;
+    }
+}
+
+#leChicALaFrancaise {
+    @include menu_thumbnails ($bg-leChicALaFrancaise, $color-logo-leChicALaFrancaise, $color-menu-leChicALaFrancaise, $font-leChicALaFrancaise-logo, $font-leChicALaFrancaise-menu-title);
+
+    a {
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+        @include text-gradient (0deg, $color-logo-leChicALaFrancaise);
+    }
+}
+
+#leDeliceDesPapilles {
+    @include menu_thumbnails ($bg-leDeliceDesPapilles, $color-logo-leDeliceDesPapilles, $color-menu-leDeliceDesPapilles, $font-leDeliceDesPapilles-logo, $font-leDeliceDesPapilles-menu-title);
+
+    h2 {
+        font-size: 1.3rem;
+        @include text-gradient (0deg, $color-logo-leDeliceDesPapilles);
+    }
+}
+
+#laPaletteDuGout {
+    @include menu_thumbnails ($bg-laPaletteDuGout, $color-logo-laPaletteDuGout, $color-menu-laPaletteDuGout, $font-laPaletteDuGout-logo, $font-laPaletteDuGout-menu-title);
+
+    h2 {
+        font-size: 1.3rem;
+        @include text-gradient (0deg, $color-logo-laPaletteDuGout);
+    }
+}

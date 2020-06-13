@@ -1,6 +1,8 @@
 @import './utils/variables';
+@import './utils/mixins';
 @import './vendors/reset';
 @import './base/global';
 @import './base/fonts';
 @import './layouts/header';
 @import './layouts/footer';
+@import './pages/home';
