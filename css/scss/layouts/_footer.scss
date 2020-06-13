@@ -7,13 +7,36 @@ body>footer {
 
     nav {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+
+        @include extra-small-devices {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
     }
 }
 
 footer a {
+    width: 100%;
+    text-align: center;
     text-decoration: none;
     color: $font-color-primary;
     font-family: $font-primary;
     font-size: 1.1rem;
+
+    &:first-child {
+        margin-bottom: 10px;
+    }
+
+    @include extra-small-devices {
+        &:first-child {
+            margin-bottom: 0px;
+        }
+
+        width: auto;
+    }
 }

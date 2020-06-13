@@ -1,11 +1,15 @@
 .prochainement {
     &__btn {
         font-family: $font-primary;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         text-decoration: none;
         color: $font-color-primary;
         background-color: $color-primary;
         padding: 0.5rem 2rem;
         border-radius: 0.6rem;
+
+        @include extra-small-devices {
+            font-size: 1.4rem;
+        }
     }
 }

@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.grid__menu article {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,7 +136,14 @@ table {
   box-sizing: border-box; }
 
 html {
-  font-size: 100%; }
+  font-size: 60%; }
+  @media screen and (min-width: 340px) {
+    html {
+      font-size: 100%; } }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 @font-face {
   font-family: 'alte_haas_groteskbold';
@@ -191,12 +201,15 @@ html {
   font-style: normal; }
 .prochainement__btn {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   text-decoration: none;
   color: #fdcb46;
   background-color: #579c87;
   padding: 0.5rem 2rem;
   border-radius: 0.6rem; }
+  @media screen and (min-width: 340px) {
+    .prochainement__btn {
+      font-size: 1.4rem; } }
 
 body > header {
   background-color: #579c87;
@@ -220,32 +233,63 @@ body > footer {
   padding: 1.1rem 1rem; }
   body > footer nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between; }
+    @media screen and (min-width: 340px) {
+      body > footer nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; } }
 
 footer a {
+  width: 100%;
+  text-align: center;
   text-decoration: none;
   color: #fdcb46;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem; }
+  footer a:first-child {
+    margin-bottom: 10px; }
+  @media screen and (min-width: 340px) {
+    footer a {
+      width: auto; }
+      footer a:first-child {
+        margin-bottom: 0px; } }
 
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-bottom: 100px; }
+  margin-bottom: 70px; }
+  @media screen and (min-width: 340px) {
+    .container {
+      margin-bottom: 100px; } }
 
 .grid__menu {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
   grid-gap: 2.5rem;
   justify-items: center;
-  padding: 2.5rem 4rem; }
+  padding: 10vw 10vw; }
+  @media screen and (min-width: 340px) {
+    .grid__menu {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 2.5rem;
+      padding: 2.5rem 3.5rem; } }
+  @media screen and (min-width: 576px) {
+    .grid__menu {
+      padding: 2.5rem 4rem; } }
   .grid__menu article {
     width: 100%;
-    height: 290px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+    height: 100vw; }
+    @media screen and (min-width: 340px) {
+      .grid__menu article {
+        height: 290px; } }
     .grid__menu article a {
       text-decoration: none;
       width: 100%;
