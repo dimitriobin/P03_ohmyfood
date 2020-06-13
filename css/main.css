@@ -232,7 +232,8 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 100px; }
 
 .grid__menu {
   width: 100%;
@@ -244,18 +245,19 @@ footer a {
   .grid__menu article {
     width: 100%;
     height: 290px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+    .grid__menu article a {
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
 
 #laNoteEnchantée {
   background-color: #fcdfdb; }
-  #laNoteEnchantée a {
-    text-decoration: none; }
   #laNoteEnchantée h2 {
     font-family: "devonshireregular", sans-serif;
     color: #3c1218;
@@ -272,8 +274,6 @@ footer a {
 
 #leChicALaFrancaise {
   background-color: #fff5feff; }
-  #leChicALaFrancaise a {
-    text-decoration: none; }
   #leChicALaFrancaise h2 {
     font-family: "croissant_oneregular", sans-serif;
     color: #c77412, #8f5aff;
@@ -283,8 +283,6 @@ footer a {
     color: #c77412ff;
     font-size: 1.4rem;
     margin-top: 1.2rem; }
-  #leChicALaFrancaise a {
-    font-weight: bold; }
   #leChicALaFrancaise h2 {
     font-size: 0.8rem;
     background: -webkit-linear-gradient(0deg, #c77412, #8f5aff);
@@ -293,8 +291,6 @@ footer a {
 
 #leDeliceDesPapilles {
   background-color: #f9f9f9; }
-  #leDeliceDesPapilles a {
-    text-decoration: none; }
   #leDeliceDesPapilles h2 {
     font-family: "dancing_scriptregular", sans-serif;
     color: #0023db, #0887fb;
@@ -312,8 +308,6 @@ footer a {
 
 #laPaletteDuGout {
   background-color: #fdfffd; }
-  #laPaletteDuGout a {
-    text-decoration: none; }
   #laPaletteDuGout h2 {
     font-family: "kaushan_scriptregular", sans-serif;
     color: #3e923a, #bcfd7e;

@@ -1,28 +1,32 @@
-@mixin menu_thumbnails ($bg, $color-logo, $color-menu, $font-logo, $font-menu) {
+@mixin menu_thumbnails ($restaurant) {
 
-    background-color: $bg;
+    $informations: map-get($menus, $restaurant);
+    $colors: map-get($informations, color);
+    $fonts: map-get($informations, font);
+    $cards: map-get($fonts, card);
 
-    a {
-        text-decoration: none;
-    }
+    background-color: map-get($colors, bg);
 
     h2 {
-        font-family: $font-logo;
-        color: $color-logo;
+        font-family: map-get($fonts, logo), sans-serif;
+        color: map-get($colors, logo);
         font-size: 1.2rem;
     }
 
     p {
-        font-family: $font-menu;
-        color: $color-menu;
+        font-family: map-get($cards, title), sans-serif;
+        color: map-get($colors, card);
         font-size: 1.4rem;
         margin-top: 1.2rem;
     }
 }
 
-@mixin text-gradient ($direction, $color) {
+@mixin text-gradient ($direction, $restaurant) {
 
-    background: -webkit-linear-gradient($direction, $color);
+    $informations: map-get($menus, $restaurant);
+    $colors: map-get($informations, color);
+
+    background: -webkit-linear-gradient($direction, map-get($colors, logo));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

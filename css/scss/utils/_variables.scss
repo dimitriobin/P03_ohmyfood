@@ -8,48 +8,33 @@ sans-serif;
 $font-primary: 'Montserrat',
 sans-serif;
 
-// MENUS :
+// MENUS:
 
-// La note enchantée
-$bg-laNoteEnchantee: #fcdfdb;
-$color-logo-laNoteEnchantee: #3c1218;
-$color-menu-laNoteEnchantee: #3c1218;
-$font-laNoteEnchantee-logo: 'devonshireregular',
-sans-serif;
-$font-laNoteEnchantee-menu-title: 'segoeprint-bold',
-sans-serif;
-$font-laNoteEnchantee-menu-text: 'segoeprint-regular',
-sans-serif;
-
-// Le chic à la francaise
-$bg-leChicALaFrancaise: #fff5feff;
-$color-logo-leChicALaFrancaise: (rgba(199, 116, 18, 1), rgba(143, 90, 255, 1));
-$color-menu-leChicALaFrancaise: #c77412ff;
-$font-leChicALaFrancaise-logo: 'croissant_oneregular',
-sans-serif;
-$font-leChicALaFrancaise-menu-title: 'serif12_betabold',
-sans-serif;
-$font-leChicALaFrancaise-menu-text: 'serif12_betaregular',
-sans-serif;
-
-// Le délice des papilles
-$bg-leDeliceDesPapilles: #f9f9f9;
-$color-logo-leDeliceDesPapilles: (#0023db, #0887fb);
-$color-menu-leDeliceDesPapilles: #0887fb;
-$font-leDeliceDesPapilles-logo: 'dancing_scriptregular',
-sans-serif;
-$font-leDeliceDesPapilles-menu-title: 'segoeprint-regular',
-sans-serif;
-$font-leDeliceDesPapilles-menu-text: 'segoeprint-regular',
-sans-serif;
-
-// La palette du goût
-$bg-laPaletteDuGout: #fdfffd;
-$color-logo-laPaletteDuGout: (#3e923a, #bcfd7e);
-$color-menu-laPaletteDuGout: #72bf56;
-$font-laPaletteDuGout-logo: 'kaushan_scriptregular',
-sans-serif;
-$font-laPaletteDuGout-menu-title: 'segoeprint-regular',
-sans-serif;
-$font-laPaletteDuGout-menu-text: 'segoeprint-regular',
-sans-serif;
+$menus: (laNoteEnchantee: (color: (bg: #fcdfdb,
+            logo: #3c1218,
+            card: #3c1218),
+        font: (logo: 'devonshireregular',
+            card: (title: 'segoeprint-bold',
+                text: 'segoeprint-regular'
+            ))),
+    leChicALaFrancaise: (color: (bg: #fff5feff,
+            logo: (rgba(199, 116, 18, 1), rgba(143, 90, 255, 1)),
+            card: #c77412ff),
+        font: (logo: 'croissant_oneregular',
+            card: (title: 'serif12_betabold',
+                text: 'serif12_betaregular'
+            ))),
+    leDeliceDesPapilles: (color: (bg: #f9f9f9,
+            logo: (#0023db, #0887fb),
+            card: #0887fb),
+        font: (logo: 'dancing_scriptregular',
+            card: (title: 'segoeprint-regular',
+                text: 'segoeprint-regular'
+            ))),
+    laPaletteDuGout: (color: (bg: #fdfffd,
+            logo: (#3e923a, #bcfd7e),
+            card: #72bf56),
+        font: (logo: 'kaushan_scriptregular',
+            card: (title: 'segoeprint-regular',
+                text: 'segoeprint-regular'
+            ))))

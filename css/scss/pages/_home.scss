@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .grid__menu {
@@ -16,19 +17,24 @@
     article {
         width: 100%;
         height: 290px;
-        text-align: center;
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+        a {
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
 #laNoteEnchantée {
 
-    @include menu_thumbnails ($bg-laNoteEnchantee, $color-logo-laNoteEnchantee, $color-menu-laNoteEnchantee, $font-laNoteEnchantee-logo, $font-laNoteEnchantee-menu-title);
+    @include menu_thumbnails (laNoteEnchantee);
 
     img {
         width: 1.6rem;
@@ -40,32 +46,29 @@
 }
 
 #leChicALaFrancaise {
-    @include menu_thumbnails ($bg-leChicALaFrancaise, $color-logo-leChicALaFrancaise, $color-menu-leChicALaFrancaise, $font-leChicALaFrancaise-logo, $font-leChicALaFrancaise-menu-title);
+    @include menu_thumbnails (leChicALaFrancaise);
 
-    a {
-        font-weight: bold;
-    }
 
     h2 {
         font-size: 0.8rem;
-        @include text-gradient (0deg, $color-logo-leChicALaFrancaise);
+        @include text-gradient (0deg, leChicALaFrancaise);
     }
 }
 
 #leDeliceDesPapilles {
-    @include menu_thumbnails ($bg-leDeliceDesPapilles, $color-logo-leDeliceDesPapilles, $color-menu-leDeliceDesPapilles, $font-leDeliceDesPapilles-logo, $font-leDeliceDesPapilles-menu-title);
+    @include menu_thumbnails (leDeliceDesPapilles);
 
     h2 {
         font-size: 1.3rem;
-        @include text-gradient (0deg, $color-logo-leDeliceDesPapilles);
+        @include text-gradient (0deg, leDeliceDesPapilles);
     }
 }
 
 #laPaletteDuGout {
-    @include menu_thumbnails ($bg-laPaletteDuGout, $color-logo-laPaletteDuGout, $color-menu-laPaletteDuGout, $font-laPaletteDuGout-logo, $font-laPaletteDuGout-menu-title);
+    @include menu_thumbnails (laPaletteDuGout);
 
     h2 {
         font-size: 1.3rem;
-        @include text-gradient (0deg, $color-logo-laPaletteDuGout);
+        @include text-gradient (0deg, laPaletteDuGout);
     }
 }
