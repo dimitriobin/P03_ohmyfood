@@ -189,6 +189,15 @@ html {
   src: url("../../../assets/fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.woff2") format("woff2"), url("../../../assets/fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.woff") format("woff"), url("../../../assets/fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.ttf") format("truetype"), url("../../../assets/fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.svg#kaushan_scriptregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+.prochainement__btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #fdcb46;
+  background-color: #579c87;
+  padding: 0.5rem 2rem;
+  border-radius: 0.6rem; }
+
 body > header {
   background-color: #579c87;
   font-family: "alte_haas_groteskbold", sans-serif;

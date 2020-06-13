@@ -1,0 +1,11 @@
+.prochainement {
+    &__btn {
+        font-family: $font-primary;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: $font-color-primary;
+        background-color: $color-primary;
+        padding: 0.5rem 2rem;
+        border-radius: 0.6rem;
+    }
+}
