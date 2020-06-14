@@ -1,3 +1,4 @@
+// vignettes de la page d'acceuil
 @mixin menu_thumbnails ($restaurant) {
 
     $informations: map-get($menus, $restaurant);
@@ -9,13 +10,13 @@
 
     h2 {
         font-family: map-get($fonts, logo), sans-serif;
-        color: map-get($colors, logo);
+        color: map-get($colors, primary);
         font-size: 1.2rem;
     }
 
     p {
         font-family: map-get($cards, title), sans-serif;
-        color: map-get($colors, card);
+        color: map-get($colors, secondary);
         font-size: 1.4rem;
         margin-top: 1.2rem;
     }
@@ -26,13 +27,133 @@
     $informations: map-get($menus, $restaurant);
     $colors: map-get($informations, color);
 
-    background: -webkit-linear-gradient($direction, map-get($colors, logo));
+    background: -webkit-linear-gradient($direction, map-get($colors, primary) 0%, map-get($colors, secondary) 50%, map-get($colors, tertiary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+// Cartes des menus
+@mixin menus ($restaurant) {
+    $informations: map-get($menus, $restaurant);
+    $colors: map-get($informations, color);
+    $fonts: map-get($informations, font);
+    $cards: map-get($fonts, card);
+    $lines: map-get($informations, lines);
+
+    .primary {
+        color: map-get($colors, primary);
+    }
+
+    .secondary {
+        color: map-get($colors, secondary);
+    }
+
+    .tertiary {
+        color: map-get($colors, tertiary);
+    }
+
+    .card {
+        background-color: map-get($colors, bg);
+        width: 100%;
+        max-width: 1200px;
+        padding: 2rem 1rem;
+
+        @include extra-small-devices {
+            padding: 2rem 1.5rem;
+        }
+
+        @include small-devices {
+            padding: 2.5rem 3.5rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        &__header {
+            text-align: center;
+            font-family: map-get($fonts, logo), sans-serif;
+            @include text-gradient(0deg, $restaurant);
+        }
+
+        &__body {
+            width: 100%;
+
+            tbody tr {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+
+                @include small-devices {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            &-title {
+
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+
+                h3 {
+                    font-family: map-get($cards, title), sans-serif;
+                    margin: 0 0.2rem;
+                }
+
+                img {
+                    display: block;
+                    width: 30%;
+                    height: auto;
+
+                    @include large-devices {
+                        width: 35%;
+                        height: 0.5rem;
+                    }
+                }
+            }
+
+            &-text {
+                font-family: map-get($cards, text);
+
+                @include small-devices {
+                    text-align: left;
+                    margin-right: 1rem;
+                }
+            }
+
+            &-price {
+                font-family: map-get($cards, title);
+
+                @include small-devices {
+                    text-align: right;
+                }
+            }
+        }
+
+        &__footer {
+
+            p {
+                display: inline-block;
+                text-align: center;
+                font-family: map-get($fonts, logo), sans-serif;
+                @include text-gradient(0deg, $restaurant);
+            }
+        }
+
+    }
+}
+
+
+// media queries et breakpoints
 @mixin micro-devices {
-    @media screen and (max-width: map-get($breakpoints, extra-small)) {
+    @media screen and (min-width: map-get($breakpoints, micro)) {
         @content;
     }
 }

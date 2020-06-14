@@ -7,12 +7,23 @@
 html {
     font-size: 60%;
 
+    @include micro-devices {
+        font-size: 80%;
+    }
+
     @include extra-small-devices {
         font-size: 100%;
     }
-}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+    @include medium-devices {
+        font-size: 120%;
+    }
+
+    @include large-devices {
+        font-size: 135%;
+    }
+
+    @include extra-large-devices {
+        font-size: 150%;
+    }
 }

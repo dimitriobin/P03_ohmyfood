@@ -8,40 +8,59 @@ sans-serif;
 $font-primary: 'Montserrat',
 sans-serif;
 
+// mesures globales
+$footer-font-size: 1.1rem;
+$footer-padding: 1.1rem;
+$footer-size: $footer-padding+$footer-padding+$footer-font-size;
+
 // MENUS:
 
 $menus: (laNoteEnchantee: (color: (bg: #fcdfdb,
-            logo: #3c1218,
-            card: #3c1218),
+            primary: #3c1218,
+            secondary: #3c1218,
+            tertiary: #3c1218),
         font: (logo: 'devonshireregular',
             card: (title: 'segoeprint-bold',
                 text: 'segoeprint-regular'
-            ))),
+            )),
+        lines: (gauche: '../../../assets/images/la_note_enchantee/Ligne_gauche.png',
+            droite: '../../../assets/images/la_note_enchantee/Ligne_droite.png'
+        )),
     leChicALaFrancaise: (color: (bg: #fff5feff,
-            logo: (rgba(199, 116, 18, 1), rgba(143, 90, 255, 1)),
-            card: #c77412ff),
+            primary: #c67412,
+            secondary: #a56799,
+            tertiary: #6e4ccc),
         font: (logo: 'croissant_oneregular',
             card: (title: 'serif12_betabold',
                 text: 'serif12_betaregular'
-            ))),
+            )), lines: (gauche: '../../../assets/images/la_note_enchantee/Ligne_gauche.png',
+            droite: '../../../assets/images/la_note_enchantee/Ligne_droite.png'
+        )),
     leDeliceDesPapilles: (color: (bg: #f9f9f9,
-            logo: (#0023db, #0887fb),
-            card: #0887fb),
+            primary: #0228dd,
+            secondary: #0670f3,
+            tertiary: #229df9),
         font: (logo: 'dancing_scriptregular',
             card: (title: 'segoeprint-regular',
                 text: 'segoeprint-regular'
-            ))),
+            )), lines: (gauche: '../../../assets/images/la_note_enchantee/Ligne_gauche.png',
+            droite: '../../../assets/images/la_note_enchantee/Ligne_droite.png'
+        )),
     laPaletteDuGout: (color: (bg: #fdfffd,
-            logo: (#3e923a, #bcfd7e),
-            card: #72bf56),
+            primary: #3d923a,
+            secondary: #72bf56,
+            tertiary: #cefea0),
         font: (logo: 'kaushan_scriptregular',
             card: (title: 'segoeprint-regular',
                 text: 'segoeprint-regular'
-            ))));
+            )), lines: (gauche: '../../../assets/images/la_note_enchantee/Ligne_gauche.png',
+            droite: '../../../assets/images/la_note_enchantee/Ligne_droite.png'
+        )));
 
 // responsive
 
-$breakpoints: (extra-small: 340px,
+$breakpoints: (micro: 250px,
+    extra-small: 340px,
     small: 576px,
     medium: 768px,
     large: 992px,

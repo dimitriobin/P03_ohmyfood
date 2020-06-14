@@ -3,7 +3,7 @@ body>footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    padding: 1.1rem 1rem;
+    padding: $footer-padding 1rem;
 
     nav {
         display: flex;
@@ -26,7 +26,7 @@ footer a {
     text-decoration: none;
     color: $font-color-primary;
     font-family: $font-primary;
-    font-size: 1.1rem;
+    font-size: $footer-font-size;
 
     &:first-child {
         margin-bottom: 10px;
