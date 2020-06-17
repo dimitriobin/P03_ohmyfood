@@ -1,42 +1,17 @@
-.container {
-
-    max-width: 1200px;
-    margin: 0 auto;
+.grid__menu {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin-bottom: $footer-size*2;
-
-    @include extra-small-devices {
-        margin-bottom: $footer-size;
-    }
-}
-
-.grid__menu {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
-    grid-gap: 2.5rem;
-    justify-items: center;
-
-    @include extra-small-devices {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 2.5rem;
-    }
-
+    flex-wrap: wrap;
 
     article {
-        width: 100%;
-        height: 100vw;
+        @include thumbnail-size (map-get($thumbnail-width, base));
+        margin: 0 auto 1rem;
         @extend %shadow;
 
-        @include extra-small-devices {
-            height: 290px;
-        }
-
         a {
-            text-decoration: none;
             width: 100%;
             height: 100%;
             text-align: center;
@@ -44,47 +19,63 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 0 0.5rem;
+        }
+
+        h2 {
+            margin-bottom: 0.5rem;
         }
     }
 }
 
 #laNoteEnchantée {
 
-    @include menu_thumbnails (laNoteEnchantee);
+    @include menu_thumbnails ($laNoteEnchantee);
 
-    img {
-        width: 1.6rem;
+    a {
+        color: map-get($laNoteEnchantee, color-primary);
     }
 
     p {
         text-transform: uppercase;
     }
+
+    img {
+        width: 1.5rem;
+    }
+
 }
 
 #leChicALaFrancaise {
-    @include menu_thumbnails (leChicALaFrancaise);
+    @include menu_thumbnails ($leChicALaFrancaise);
 
 
     h2 {
-        font-size: 0.8rem;
-        @include text-gradient (0deg, leChicALaFrancaise);
+        font-size: $global-font-size*0.8;
+        @include text-gradient (-90deg, $leChicALaFrancaise);
+    }
+
+    p {
+        color: map-get($leChicALaFrancaise, color-primary);
     }
 }
 
 #leDeliceDesPapilles {
-    @include menu_thumbnails (leDeliceDesPapilles);
+    @include menu_thumbnails ($leDeliceDesPapilles);
 
     h2 {
-        font-size: 1.3rem;
-        @include text-gradient (0deg, leDeliceDesPapilles);
+        @include text-gradient (-90deg, $leDeliceDesPapilles);
+    }
+
+    p {
+        color: map-get($leDeliceDesPapilles, color-tertiary);
     }
 }
 
 #laPaletteDuGout {
-    @include menu_thumbnails (laPaletteDuGout);
+    @include menu_thumbnails ($laPaletteDuGout);
 
     h2 {
-        font-size: 1.3rem;
-        @include text-gradient (0deg, laPaletteDuGout);
+        @include text-gradient (-90deg, $laPaletteDuGout);
     }
 }

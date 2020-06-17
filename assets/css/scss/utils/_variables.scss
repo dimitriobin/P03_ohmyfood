@@ -9,59 +9,50 @@ $font-primary: 'Montserrat',
 sans-serif;
 
 // mesures globales
-$footer-font-size: 1.1rem;
+$global-font-size: 1rem;
+$footer-font-size: 1rem;
 $footer-padding: 1.1rem;
 $footer-size: $footer-padding+$footer-padding+$footer-font-size;
-
+$thumbnail-width: (base:75vw, micro: 175px, extra-small:200px, small: 200px, medium:200px, large: 225px, extra-large:225px);
 // MENUS:
 
-$menus: (laNoteEnchantee: (color: (bg: #fcdfdb,
-            primary: #3c1218,
-            secondary: #3c1218,
-            tertiary: #3c1218),
-        font: (logo: 'devonshireregular',
-            card: (title: 'segoeprint-bold',
-                text: 'segoeprint-regular'
-            )),
-        lines: (gauche: '../../../assets/images/la_note_enchantee/Ligne_gauche.png',
-            droite: '../../../assets/images/la_note_enchantee/Ligne_droite.png'
-        )),
-    leChicALaFrancaise: (color: (bg: #fff5feff,
-            primary: #c67412,
-            secondary: #a56799,
-            tertiary: #6e4ccc),
-        font: (logo: 'croissant_oneregular',
-            card: (title: 'serif12_betabold',
-                text: 'serif12_betaregular'
-            )), lines: (gauche: '../../../assets/images/la_note_enchantee/Ligne_gauche.png',
-            droite: '../../../assets/images/la_note_enchantee/Ligne_droite.png'
-        )),
-    leDeliceDesPapilles: (color: (bg: #f9f9f9,
-            primary: #0228dd,
-            secondary: #0670f3,
-            tertiary: #229df9),
-        font: (logo: 'dancing_scriptregular',
-            card: (title: 'segoeprint-regular',
-                text: 'segoeprint-regular'
-            )), lines: (gauche: '../../../assets/images/la_note_enchantee/Ligne_gauche.png',
-            droite: '../../../assets/images/la_note_enchantee/Ligne_droite.png'
-        )),
-    laPaletteDuGout: (color: (bg: #fdfffd,
-            primary: #3d923a,
-            secondary: #72bf56,
-            tertiary: #cefea0),
-        font: (logo: 'kaushan_scriptregular',
-            card: (title: 'segoeprint-regular',
-                text: 'segoeprint-regular'
-            )), lines: (gauche: '../../../assets/images/la_note_enchantee/Ligne_gauche.png',
-            droite: '../../../assets/images/la_note_enchantee/Ligne_droite.png'
-        )));
+$laNoteEnchantee: (bg: #fcdfdb,
+    color-primary: #3c1218,
+    font-primary: 'devonshireregular',
+    font-secondary: 'segoeprint-bold',
+    font-tertiary: 'segoeprint-regular'
+);
+
+$leChicALaFrancaise: (bg: #fff5feff,
+    color-primary: #c67412,
+    color-secondary: #a56799,
+    color-tertiary: #6e4ccc,
+    font-primary: 'croissant_oneregular',
+    font-secondary: 'serif12_betabold',
+    font-tertiary: 'serif12_betaregular'
+);
+$leDeliceDesPapilles: (bg: #f9f9f9,
+    color-primary: #0228dd,
+    color-secondary: #0670f3,
+    color-tertiary: #229df9,
+    font-primary: 'dancing_scriptregular',
+    font-secondary: 'segoeprint-regular',
+    font-tertiary: 'segoeprint-regular'
+);
+$laPaletteDuGout: (bg: #fdfffd,
+    color-primary: #3d923a,
+    color-secondary: #72bf56,
+    color-tertiary: #cefea0,
+    font-primary: 'kaushan_scriptregular',
+    font-secondary: 'segoeprint-regular',
+    font-tertiary: 'segoeprint-regular'
+);
 
 // responsive
 
 $breakpoints: (micro: 250px,
-    extra-small: 340px,
-    small: 576px,
+    extra-small: 370px,
+    small: 560px,
     medium: 768px,
-    large: 992px,
-    extra-large: 1200px);
+    large: 830px,
+    extra-large: 1130px);

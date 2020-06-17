@@ -1,3 +1,4 @@
+// Elements généraux à tout le site
 *,
 *::before,
 *::after {
@@ -5,25 +6,61 @@
 }
 
 html {
-    font-size: 60%;
+    font-size: $global-font-size;
+}
 
-    @include micro-devices {
-        font-size: 80%;
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+// HEADER ET FOOTER
+body {
+
+    &>header {
+        background-color: $color-primary;
+        color: $font-color-primary;
+        font-family: $font-logo;
+        font-size: 1.8rem;
+        padding: 1rem 0;
+        text-align: center;
     }
 
-    @include extra-small-devices {
-        font-size: 100%;
-    }
+    &>footer {
+        background-color: $color-primary;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: $footer-padding 1rem;
 
-    @include medium-devices {
-        font-size: 120%;
-    }
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-    @include large-devices {
-        font-size: 135%;
-    }
+        a {
+            text-align: center;
+            color: $font-color-primary;
+            font-family: $font-primary;
+            font-size: $footer-font-size;
 
-    @include extra-large-devices {
-        font-size: 150%;
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
     }
+}
+
+// Classes outils
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: $footer-size*2;
 }

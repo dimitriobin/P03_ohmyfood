@@ -1,18 +1,11 @@
-.prochainement {
-
-    &__btn {
-        display: block;
-        font-family: $font-primary;
-        font-size: 1.1rem;
-        text-decoration: none;
-        color: $font-color-primary;
-        background-color: $color-primary;
-        padding: 0.5rem 2rem;
-        border-radius: 0.6rem;
-        margin: 1rem auto;
-
-        @include extra-small-devices {
-            font-size: 1.4rem;
-        }
-    }
+.btn {
+    display: block;
+    font-family: $font-primary;
+    font-size: $global-font-size;
+    text-decoration: none;
+    word-break: break-all;
+    color: $font-color-primary;
+    background-color: $color-primary;
+    padding: 0.6rem 2rem;
+    border-radius: 0.6rem;
 }

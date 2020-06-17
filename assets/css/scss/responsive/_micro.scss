@@ -1,0 +1,13 @@
+@media screen and (min-width: map-get($breakpoints, micro)) {
+    .container {
+        padding: 1.5rem 2rem;
+        margin-bottom: $footer-size*1.5;
+    }
+
+    .grid__menu {
+        article {
+            margin-bottom: 1.5rem;
+            @include thumbnail-size (map-get($thumbnail-width, micro));
+        }
+    }
+}

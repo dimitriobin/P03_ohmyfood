@@ -1,0 +1,27 @@
+@media screen and (min-width: map-get($breakpoints, small)) {
+    .container {
+        padding: 2rem 3rem;
+    }
+
+    .grid__menu {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto 2rem;
+
+        article {
+            @include thumbnail-size (map-get($thumbnail-width, small));
+
+            &:nth-child(2n) {
+                margin-left: 1rem;
+            }
+
+            &:nth-child(2n+1) {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .btn {
+        font-size: $global-font-size*1.2;
+    }
+}

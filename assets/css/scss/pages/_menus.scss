@@ -1,19 +1,4 @@
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    margin-bottom: $footer-size*2;
-
-    @include extra-small-devices {
-        margin-bottom: $footer-size;
-    }
-
-    @include small-devices {
-        padding: 2.5rem 3.5rem;
-    }
-
 
     &>h2 {
         font-family: sans-serif;
@@ -24,305 +9,58 @@ main {
     }
 }
 
-.card {
+#card {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     @extend %shadow;
+
+    header {
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+
+        tr {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        th {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                margin: 0 0.2rem;
+            }
+
+            img {
+                display: block;
+                width: 30%;
+                height: auto;
+            }
+        }
+    }
+
+    footer {
+
+        p {
+            display: inline-block;
+            text-align: center;
+        }
+    }
 }
 
-// MENU 1
 #menu_la_note_enchantee {
-    @include menus (laNoteEnchantee);
-
-    .card {
-
-        &__header {
-            font-size: 1.8rem;
-            margin-bottom: 0.8rem;
-
-            img {
-                width: 20%;
-            }
-
-            @include large-devices {
-                margin-bottom: 1rem;
-
-                img {
-                    width: 25%;
-                }
-            }
-        }
-
-        &__body {
-            margin-top: 1rem;
-            line-height: 1.3;
-
-            tbody tr {
-                margin-bottom: 0.9rem;
-
-                &:first-child {
-                    margin-top: 1.1rem;
-                }
-
-                &:last-child {
-                    margin-bottom: 2rem;
-                }
-            }
-
-            &-title {
-
-                h3 {
-                    font-size: 0.9rem;
-                }
-            }
-
-            &-text {
-                font-size: 0.6rem;
-            }
-
-            &-price {
-                font-size: 0.7rem;
-                margin-top: 0.2rem;
-
-                @include small-devices {
-                    margin-top: 0;
-                }
-            }
-        }
-
-        &__footer {
-            margin-top: 0.6rem;
-
-            img {
-                display: inline-block;
-                width: 1.5rem;
-                vertical-align: bottom;
-                margin-right: 0.2rem;
-            }
-
-            p {
-                font-size: 1.4rem;
-            }
-        }
-
-    }
-}
-
-// MENU 2
-#menu_le_chic_a_la_francaise {
-    @include menus (leChicALaFrancaise);
-
-    .card {
-        padding: 5rem 0 6rem 0;
-
-        &__header {
-            font-size: 1.5rem;
-            letter-spacing: 0.1rem;
-            margin-bottom: 4rem;
-        }
-
-        &__body {
-            width: 90%;
-            margin-top: 1rem;
-            line-height: 1.3;
-
-            tbody tr {
-
-                margin-bottom: 0.9rem;
-
-                &:first-child {
-                    margin-top: 1.1rem;
-                }
-
-                &:last-child {
-                    margin-bottom: 2rem;
-                }
-
-                @include small-devices {
-                    width: 80%;
-                }
-            }
-
-            &-title {
-
-                h3 {
-                    font-size: 0.85rem;
-                }
-            }
-
-            &-text {
-                font-size: 0.75rem;
-            }
-
-            &-price {
-                font-size: 0.85rem;
-                margin-top: 0.2rem;
-
-                @include small-devices {
-                    margin-top: 0;
-                }
-            }
-        }
-    }
-
-}
-
-//MENU 3
-#menu_le_delice_des_papilles {
-    @include menus (leDeliceDesPapilles);
-
-    .card {
-        padding: 3rem 1rem 4rem 1rem;
-
-        &__header {
-            font-size: 1.5rem;
-            margin-bottom: 0.8rem;
-
-            @include small-devices {
-                font-size: 3.2rem;
-                margin-bottom: 3.5rem;
-            }
-        }
-
-        &__body {
-            margin-top: 1rem;
-            line-height: 1.3;
-
-            tbody tr {
-                margin-bottom: 0.8rem;
-
-                &:first-child {
-                    margin-top: 1.1rem;
-                }
-
-                &:last-child {
-                    margin-bottom: 1rem;
-                }
-
-                @include small-devices {
-                    width: 80%;
-                }
-            }
-
-            &-title {
-
-                h3 {
-                    font-size: 0.7rem;
-
-                    @include small-devices {
-                        font-size: 0.8rem;
-                    }
-                }
-
-                img {
-                    width: 33%;
-                }
-
-                @include small-devices {
-                    margin-bottom: 0.8rem;
-                }
-            }
-
-            &-text {
-                font-size: 0.6rem;
-
-                @include small-devices {
-                    font-size: 0.7rem;
-                }
-            }
-
-            &-price {
-                font-size: 0.7rem;
-                margin-top: 0.2rem;
-
-                @include small-devices {
-                    margin-top: 0;
-                    font-size: 1rem;
-                }
-            }
-        }
-
-        @include small-devices {
-            padding: 5rem 1.5rem 8rem 1.5rem;
-        }
-    }
-}
-
-#menu_la_palette_du_gout {
-    @include menus (laPaletteDuGout);
-
-    .card {
-        padding: 4rem 1rem 6rem 1rem;
-
-        &__header {
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-
-            @include small-devices {
-                font-size: 3.2rem;
-                margin-bottom: 4rem;
-            }
-        }
-
-        &__body {
-            margin-top: 1rem;
-            line-height: 1.3;
-
-            tbody tr {
-                margin-bottom: 0.6rem;
-
-                &:first-child {
-                    margin-top: 1.1rem;
-                }
-
-                &:last-child {
-                    margin-bottom: 1.2rem;
-                }
-
-                @include small-devices {
-                    width: 80%;
-                }
-            }
-
-            &-title {
-
-                h3 {
-                    font-size: 0.7rem;
-
-                    @include small-devices {
-                        font-size: 0.8rem;
-                    }
-                }
-
-                img {
-                    width: 36%;
-                }
-
-                @include small-devices {
-                    margin-bottom: 0.6rem;
-                }
-            }
-
-            &-text {
-                font-size: 0.6rem;
-
-                @include small-devices {
-                    font-size: 0.7rem;
-                }
-            }
-
-            &-price {
-                font-size: 0.8rem;
-                margin-top: 0.2rem;
-
-                @include small-devices {
-                    margin-top: 0;
-                    font-size: 1rem;
-                }
-            }
-        }
-
-        @include small-devices {
-            padding: 5rem 1.5rem 8rem 1.5rem;
-        }
-    }
-
+    @include menus ($laNoteEnchantee);
 }
