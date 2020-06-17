@@ -1,54 +1,58 @@
-main {
-
-    &>h2 {
-        font-family: sans-serif;
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-}
-
 #card {
     width: 100%;
-    max-width: 1200px;
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     @extend %shadow;
+    text-align: center;
 
     header {
-        text-align: center;
+        font-size: $global-font-size*2;
+        margin-bottom: 2rem;
     }
 
     table {
         width: 100%;
+        margin-bottom: 2.5rem;
+    }
 
-        tr {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.8rem;
+    }
+
+    th {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        h3 {
+            margin: 0 0.2rem;
+            font-size: $global-font-size*0.9;
         }
 
-        th {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: center;
+        img {
+            display: block;
+            width: 30%;
+            height: auto;
+        }
+    }
 
-            h3 {
-                margin: 0 0.2rem;
-            }
+    td {
+        &:nth-child(odd) {
+            font-size: $global-font-size*0.7;
+        }
 
-            img {
-                display: block;
-                width: 30%;
-                height: auto;
-            }
+        &:nth-child(even) {
+            font-size: $global-font-size*0.8;
+            margin-top: 0.3rem;
         }
     }
 
@@ -63,4 +67,82 @@ main {
 
 #menu_la_note_enchantee {
     @include menus ($laNoteEnchantee);
+
+    color: map-get($laNoteEnchantee, color-primary);
+
+    #card {
+        header img {
+            width: 2rem;
+        }
+
+        th h3 {
+            font-size: $global-font-size*1.1;
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-family: map-get($laNoteEnchantee, font-primary);
+                font-size: $global-font-size*1.4;
+            }
+
+            img {
+                width: 1rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+
+}
+
+#menu_le_chic_a_la_francaise {
+    @include menus ($leChicALaFrancaise);
+
+    #card {
+        header {
+            font-size: $global-font-size*1.2;
+            @include text-gradient (-45deg, $leChicALaFrancaise)
+        }
+
+        table {
+            &:nth-of-type(1) {
+                color: map-get($leChicALaFrancaise, color-primary);
+            }
+
+            &:nth-of-type(2) {
+                color: map-get($leChicALaFrancaise, color-secondary);
+            }
+
+            &:nth-of-type(3) {
+                color: map-get($leChicALaFrancaise, color-tertiary);
+            }
+        }
+    }
+}
+
+#menu_le_delice_des_papilles {
+    @include menus ($leDeliceDesPapilles);
+
+    #card {
+        header {
+            @include text-gradient (-90deg, $leDeliceDesPapilles)
+        }
+
+        color: black
+    }
+}
+
+#menu_la_palette_du_gout {
+    @include menus ($laPaletteDuGout);
+
+    #card {
+        header {
+            @include text-gradient (-90deg, $laPaletteDuGout)
+        }
+
+        color: black
+    }
 }

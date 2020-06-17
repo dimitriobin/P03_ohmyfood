@@ -194,6 +194,12 @@ body > footer a:first-child {
   align-items: center;
   margin-bottom: 6.4rem;
 }
+.container > h2 {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
 @font-face {
   font-family: 'alte_haas_groteskbold';
@@ -376,55 +382,61 @@ body > footer a:first-child {
   color: transparent;
 }
 
-main > h2 {
-  font-family: sans-serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
 #card {
   width: 100%;
-  max-width: 1200px;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 #card header {
-  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 #card table {
   width: 100%;
+  margin-bottom: 2.5rem;
 }
-#card table tr {
+#card tbody tr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
+  margin-bottom: 0.8rem;
 }
-#card table th {
+#card th {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
-#card table th h3 {
+#card th h3 {
   margin: 0 0.2rem;
+  font-size: 0.9rem;
 }
-#card table th img {
+#card th img {
   display: block;
   width: 30%;
   height: auto;
+}
+#card td:nth-child(odd) {
+  font-size: 0.7rem;
+}
+#card td:nth-child(even) {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
 }
 #card footer p {
   display: inline-block;
   text-align: center;
 }
 
+#menu_la_note_enchantee {
+  color: #3c1218;
+}
 #menu_la_note_enchantee #card {
   background-color: #fcdfdb;
 }
@@ -434,11 +446,108 @@ main > h2 {
 #menu_la_note_enchantee #card th {
   font-family: "segoeprint-bold", sans-serif;
 }
-#menu_la_note_enchantee #card td:first-child {
+#menu_la_note_enchantee #card td:nth-child(odd) {
   font-family: "segoeprint-regular", sans-serif;
 }
-#menu_la_note_enchantee #card td:last-child {
+#menu_la_note_enchantee #card td:nth-child(even) {
   font-family: "segoeprint-bold", sans-serif;
+}
+#menu_la_note_enchantee #card header img {
+  width: 2rem;
+}
+#menu_la_note_enchantee #card th h3 {
+  font-size: 1.1rem;
+}
+#menu_la_note_enchantee #card footer {
+  display: flex;
+  align-items: center;
+}
+#menu_la_note_enchantee #card footer p {
+  font-family: "devonshireregular";
+  font-size: 1.4rem;
+}
+#menu_la_note_enchantee #card footer img {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+#menu_le_chic_a_la_francaise #card {
+  background-color: #fff5feff;
+}
+#menu_le_chic_a_la_francaise #card header {
+  font-family: "croissant_oneregular", sans-serif;
+}
+#menu_le_chic_a_la_francaise #card th {
+  font-family: "serif12_betabold", sans-serif;
+}
+#menu_le_chic_a_la_francaise #card td:nth-child(odd) {
+  font-family: "serif12_betaregular", sans-serif;
+}
+#menu_le_chic_a_la_francaise #card td:nth-child(even) {
+  font-family: "serif12_betabold", sans-serif;
+}
+#menu_le_chic_a_la_francaise #card header {
+  font-size: 1.2rem;
+  background: linear-gradient(-45deg, #6e4ccc 0%, #a56799 50%, #c67412 100%);
+  background-clip: text;
+  color: transparent;
+}
+#menu_le_chic_a_la_francaise #card table:nth-of-type(1) {
+  color: #c67412;
+}
+#menu_le_chic_a_la_francaise #card table:nth-of-type(2) {
+  color: #a56799;
+}
+#menu_le_chic_a_la_francaise #card table:nth-of-type(3) {
+  color: #6e4ccc;
+}
+
+#menu_le_delice_des_papilles #card {
+  background-color: #f9f9f9;
+}
+#menu_le_delice_des_papilles #card header {
+  font-family: "dancing_scriptregular", sans-serif;
+}
+#menu_le_delice_des_papilles #card th {
+  font-family: "segoeprint-regular", sans-serif;
+}
+#menu_le_delice_des_papilles #card td:nth-child(odd) {
+  font-family: "segoeprint-regular", sans-serif;
+}
+#menu_le_delice_des_papilles #card td:nth-child(even) {
+  font-family: "segoeprint-regular", sans-serif;
+}
+#menu_le_delice_des_papilles #card {
+  color: black;
+}
+#menu_le_delice_des_papilles #card header {
+  background: linear-gradient(-90deg, #229df9 0%, #0670f3 50%, #0228dd 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+#menu_la_palette_du_gout #card {
+  background-color: #fdfffd;
+}
+#menu_la_palette_du_gout #card header {
+  font-family: "kaushan_scriptregular", sans-serif;
+}
+#menu_la_palette_du_gout #card th {
+  font-family: "segoeprint-regular", sans-serif;
+}
+#menu_la_palette_du_gout #card td:nth-child(odd) {
+  font-family: "segoeprint-regular", sans-serif;
+}
+#menu_la_palette_du_gout #card td:nth-child(even) {
+  font-family: "segoeprint-regular", sans-serif;
+}
+#menu_la_palette_du_gout #card {
+  color: black;
+}
+#menu_la_palette_du_gout #card header {
+  background: linear-gradient(-90deg, #cefea0 0%, #72bf56 50%, #3d923a 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 @media screen and (min-width: 250px) {
@@ -480,6 +589,30 @@ main > h2 {
   .grid__menu article h2 {
     margin-bottom: 1.5rem;
   }
+
+  #card {
+    padding: 3rem 1rem;
+  }
+  #card header {
+    font-size: 2.7rem;
+  }
+  #card th h3 {
+    font-size: 0.85rem;
+  }
+  #card td:nth-child(odd) {
+    font-size: 0.7rem;
+  }
+  #card td:nth-child(even) {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+  }
+
+  #menu_la_note_enchantee #card header {
+    font-size: 2.2rem;
+  }
+  #menu_la_note_enchantee #card header img {
+    width: 3rem;
+  }
 }
 @media screen and (min-width: 560px) {
   .container {
@@ -504,6 +637,28 @@ main > h2 {
 
   .btn {
     font-size: 1.2rem;
+  }
+
+  #card tbody tr {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #card td:nth-child(odd) {
+    text-align: left;
+    margin-right: 0.5rem;
+  }
+  #card td:nth-child(even) {
+    text-align: right;
+    margin-top: 0;
+  }
+
+  #menu_la_note_enchantee #card {
+    padding: 3rem 3.5rem 2.5rem;
+  }
+
+  #menu_le_chic_a_la_francaise #card {
+    padding: 5rem 1rem;
   }
 }
 @media screen and (min-width: 768px) {

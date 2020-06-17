@@ -45,11 +45,11 @@
         }
 
         td {
-            &:first-child {
+            &:nth-child(odd) {
                 font-family: map-get($restaurant, font-tertiary), sans-serif;
             }
 
-            &:last-child {
+            &:nth-child(even) {
                 font-family: map-get($restaurant, font-secondary), sans-serif;
 
             }
