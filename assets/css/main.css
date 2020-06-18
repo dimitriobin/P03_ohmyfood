@@ -157,7 +157,8 @@ body > header {
   background-color: #579c87;
   color: #fdcb46;
   font-family: "alte_haas_groteskbold", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
+  letter-spacing: -0.1rem;
   padding: 1rem 0;
   text-align: center;
 }
@@ -184,7 +185,7 @@ body > footer a:first-child {
   margin-bottom: 10px;
 }
 
-.container {
+main {
   max-width: 900px;
   margin: 0 auto;
   padding: 1rem 1rem;
@@ -194,11 +195,12 @@ body > footer a:first-child {
   align-items: center;
   margin-bottom: 6.4rem;
 }
-.container > h2 {
+main > h2 {
   font-family: sans-serif;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
 @font-face {
@@ -460,14 +462,16 @@ body > footer a:first-child {
 }
 #menu_la_note_enchantee #card footer {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 #menu_la_note_enchantee #card footer p {
   font-family: "devonshireregular";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  text-align: left;
 }
 #menu_la_note_enchantee #card footer img {
-  width: 1rem;
+  width: 1.8rem;
   margin-right: 0.5rem;
 }
 
@@ -487,10 +491,11 @@ body > footer a:first-child {
   font-family: "serif12_betabold", sans-serif;
 }
 #menu_le_chic_a_la_francaise #card header {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background: linear-gradient(-45deg, #6e4ccc 0%, #a56799 50%, #c67412 100%);
   background-clip: text;
   color: transparent;
+  margin-bottom: 2rem;
 }
 #menu_le_chic_a_la_francaise #card table:nth-of-type(1) {
   color: #c67412;
@@ -500,6 +505,14 @@ body > footer a:first-child {
 }
 #menu_le_chic_a_la_francaise #card table:nth-of-type(3) {
   color: #6e4ccc;
+}
+#menu_le_chic_a_la_francaise #card th {
+  margin-bottom: 1.7rem;
+}
+#menu_le_chic_a_la_francaise #card tbody tr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 #menu_le_delice_des_papilles #card {
@@ -525,6 +538,14 @@ body > footer a:first-child {
   background-clip: text;
   color: transparent;
 }
+#menu_le_delice_des_papilles #card th {
+  margin-bottom: 1.8rem;
+}
+#menu_le_delice_des_papilles #card tbody tr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
 
 #menu_la_palette_du_gout #card {
   background-color: #fdfffd;
@@ -548,6 +569,16 @@ body > footer a:first-child {
   background: linear-gradient(-90deg, #cefea0 0%, #72bf56 50%, #3d923a 100%);
   background-clip: text;
   color: transparent;
+}
+#menu_la_palette_du_gout #card th {
+  margin-bottom: 1.8rem;
+}
+#menu_la_palette_du_gout #card tbody tr {
+  margin: 0 auto 1.1rem;
+  width: 90%;
+}
+#menu_la_palette_du_gout #card td:nth-child(even) {
+  font-size: 0.9rem;
 }
 
 @media screen and (min-width: 250px) {
@@ -582,7 +613,7 @@ body > footer a:first-child {
   }
 
   .grid__menu article {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     width: 200px;
     height: 290px;
   }
@@ -659,6 +690,24 @@ body > footer a:first-child {
 
   #menu_le_chic_a_la_francaise #card {
     padding: 5rem 1rem;
+  }
+  #menu_le_chic_a_la_francaise #card header {
+    margin-bottom: 5rem;
+  }
+
+  #menu_le_delice_des_papilles #card {
+    padding-top: 4.5rem;
+  }
+  #menu_le_delice_des_papilles #card header {
+    margin-bottom: 4.5rem;
+  }
+
+  #menu_la_palette_du_gout #card {
+    padding: 4.5rem 2rem 6rem;
+  }
+  #menu_la_palette_du_gout #card header {
+    margin-bottom: 4.5rem;
+    font-size: 3.5rem;
   }
 }
 @media screen and (min-width: 768px) {

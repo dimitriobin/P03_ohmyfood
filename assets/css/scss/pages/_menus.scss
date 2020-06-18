@@ -81,15 +81,17 @@
 
         footer {
             display: flex;
+            justify-content: center;
             align-items: center;
 
             p {
                 font-family: map-get($laNoteEnchantee, font-primary);
-                font-size: $global-font-size*1.4;
+                font-size: $global-font-size*1.6;
+                text-align: left;
             }
 
             img {
-                width: 1rem;
+                width: 1.8rem;
                 margin-right: 0.5rem;
             }
         }
@@ -103,8 +105,9 @@
 
     #card {
         header {
-            font-size: $global-font-size*1.2;
-            @include text-gradient (-45deg, $leChicALaFrancaise)
+            font-size: $global-font-size*1.4;
+            @include text-gradient (-45deg, $leChicALaFrancaise);
+            margin-bottom: 2rem;
         }
 
         table {
@@ -120,6 +123,16 @@
                 color: map-get($leChicALaFrancaise, color-tertiary);
             }
         }
+
+        th {
+            margin-bottom: 1.7rem;
+        }
+
+        tbody tr {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
     }
 }
 
@@ -127,11 +140,22 @@
     @include menus ($leDeliceDesPapilles);
 
     #card {
+        color: black;
+
         header {
-            @include text-gradient (-90deg, $leDeliceDesPapilles)
+            @include text-gradient (-90deg, $leDeliceDesPapilles);
         }
 
-        color: black
+        th {
+            margin-bottom: 1.8rem;
+        }
+
+        tbody tr {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
     }
 }
 
@@ -139,10 +163,24 @@
     @include menus ($laPaletteDuGout);
 
     #card {
+        color: black;
+
         header {
-            @include text-gradient (-90deg, $laPaletteDuGout)
+            @include text-gradient (-90deg, $laPaletteDuGout);
         }
 
-        color: black
+        th {
+            margin-bottom: 1.8rem;
+        }
+
+        tbody tr {
+            margin: 0 auto 1.1rem;
+            width: 90%;
+        }
+
+        td:nth-child(even) {
+            font-size: $global-font-size*0.9;
+        }
+
     }
 }

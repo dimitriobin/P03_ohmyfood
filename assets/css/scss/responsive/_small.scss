@@ -56,6 +56,34 @@
         #card {
             padding: 5rem 1rem;
 
+            header {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
+    #menu_le_delice_des_papilles {
+
+        #card {
+            padding-top: 4.5rem;
+
+            header {
+                margin-bottom: 4.5rem;
+            }
+
+        }
+    }
+
+    #menu_la_palette_du_gout {
+
+        #card {
+            padding: 4.5rem 2rem 6rem;
+
+            header {
+                margin-bottom: 4.5rem;
+                font-size: $global-font-size*3.5;
+            }
+
         }
     }
 }
