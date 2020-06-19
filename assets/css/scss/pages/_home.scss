@@ -30,52 +30,73 @@
 
 #laNoteEnchantée {
 
-    @include menu_thumbnails ($laNoteEnchantee);
-
     a {
+        background-color: map-get($laNoteEnchantee, bg);
+    }
+
+    h2 {
+        font-family: map-get($laNoteEnchantee, font-primary), sans-serif;
         color: map-get($laNoteEnchantee, color-primary);
     }
 
     p {
+        font-family: map-get($laNoteEnchantee, font-secondary), sans-serif;
+        color: map-get($laNoteEnchantee, color-primary);
         text-transform: uppercase;
     }
+
 
     img {
         width: 1.5rem;
     }
-
 }
 
 #leChicALaFrancaise {
-    @include menu_thumbnails ($leChicALaFrancaise);
-
+    a {
+        background-color: map-get($leChicALaFrancaise, bg);
+    }
 
     h2 {
-        font-size: $global-font-size*0.8;
+        font-family: map-get($leChicALaFrancaise, font-primary), sans-serif;
         @include text-gradient (-90deg, $leChicALaFrancaise);
+        font-size: $global-font-size*0.8;
+
     }
 
     p {
+        font-family: map-get($leChicALaFrancaise, font-secondary), sans-serif;
         color: map-get($leChicALaFrancaise, color-primary);
     }
 }
 
 #leDeliceDesPapilles {
-    @include menu_thumbnails ($leDeliceDesPapilles);
+    a {
+        background-color: map-get($leDeliceDesPapilles, bg);
+    }
 
     h2 {
+        font-family: map-get($leDeliceDesPapilles, font-primary), sans-serif;
         @include text-gradient (-90deg, $leDeliceDesPapilles);
     }
 
     p {
+        font-family: map-get($leDeliceDesPapilles, font-secondary), sans-serif;
         color: map-get($leDeliceDesPapilles, color-tertiary);
     }
 }
 
 #laPaletteDuGout {
-    @include menu_thumbnails ($laPaletteDuGout);
+    a {
+        background-color: map-get($laPaletteDuGout, bg);
+    }
 
     h2 {
+        font-family: map-get($laPaletteDuGout, font-primary), sans-serif;
         @include text-gradient (-90deg, $laPaletteDuGout);
+    }
+
+    p {
+        font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
+        color: map-get($laPaletteDuGout, color-secondary);
     }
 }

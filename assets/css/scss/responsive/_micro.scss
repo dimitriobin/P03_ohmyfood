@@ -1,6 +1,6 @@
 // micro: 250px
 @media screen and (min-width: map-get($breakpoints, micro)) {
-    .container {
+    main {
         padding: 1.5rem 2rem;
         margin-bottom: $footer-size*1.5;
     }

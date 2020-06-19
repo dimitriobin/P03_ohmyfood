@@ -1,21 +1,4 @@
 // vignettes de la page d'acceuil
-@mixin menu_thumbnails ($restaurant) {
-
-    a {
-        background-color: map-get($restaurant, bg);
-    }
-
-    h2 {
-        font-family: map-get($restaurant, font-primary), sans-serif;
-        color: map-get($restaurant, color-primary);
-    }
-
-    p {
-        font-family: map-get($restaurant, font-secondary), sans-serif;
-        color: map-get($restaurant, color-secondary);
-    }
-}
-
 @mixin thumbnail-size ($width) {
     $height: $width*1.45;
 
@@ -23,36 +6,10 @@
     height: $height;
 }
 
+// dégradé des textes
 @mixin text-gradient ($direction, $restaurant) {
 
     background: linear-gradient($direction, map-get($restaurant, color-tertiary) 0%, map-get($restaurant, color-secondary) 50%, map-get($restaurant, color-primary) 100%);
     background-clip: text;
     color: transparent;
-}
-
-// Cartes des menus
-@mixin menus ($restaurant) {
-
-    #card {
-        background-color: map-get($restaurant, bg);
-
-        header {
-            font-family: map-get($restaurant, font-primary), sans-serif;
-        }
-
-        th {
-            font-family: map-get($restaurant, font-secondary), sans-serif;
-        }
-
-        td {
-            &:nth-child(odd) {
-                font-family: map-get($restaurant, font-tertiary), sans-serif;
-            }
-
-            &:nth-child(even) {
-                font-family: map-get($restaurant, font-secondary), sans-serif;
-
-            }
-        }
-    }
 }

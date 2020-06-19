@@ -315,11 +315,7 @@ main > h2 {
 }
 #laNoteEnchantée p {
   font-family: "segoeprint-bold", sans-serif;
-}
-#laNoteEnchantée a {
   color: #3c1218;
-}
-#laNoteEnchantée p {
   text-transform: uppercase;
 }
 #laNoteEnchantée img {
@@ -331,19 +327,13 @@ main > h2 {
 }
 #leChicALaFrancaise h2 {
   font-family: "croissant_oneregular", sans-serif;
-  color: #c67412;
-}
-#leChicALaFrancaise p {
-  font-family: "serif12_betabold", sans-serif;
-  color: #a56799;
-}
-#leChicALaFrancaise h2 {
-  font-size: 0.8rem;
   background: linear-gradient(-90deg, #6e4ccc 0%, #a56799 50%, #c67412 100%);
   background-clip: text;
   color: transparent;
+  font-size: 0.8rem;
 }
 #leChicALaFrancaise p {
+  font-family: "serif12_betabold", sans-serif;
   color: #c67412;
 }
 
@@ -352,18 +342,12 @@ main > h2 {
 }
 #leDeliceDesPapilles h2 {
   font-family: "dancing_scriptregular", sans-serif;
-  color: #0228dd;
-}
-#leDeliceDesPapilles p {
-  font-family: "segoeprint-regular", sans-serif;
-  color: #0670f3;
-}
-#leDeliceDesPapilles h2 {
   background: linear-gradient(-90deg, #229df9 0%, #0670f3 50%, #0228dd 100%);
   background-clip: text;
   color: transparent;
 }
 #leDeliceDesPapilles p {
+  font-family: "segoeprint-regular", sans-serif;
   color: #229df9;
 }
 
@@ -372,16 +356,13 @@ main > h2 {
 }
 #laPaletteDuGout h2 {
   font-family: "kaushan_scriptregular", sans-serif;
-  color: #3d923a;
+  background: linear-gradient(-90deg, #cefea0 0%, #72bf56 50%, #3d923a 100%);
+  background-clip: text;
+  color: transparent;
 }
 #laPaletteDuGout p {
   font-family: "segoeprint-regular", sans-serif;
   color: #72bf56;
-}
-#laPaletteDuGout h2 {
-  background: linear-gradient(-90deg, #cefea0 0%, #72bf56 50%, #3d923a 100%);
-  background-clip: text;
-  color: transparent;
 }
 
 #card {
@@ -436,29 +417,25 @@ main > h2 {
   text-align: center;
 }
 
-#menu_la_note_enchantee {
-  color: #3c1218;
-}
 #menu_la_note_enchantee #card {
   background-color: #fcdfdb;
+  color: #3c1218;
 }
 #menu_la_note_enchantee #card header {
   font-family: "devonshireregular", sans-serif;
 }
-#menu_la_note_enchantee #card th {
+#menu_la_note_enchantee #card header img {
+  width: 2rem;
+}
+#menu_la_note_enchantee #card th h3 {
   font-family: "segoeprint-bold", sans-serif;
+  font-size: 1.1rem;
 }
 #menu_la_note_enchantee #card td:nth-child(odd) {
   font-family: "segoeprint-regular", sans-serif;
 }
 #menu_la_note_enchantee #card td:nth-child(even) {
   font-family: "segoeprint-bold", sans-serif;
-}
-#menu_la_note_enchantee #card header img {
-  width: 2rem;
-}
-#menu_la_note_enchantee #card th h3 {
-  font-size: 1.1rem;
 }
 #menu_la_note_enchantee #card footer {
   display: flex;
@@ -480,17 +457,6 @@ main > h2 {
 }
 #menu_le_chic_a_la_francaise #card header {
   font-family: "croissant_oneregular", sans-serif;
-}
-#menu_le_chic_a_la_francaise #card th {
-  font-family: "serif12_betabold", sans-serif;
-}
-#menu_le_chic_a_la_francaise #card td:nth-child(odd) {
-  font-family: "serif12_betaregular", sans-serif;
-}
-#menu_le_chic_a_la_francaise #card td:nth-child(even) {
-  font-family: "serif12_betabold", sans-serif;
-}
-#menu_le_chic_a_la_francaise #card header {
   font-size: 1.4rem;
   background: linear-gradient(-45deg, #6e4ccc 0%, #a56799 50%, #c67412 100%);
   background-clip: text;
@@ -507,6 +473,7 @@ main > h2 {
   color: #6e4ccc;
 }
 #menu_le_chic_a_la_francaise #card th {
+  font-family: "serif12_betabold", sans-serif;
   margin-bottom: 1.7rem;
 }
 #menu_le_chic_a_la_francaise #card tbody tr {
@@ -514,31 +481,25 @@ main > h2 {
   margin-right: auto;
   width: 80%;
 }
+#menu_le_chic_a_la_francaise #card td:nth-child(odd) {
+  font-family: "serif12_betaregular", sans-serif;
+}
+#menu_le_chic_a_la_francaise #card td:nth-child(even) {
+  font-family: "serif12_betabold", sans-serif;
+}
 
 #menu_le_delice_des_papilles #card {
   background-color: #f9f9f9;
-}
-#menu_le_delice_des_papilles #card header {
-  font-family: "dancing_scriptregular", sans-serif;
-}
-#menu_le_delice_des_papilles #card th {
-  font-family: "segoeprint-regular", sans-serif;
-}
-#menu_le_delice_des_papilles #card td:nth-child(odd) {
-  font-family: "segoeprint-regular", sans-serif;
-}
-#menu_le_delice_des_papilles #card td:nth-child(even) {
-  font-family: "segoeprint-regular", sans-serif;
-}
-#menu_le_delice_des_papilles #card {
   color: black;
 }
 #menu_le_delice_des_papilles #card header {
+  font-family: "dancing_scriptregular", sans-serif;
   background: linear-gradient(-90deg, #229df9 0%, #0670f3 50%, #0228dd 100%);
   background-clip: text;
   color: transparent;
 }
 #menu_le_delice_des_papilles #card th {
+  font-family: "segoeprint-regular", sans-serif;
   margin-bottom: 1.8rem;
 }
 #menu_le_delice_des_papilles #card tbody tr {
@@ -546,43 +507,41 @@ main > h2 {
   margin-right: auto;
   width: 80%;
 }
+#menu_le_delice_des_papilles #card td:nth-child(odd) {
+  font-family: "segoeprint-regular", sans-serif;
+}
+#menu_le_delice_des_papilles #card td:nth-child(even) {
+  font-family: "segoeprint-regular", sans-serif;
+}
 
 #menu_la_palette_du_gout #card {
   background-color: #fdfffd;
-}
-#menu_la_palette_du_gout #card header {
-  font-family: "kaushan_scriptregular", sans-serif;
-}
-#menu_la_palette_du_gout #card th {
-  font-family: "segoeprint-regular", sans-serif;
-}
-#menu_la_palette_du_gout #card td:nth-child(odd) {
-  font-family: "segoeprint-regular", sans-serif;
-}
-#menu_la_palette_du_gout #card td:nth-child(even) {
-  font-family: "segoeprint-regular", sans-serif;
-}
-#menu_la_palette_du_gout #card {
   color: black;
 }
 #menu_la_palette_du_gout #card header {
+  font-family: "kaushan_scriptregular", sans-serif;
   background: linear-gradient(-90deg, #cefea0 0%, #72bf56 50%, #3d923a 100%);
   background-clip: text;
   color: transparent;
 }
 #menu_la_palette_du_gout #card th {
+  font-family: "segoeprint-regular", sans-serif;
   margin-bottom: 1.8rem;
 }
 #menu_la_palette_du_gout #card tbody tr {
   margin: 0 auto 1.1rem;
   width: 90%;
 }
+#menu_la_palette_du_gout #card td:nth-child(odd) {
+  font-family: "segoeprint-regular", sans-serif;
+}
 #menu_la_palette_du_gout #card td:nth-child(even) {
+  font-family: "segoeprint-regular", sans-serif;
   font-size: 0.9rem;
 }
 
 @media screen and (min-width: 250px) {
-  .container {
+  main {
     padding: 1.5rem 2rem;
     margin-bottom: 4.8rem;
   }
@@ -608,7 +567,7 @@ main > h2 {
     margin-bottom: 0px;
   }
 
-  .container {
+  main {
     margin-bottom: 3.2rem;
   }
 
@@ -646,7 +605,7 @@ main > h2 {
   }
 }
 @media screen and (min-width: 560px) {
-  .container {
+  main {
     padding: 2rem 3rem;
   }
 
@@ -711,7 +670,7 @@ main > h2 {
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
+  main {
     padding: 3rem 4rem;
   }
 

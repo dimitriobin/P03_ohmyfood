@@ -1,6 +1,6 @@
 // small: 560px
 @media screen and (min-width: map-get($breakpoints, small)) {
-    .container {
+    main {
         padding: 2rem 3rem;
     }
 
