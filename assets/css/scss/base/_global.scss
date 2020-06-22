@@ -1,4 +1,4 @@
-// Elements généraux à tout le site
+/* Elements généraux à tout le site */
 *,
 *::before,
 *::after {
@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-// HEADER ET FOOTER
+/* HEADER ET FOOTER */
 body {
 
     &>header {
@@ -54,6 +54,7 @@ body {
     }
 }
 
+/* Container */
 main {
     max-width: 900px;
     margin: 0 auto;
