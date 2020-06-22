@@ -1,0 +1,105 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/placeholder';
+@import 'pages/menus';
+
+// Le chic à la francaise
+@font-face {
+    font-family: 'croissant_oneregular';
+    src: url('../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.eot');
+    src: url('../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.woff2') format('woff2'),
+        url('../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.woff') format('woff'),
+        url('../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.ttf') format('truetype'),
+        url('../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.svg#croissant_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'serif12_betaregular';
+    src: url('../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.eot');
+    src: url('../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.woff2') format('woff2'),
+        url('../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.woff') format('woff'),
+        url('../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.ttf') format('truetype'),
+        url('../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.svg#serif12_betaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'serif12_betabold';
+    src: url('../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.eot');
+    src: url('../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.woff2') format('woff2'),
+        url('../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.woff') format('woff'),
+        url('../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.ttf') format('truetype'),
+        url('../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.svg#serif12_betabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#menu_le_chic_a_la_francaise {
+
+    section {
+        background-color: map-get($leChicALaFrancaise, bg);
+
+        header {
+            font-family: map-get($leChicALaFrancaise, font-primary), sans-serif;
+            font-size: $global-font-size*1.4;
+            @include text-gradient (-45deg, $leChicALaFrancaise);
+            margin-bottom: 2rem;
+        }
+
+        table {
+            &:nth-of-type(1) {
+                color: map-get($leChicALaFrancaise, color-primary);
+            }
+
+            &:nth-of-type(2) {
+                color: map-get($leChicALaFrancaise, color-secondary);
+            }
+
+            &:nth-of-type(3) {
+                color: map-get($leChicALaFrancaise, color-tertiary);
+            }
+        }
+
+        th {
+            font-family: map-get($leChicALaFrancaise, font-secondary), sans-serif;
+            margin-bottom: 1.7rem;
+        }
+
+        tbody tr {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        td {
+            &:nth-child(odd) {
+                font-family: map-get($leChicALaFrancaise, font-tertiary), sans-serif;
+            }
+
+            &:nth-child(even) {
+                font-family: map-get($leChicALaFrancaise, font-secondary), sans-serif;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, small)) {
+
+    #menu_le_chic_a_la_francaise {
+        section {
+            padding: 5rem 1rem;
+
+            header {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}

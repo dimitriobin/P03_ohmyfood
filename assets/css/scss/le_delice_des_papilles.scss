@@ -1,0 +1,67 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/placeholder';
+@import 'pages/menus';
+
+// Le délice des papilles
+@font-face {
+    font-family: 'dancing_scriptregular';
+    src: url('../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.eot');
+    src: url('../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.woff2') format('woff2'),
+        url('../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.woff') format('woff'),
+        url('../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.ttf') format('truetype'),
+        url('../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.svg#dancing_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#menu_le_delice_des_papilles {
+
+    section {
+        background-color: map-get($leDeliceDesPapilles, bg);
+        color: black;
+
+        header {
+            font-family: map-get($leDeliceDesPapilles, font-primary), sans-serif;
+            @include text-gradient (-90deg, $leDeliceDesPapilles);
+        }
+
+        th {
+            font-family: map-get($leDeliceDesPapilles, font-secondary), sans-serif;
+            margin-bottom: 1.8rem;
+        }
+
+        tbody tr {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        td {
+            &:nth-child(odd) {
+                font-family: map-get($leDeliceDesPapilles, font-tertiary), sans-serif;
+            }
+
+            &:nth-child(even) {
+                font-family: map-get($leDeliceDesPapilles, font-secondary), sans-serif;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, small)) {
+
+    #menu_le_delice_des_papilles {
+
+        section {
+            padding-top: 4.5rem;
+
+            header {
+                margin-bottom: 4.5rem;
+            }
+
+        }
+    }
+}

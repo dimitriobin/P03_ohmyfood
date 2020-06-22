@@ -4,8 +4,8 @@
   "description": "Dynamisez une page web avec des animations CSS",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./assets/css/scss/main.scss:./assets/css/main.css --style expanded",
-    "prefix": "postcss ./assets/css/main.css --use autoprefixer -d ./assets/css/prefixed/"
+    "sass": "sass --watch ./assets/css/scss/:./assets/css/ --style expanded",
+    "prefix": "postcss ./assets/css/*.css --use autoprefixer -d ./assets/css/prefixed/"
   },
   "repository": {
     "type": "git",

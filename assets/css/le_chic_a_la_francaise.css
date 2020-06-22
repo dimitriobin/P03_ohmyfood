@@ -1,0 +1,157 @@
+main > section {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Carte des pages des menus */
+main > section {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main > section header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+main > section table {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+main > section tbody tr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+main > section th {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+main > section th h3 {
+  margin: 0 0.2rem;
+  font-size: 0.9rem;
+}
+main > section th img {
+  display: block;
+  width: 30%;
+  height: auto;
+}
+main > section td:nth-child(odd) {
+  font-size: 0.7rem;
+}
+main > section td:nth-child(even) {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+main > section footer p {
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (min-width: 370px) {
+  main > section {
+    padding: 3rem 1rem;
+  }
+  main > section header {
+    font-size: 2.7rem;
+  }
+  main > section th h3 {
+    font-size: 0.85rem;
+  }
+  main > section td:nth-child(odd) {
+    font-size: 0.7rem;
+  }
+  main > section td:nth-child(even) {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+  }
+}
+@media screen and (min-width: 560px) {
+  main > section tbody tr {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  main > section td:nth-child(odd) {
+    text-align: left;
+    margin-right: 0.5rem;
+  }
+  main > section td:nth-child(even) {
+    text-align: right;
+    margin-top: 0;
+  }
+}
+@font-face {
+  font-family: 'croissant_oneregular';
+  src: url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.eot");
+  src: url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.woff2") format("woff2"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.woff") format("woff"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.ttf") format("truetype"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.svg#croissant_oneregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'serif12_betaregular';
+  src: url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.eot");
+  src: url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.woff2") format("woff2"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.woff") format("woff"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.ttf") format("truetype"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.svg#serif12_betaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'serif12_betabold';
+  src: url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.eot");
+  src: url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.woff2") format("woff2"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.woff") format("woff"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.ttf") format("truetype"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.svg#serif12_betabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+#menu_le_chic_a_la_francaise section {
+  background-color: #fff5feff;
+}
+#menu_le_chic_a_la_francaise section header {
+  font-family: "croissant_oneregular", sans-serif;
+  font-size: 1.4rem;
+  background: linear-gradient(-45deg, #6e4ccc 0%, #a56799 50%, #c67412 100%);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 2rem;
+}
+#menu_le_chic_a_la_francaise section table:nth-of-type(1) {
+  color: #c67412;
+}
+#menu_le_chic_a_la_francaise section table:nth-of-type(2) {
+  color: #a56799;
+}
+#menu_le_chic_a_la_francaise section table:nth-of-type(3) {
+  color: #6e4ccc;
+}
+#menu_le_chic_a_la_francaise section th {
+  font-family: "serif12_betabold", sans-serif;
+  margin-bottom: 1.7rem;
+}
+#menu_le_chic_a_la_francaise section tbody tr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+#menu_le_chic_a_la_francaise section td:nth-child(odd) {
+  font-family: "serif12_betaregular", sans-serif;
+}
+#menu_le_chic_a_la_francaise section td:nth-child(even) {
+  font-family: "serif12_betabold", sans-serif;
+}
+
+@media screen and (min-width: 560px) {
+  #menu_le_chic_a_la_francaise section {
+    padding: 5rem 1rem;
+  }
+  #menu_le_chic_a_la_francaise section header {
+    margin-bottom: 5rem;
+  }
+}
+
+/*# sourceMappingURL=le_chic_a_la_francaise.css.map */

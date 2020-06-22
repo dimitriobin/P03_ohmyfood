@@ -1,5 +1,5 @@
 /* Carte des pages des menus */
-#card {
+main>section {
     width: 100%;
     padding: 2rem 1rem;
     display: flex;
@@ -66,173 +66,51 @@
     }
 }
 
-/* Elements propres à chaque menu */
-#menu_la_note_enchantee {
+@media screen and (min-width: map-get($breakpoints, extra-small)) {
 
-    #card {
-        background-color: map-get($laNoteEnchantee, bg);
-        color: map-get($laNoteEnchantee, color-primary);
+    main>section {
+        padding: 3rem 1rem;
 
         header {
-            font-family: map-get($laNoteEnchantee, font-primary), sans-serif;
-
-            img {
-                width: 2rem;
-            }
+            font-size: $global-font-size*2.7;
         }
 
         th h3 {
-            font-family: map-get($laNoteEnchantee, font-secondary), sans-serif;
-            font-size: $global-font-size*1.1;
+            font-size: $global-font-size*0.85;
         }
 
         td {
             &:nth-child(odd) {
-                font-family: map-get($laNoteEnchantee, font-tertiary), sans-serif;
+                font-size: $global-font-size*0.7;
             }
 
             &:nth-child(even) {
-                font-family: map-get($laNoteEnchantee, font-secondary), sans-serif;
-
+                font-size: $global-font-size*0.8;
+                margin-top: 0.3rem;
             }
         }
+    }
+}
 
-        footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+@media screen and (min-width: map-get($breakpoints, small)) {
 
-            p {
-                font-family: map-get($laNoteEnchantee, font-primary);
-                font-size: $global-font-size*1.6;
+    main>section {
+        tbody tr {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        td {
+            &:nth-child(odd) {
                 text-align: left;
-            }
-
-            img {
-                width: 1.8rem;
                 margin-right: 0.5rem;
             }
-        }
-    }
-}
-
-#menu_le_chic_a_la_francaise {
-
-    #card {
-        background-color: map-get($leChicALaFrancaise, bg);
-
-        header {
-            font-family: map-get($leChicALaFrancaise, font-primary), sans-serif;
-            font-size: $global-font-size*1.4;
-            @include text-gradient (-45deg, $leChicALaFrancaise);
-            margin-bottom: 2rem;
-        }
-
-        table {
-            &:nth-of-type(1) {
-                color: map-get($leChicALaFrancaise, color-primary);
-            }
-
-            &:nth-of-type(2) {
-                color: map-get($leChicALaFrancaise, color-secondary);
-            }
-
-            &:nth-of-type(3) {
-                color: map-get($leChicALaFrancaise, color-tertiary);
-            }
-        }
-
-        th {
-            font-family: map-get($leChicALaFrancaise, font-secondary), sans-serif;
-            margin-bottom: 1.7rem;
-        }
-
-        tbody tr {
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-        }
-
-        td {
-            &:nth-child(odd) {
-                font-family: map-get($leChicALaFrancaise, font-tertiary), sans-serif;
-            }
 
             &:nth-child(even) {
-                font-family: map-get($leChicALaFrancaise, font-secondary), sans-serif;
-
+                text-align: right;
+                margin-top: 0;
             }
         }
-    }
-}
-
-#menu_le_delice_des_papilles {
-
-    #card {
-        background-color: map-get($leDeliceDesPapilles, bg);
-        color: black;
-
-        header {
-            font-family: map-get($leDeliceDesPapilles, font-primary), sans-serif;
-            @include text-gradient (-90deg, $leDeliceDesPapilles);
-        }
-
-        th {
-            font-family: map-get($leDeliceDesPapilles, font-secondary), sans-serif;
-            margin-bottom: 1.8rem;
-        }
-
-        tbody tr {
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-        }
-
-        td {
-            &:nth-child(odd) {
-                font-family: map-get($leDeliceDesPapilles, font-tertiary), sans-serif;
-            }
-
-            &:nth-child(even) {
-                font-family: map-get($leDeliceDesPapilles, font-secondary), sans-serif;
-
-            }
-        }
-    }
-}
-
-#menu_la_palette_du_gout {
-
-    #card {
-        background-color: map-get($laPaletteDuGout, bg);
-        color: black;
-
-        header {
-            font-family: map-get($laPaletteDuGout, font-primary), sans-serif;
-            @include text-gradient (-90deg, $laPaletteDuGout);
-        }
-
-        th {
-            font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
-            margin-bottom: 1.8rem;
-        }
-
-        tbody tr {
-            margin: 0 auto 1.1rem;
-            width: 90%;
-        }
-
-        td {
-            &:nth-child(odd) {
-                font-family: map-get($laPaletteDuGout, font-tertiary), sans-serif;
-            }
-
-            &:nth-child(even) {
-                font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
-                font-size: $global-font-size*0.9;
-
-            }
-        }
-
     }
 }

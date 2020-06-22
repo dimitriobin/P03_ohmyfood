@@ -1,7 +1,0 @@
-@media screen and (min-width: map-get($breakpoints, extra-large)) {
-    .grid__menu {
-        article {
-            @include thumbnail-size (map-get($thumbnail-width, extra-large));
-        }
-    }
-}
