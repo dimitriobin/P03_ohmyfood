@@ -1,5 +1,5 @@
 main > section {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 25px -4px #616585;
 }
 
 /* Carte des pages des menus */
@@ -73,7 +73,7 @@ main > section footer p {
     margin-top: 0.3rem;
   }
 }
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 577px) {
   main > section tbody tr {
     flex-direction: row;
     justify-content: space-between;
@@ -146,7 +146,7 @@ main > section footer p {
     width: 3rem;
   }
 }
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 577px) {
   #menu_la_note_enchantee section {
     padding: 3rem 3.5rem 2.5rem;
   }

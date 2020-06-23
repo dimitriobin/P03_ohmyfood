@@ -1,134 +1,98 @@
-main > section {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
+/*
+Error: Undefined mixin 'text-gradient'.
+        on line 27 of ./assets/css/scss/la_palette_du_gout.scss, in `text-gradient'
+        from line 27 of ./assets/css/scss/la_palette_du_gout.scss
 
-/* Carte des pages des menus */
-main > section {
-  width: 100%;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-main > section header {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-main > section table {
-  width: 100%;
-  margin-bottom: 2.5rem;
-}
-main > section tbody tr {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.8rem;
-}
-main > section th {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-main > section th h3 {
-  margin: 0 0.2rem;
-  font-size: 0.9rem;
-}
-main > section th img {
-  display: block;
-  width: 30%;
-  height: auto;
-}
-main > section td:nth-child(odd) {
-  font-size: 0.7rem;
-}
-main > section td:nth-child(even) {
-  font-size: 0.8rem;
-  margin-top: 0.3rem;
-}
-main > section footer p {
-  display: inline-block;
-  text-align: center;
-}
+22:         background-color: map-get($laPaletteDuGout, bg);
+23:         color: black;
+24: 
+25:         header {
+26:             font-family: map-get($laPaletteDuGout, font-primary), sans-serif;
+27:             @include text-gradient (-90deg, $laPaletteDuGout);
+28:         }
+29: 
+30:         th {
+31:             font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
+32:             margin-bottom: 1.8rem;
 
-@media screen and (min-width: 370px) {
-  main > section {
-    padding: 3rem 1rem;
-  }
-  main > section header {
-    font-size: 2.7rem;
-  }
-  main > section th h3 {
-    font-size: 0.85rem;
-  }
-  main > section td:nth-child(odd) {
-    font-size: 0.7rem;
-  }
-  main > section td:nth-child(even) {
-    font-size: 0.8rem;
-    margin-top: 0.3rem;
-  }
-}
-@media screen and (min-width: 560px) {
-  main > section tbody tr {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  main > section td:nth-child(odd) {
-    text-align: left;
-    margin-right: 0.5rem;
-  }
-  main > section td:nth-child(even) {
-    text-align: right;
-    margin-top: 0;
-  }
-}
-@font-face {
-  font-family: 'kaushan_scriptregular';
-  src: url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.eot");
-  src: url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.woff2") format("woff2"), url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.woff") format("woff"), url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.ttf") format("truetype"), url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.svg#kaushan_scriptregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-#menu_la_palette_du_gout section {
-  background-color: #fdfffd;
-  color: black;
-}
-#menu_la_palette_du_gout section header {
-  font-family: "kaushan_scriptregular", sans-serif;
-  background: linear-gradient(-90deg, #cefea0 0%, #72bf56 50%, #3d923a 100%);
-  background-clip: text;
-  color: transparent;
-}
-#menu_la_palette_du_gout section th {
-  font-family: "segoeprint-regular", sans-serif;
-  margin-bottom: 1.8rem;
-}
-#menu_la_palette_du_gout section tbody tr {
-  margin: 0 auto 1.1rem;
-  width: 90%;
-}
-#menu_la_palette_du_gout section td:nth-child(odd) {
-  font-family: "segoeprint-regular", sans-serif;
-}
-#menu_la_palette_du_gout section td:nth-child(even) {
-  font-family: "segoeprint-regular", sans-serif;
-  font-size: 0.9rem;
-}
-
-@media screen and (min-width: 560px) {
-  #menu_la_palette_du_gout section {
-    padding: 4.5rem 2rem 6rem;
-  }
-  #menu_la_palette_du_gout section header {
-    margin-bottom: 4.5rem;
-    font-size: 3.5rem;
-  }
-}
-
-/*# sourceMappingURL=la_palette_du_gout.css.map */
+Backtrace:
+./assets/css/scss/la_palette_du_gout.scss:27:in `text-gradient'
+./assets/css/scss/la_palette_du_gout.scss:27
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `block in with_mixin'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `with_mixin'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'text-gradient'.\A         on line 27 of ./assets/css/scss/la_palette_du_gout.scss, in `text-gradient'\A         from line 27 of ./assets/css/scss/la_palette_du_gout.scss\A \A 22:         background-color: map-get($laPaletteDuGout, bg);\A 23:         color: black;\A 24: \A 25:         header {\A 26:             font-family: map-get($laPaletteDuGout, font-primary), sans-serif;\A 27:             @include text-gradient (-90deg, $laPaletteDuGout);\A 28:         }\A 29: \A 30:         th {\A 31:             font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;\A 32:             margin-bottom: 1.8rem;"; }

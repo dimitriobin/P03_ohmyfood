@@ -3,16 +3,14 @@ $color-primary:#579c87;
 
 // typographies globales
 $font-color-primary: #fdcb46;
-$font-logo: 'alte_haas_groteskbold',
+$font-logo: 'Arial',
 sans-serif;
 $font-primary: 'Montserrat',
 sans-serif;
 
 // mesures globales
 $global-font-size: 1rem;
-$footer-font-size: 1rem;
-$footer-padding: 1.1rem;
-$footer-size: $footer-padding+$footer-padding+$footer-font-size;
+$footer-size: 105px;
 $thumbnail-width: (base:75vw, micro: 175px, extra-small:200px, small: 200px, medium:200px, large: 225px, extra-large:225px);
 // MENUS:
 
@@ -52,7 +50,7 @@ $laPaletteDuGout: (bg: #fdfffd,
 
 $breakpoints: (micro: 250px,
     extra-small: 370px,
-    small: 560px,
+    small: 577px,
     medium: 768px,
-    large: 830px,
-    extra-large: 1130px);
+    large: 992px,
+    extra-large: 1200px);

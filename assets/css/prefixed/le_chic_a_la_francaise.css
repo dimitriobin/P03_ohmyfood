@@ -1,192 +1,100 @@
-main > section {
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
+/*
+Error: Undefined mixin 'text-gradient'.
+        on line 52 of ./assets/css/scss/le_chic_a_la_francaise.scss, in `text-gradient'
+        from line 52 of ./assets/css/scss/le_chic_a_la_francaise.scss
 
-/* Carte des pages des menus */
-main > section {
-  width: 100%;
-  padding: 2rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-main > section header {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-main > section table {
-  width: 100%;
-  margin-bottom: 2.5rem;
-}
-main > section tbody tr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0.8rem;
-}
-main > section th {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1rem;
-}
-main > section th h3 {
-  margin: 0 0.2rem;
-  font-size: 0.9rem;
-}
-main > section th img {
-  display: block;
-  width: 30%;
-  height: auto;
-}
-main > section td:nth-child(odd) {
-  font-size: 0.7rem;
-}
-main > section td:nth-child(even) {
-  font-size: 0.8rem;
-  margin-top: 0.3rem;
-}
-main > section footer p {
-  display: inline-block;
-  text-align: center;
-}
+47:         background-color: map-get($leChicALaFrancaise, bg);
+48: 
+49:         header {
+50:             font-family: map-get($leChicALaFrancaise, font-primary), sans-serif;
+51:             font-size: $global-font-size*1.4;
+52:             @include text-gradient (-45deg, $leChicALaFrancaise);
+53:             margin-bottom: 2rem;
+54:         }
+55: 
+56:         table {
+57:             &:nth-of-type(1) {
 
-@media screen and (min-width: 370px) {
-  main > section {
-    padding: 3rem 1rem;
-  }
-  main > section header {
-    font-size: 2.7rem;
-  }
-  main > section th h3 {
-    font-size: 0.85rem;
-  }
-  main > section td:nth-child(odd) {
-    font-size: 0.7rem;
-  }
-  main > section td:nth-child(even) {
-    font-size: 0.8rem;
-    margin-top: 0.3rem;
-  }
-}
-@media screen and (min-width: 560px) {
-  main > section tbody tr {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  main > section td:nth-child(odd) {
-    text-align: left;
-    margin-right: 0.5rem;
-  }
-  main > section td:nth-child(even) {
-    text-align: right;
-    margin-top: 0;
-  }
-}
-@font-face {
-  font-family: 'croissant_oneregular';
-  src: url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.eot");
-  src: url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.woff2") format("woff2"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.woff") format("woff"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.ttf") format("truetype"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.svg#croissant_oneregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'serif12_betaregular';
-  src: url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.eot");
-  src: url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.woff2") format("woff2"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.woff") format("woff"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.ttf") format("truetype"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.svg#serif12_betaregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'serif12_betabold';
-  src: url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.eot");
-  src: url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.woff2") format("woff2"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.woff") format("woff"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.ttf") format("truetype"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.svg#serif12_betabold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-#menu_le_chic_a_la_francaise section {
-  background-color: #fff5feff;
-}
-#menu_le_chic_a_la_francaise section header {
-  font-family: "croissant_oneregular", sans-serif;
-  font-size: 1.4rem;
-  background: -o-linear-gradient(135deg, #6e4ccc 0%, #a56799 50%, #c67412 100%);
-  background: linear-gradient(-45deg, #6e4ccc 0%, #a56799 50%, #c67412 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  margin-bottom: 2rem;
-}
-#menu_le_chic_a_la_francaise section table:nth-of-type(1) {
-  color: #c67412;
-}
-#menu_le_chic_a_la_francaise section table:nth-of-type(2) {
-  color: #a56799;
-}
-#menu_le_chic_a_la_francaise section table:nth-of-type(3) {
-  color: #6e4ccc;
-}
-#menu_le_chic_a_la_francaise section th {
-  font-family: "serif12_betabold", sans-serif;
-  margin-bottom: 1.7rem;
-}
-#menu_le_chic_a_la_francaise section tbody tr {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
-#menu_le_chic_a_la_francaise section td:nth-child(odd) {
-  font-family: "serif12_betaregular", sans-serif;
-}
-#menu_le_chic_a_la_francaise section td:nth-child(even) {
-  font-family: "serif12_betabold", sans-serif;
-}
+Backtrace:
+./assets/css/scss/le_chic_a_la_francaise.scss:52:in `text-gradient'
+./assets/css/scss/le_chic_a_la_francaise.scss:52
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `block in with_mixin'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `with_mixin'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'text-gradient'.\A         on line 52 of ./assets/css/scss/le_chic_a_la_francaise.scss, in `text-gradient'\A         from line 52 of ./assets/css/scss/le_chic_a_la_francaise.scss\A \A 47:         background-color: map-get($leChicALaFrancaise, bg);\A 48: \A 49:         header {\A 50:             font-family: map-get($leChicALaFrancaise, font-primary), sans-serif;\A 51:             font-size: $global-font-size*1.4;\A 52:             @include text-gradient (-45deg, $leChicALaFrancaise);\A 53:             margin-bottom: 2rem;\A 54:         }\A 55: \A 56:         table {\A 57:             &:nth-of-type(1) {"; }
 
-@media screen and (min-width: 560px) {
-  #menu_le_chic_a_la_francaise section {
-    padding: 5rem 1rem;
-  }
-  #menu_le_chic_a_la_francaise section header {
-    margin-bottom: 5rem;
-  }
-}
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvdXRpbHMvX3BsYWNlaG9sZGVyLnNjc3MiLCIuLi9sZV9jaGljX2FfbGFfZnJhbmNhaXNlLmNzcyIsIi4uL3Njc3MvcGFnZXMvX21lbnVzLnNjc3MiLCIuLi9zY3NzL2xlX2NoaWNfYV9sYV9mcmFuY2Fpc2Uuc2NzcyIsIi4uL3Njc3MvdXRpbHMvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vc2Nzcy91dGlscy9fbWl4aW5zLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtREFBMkM7VUFBM0MsMkNBQTJDO0FDQy9DOztBQ0ZBLDhCQUFBO0FBQ0E7RUFDSSxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLG9CQUFhO0VBQWIsb0JBQWE7RUFBYixhQUFhO0VBQ2IsNEJBQXNCO0VBQXRCLDZCQUFzQjtNQUF0QiwwQkFBc0I7VUFBdEIsc0JBQXNCO0VBQ3RCLHdCQUF1QjtNQUF2QixxQkFBdUI7VUFBdkIsdUJBQXVCO0VBQ3ZCLHlCQUFtQjtNQUFuQixzQkFBbUI7VUFBbkIsbUJBQW1CO0VBRW5CLGtCQUFrQjtBREl0QjtBQ0ZJO0VBQ0ksZUFBOEI7RUFDOUIsbUJBQW1CO0FESTNCO0FDREk7RUFDSSxXQUFXO0VBQ1gscUJBQXFCO0FERzdCO0FDQUk7RUFDSSxvQkFBYTtFQUFiLG9CQUFhO0VBQWIsYUFBYTtFQUNiLDRCQUFzQjtFQUF0Qiw2QkFBc0I7TUFBdEIsMEJBQXNCO1VBQXRCLHNCQUFzQjtFQUN0Qix5QkFBOEI7TUFBOUIsc0JBQThCO1VBQTlCLDhCQUE4QjtFQUM5Qix5QkFBbUI7TUFBbkIsc0JBQW1CO1VBQW5CLG1CQUFtQjtFQUNuQixxQkFBcUI7QURFN0I7QUNDSTtFQUNJLG9CQUFhO0VBQWIsb0JBQWE7RUFBYixhQUFhO0VBQ2IscUJBQWlCO01BQWpCLGlCQUFpQjtFQUNqQix5QkFBOEI7TUFBOUIsc0JBQThCO1VBQTlCLDhCQUE4QjtFQUM5Qix5QkFBbUI7TUFBbkIsc0JBQW1CO1VBQW5CLG1CQUFtQjtFQUNuQixtQkFBbUI7QURDM0I7QUNDUTtFQUNJLGdCQUFnQjtFQUNoQixpQkFBZ0M7QURDNUM7QUNFUTtFQUNJLGNBQWM7RUFDZCxVQUFVO0VBQ1YsWUFBWTtBREF4QjtBQ0tRO0VBQ0ksaUJBQWdDO0FESDVDO0FDTVE7RUFDSSxpQkFBZ0M7RUFDaEMsa0JBQWtCO0FESjlCO0FDVVE7RUFDSSxxQkFBcUI7RUFDckIsa0JBQWtCO0FEUjlCOztBQ2FBO0VBRUk7SUFDSSxrQkFBa0I7RURYeEI7RUNhTTtJQUNJLGlCQUFnQztFRFgxQztFQ2NNO0lBQ0ksa0JBQWlDO0VEWjNDO0VDZ0JVO0lBQ0ksaUJBQWdDO0VEZDlDO0VDaUJVO0lBQ0ksaUJBQWdDO0lBQ2hDLGtCQUFrQjtFRGZoQztBQUNGO0FDb0JBO0VBR1E7SUFDSSw4QkFBbUI7SUFBbkIsNkJBQW1CO1FBQW5CLHVCQUFtQjtZQUFuQixtQkFBbUI7SUFDbkIseUJBQThCO1FBQTlCLHNCQUE4QjtZQUE5Qiw4QkFBOEI7SUFDOUIsd0JBQXVCO1FBQXZCLHFCQUF1QjtZQUF2Qix1QkFBdUI7RURwQmpDO0VDd0JVO0lBQ0ksZ0JBQWdCO0lBQ2hCLG9CQUFvQjtFRHRCbEM7RUN5QlU7SUFDSSxpQkFBaUI7SUFDakIsYUFBYTtFRHZCM0I7QUFDRjtBRW5GQTtFQUNJLG1DQUFtQztFQUNuQyxvR0FBb0c7RUFDcEcsbW1CQUlzSTtFQUN0SSxtQkFBbUI7RUFDbkIsa0JBQWtCO0FGaUZ0QjtBRTlFQTtFQUNJLGtDQUFrQztFQUNsQyw4RkFBOEY7RUFDOUYsb2tCQUkrSDtFQUMvSCxtQkFBbUI7RUFDbkIsa0JBQWtCO0FGNEV0QjtBRXhFQTtFQUNJLCtCQUErQjtFQUMvQix3RkFBd0Y7RUFDeEYsbWlCQUlzSDtFQUN0SCxtQkFBbUI7RUFDbkIsa0JBQWtCO0FGc0V0QjtBRWpFSTtFQUNJLDJCQ3JCMkI7QUh3Rm5DO0FFakVRO0VBQ0ksK0NBQW1FO0VBQ25FLGlCQUFnQztFRXZDeEMsNkVBQXFLO0VBQXJLLDBFQUFxSztFQUNySyw2QkFBcUI7VUFBckIscUJBQXFCO0VBQ3JCLGtCQUFrQjtFRnVDVixtQkFBbUI7QUZxRS9CO0FFakVZO0VBQ0ksY0MvQlU7QUhrRzFCO0FFaEVZO0VBQ0ksY0NsQ1k7QUhvRzVCO0FFL0RZO0VBQ0ksY0NyQ1c7QUhzRzNCO0FFN0RRO0VBQ0ksMkNBQXFFO0VBQ3JFLHFCQUFxQjtBRitEakM7QUU1RFE7RUFDSSxpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLFVBQVU7QUY4RHRCO0FFMURZO0VBQ0ksOENBQW9FO0FGNERwRjtBRXpEWTtFQUNJLDJDQUFxRTtBRjJEckY7O0FFcERBO0VBR1E7SUFDSSxrQkFBa0I7RUZxRDVCO0VFbkRVO0lBQ0ksbUJBQW1CO0VGcURqQztBQUNGIiwiZmlsZSI6ImxlX2NoaWNfYV9sYV9mcmFuY2Fpc2UuY3NzIn0= */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2xlX2NoaWNfYV9sYV9mcmFuY2Fpc2UuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Q0E2RkM7QUFDRDtFQUNFLGdCQUFnQjtFQUNoQixzQkFBc0I7RUFDdEIsbW9CQUFtb0IsRUFBRSIsImZpbGUiOiJsZV9jaGljX2FfbGFfZnJhbmNhaXNlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG5FcnJvcjogVW5kZWZpbmVkIG1peGluICd0ZXh0LWdyYWRpZW50Jy5cbiAgICAgICAgb24gbGluZSA1MiBvZiAuL2Fzc2V0cy9jc3Mvc2Nzcy9sZV9jaGljX2FfbGFfZnJhbmNhaXNlLnNjc3MsIGluIGB0ZXh0LWdyYWRpZW50J1xuICAgICAgICBmcm9tIGxpbmUgNTIgb2YgLi9hc3NldHMvY3NzL3Njc3MvbGVfY2hpY19hX2xhX2ZyYW5jYWlzZS5zY3NzXG5cbjQ3OiAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IG1hcC1nZXQoJGxlQ2hpY0FMYUZyYW5jYWlzZSwgYmcpO1xuNDg6IFxuNDk6ICAgICAgICAgaGVhZGVyIHtcbjUwOiAgICAgICAgICAgICBmb250LWZhbWlseTogbWFwLWdldCgkbGVDaGljQUxhRnJhbmNhaXNlLCBmb250LXByaW1hcnkpLCBzYW5zLXNlcmlmO1xuNTE6ICAgICAgICAgICAgIGZvbnQtc2l6ZTogJGdsb2JhbC1mb250LXNpemUqMS40O1xuNTI6ICAgICAgICAgICAgIEBpbmNsdWRlIHRleHQtZ3JhZGllbnQgKC00NWRlZywgJGxlQ2hpY0FMYUZyYW5jYWlzZSk7XG41MzogICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogMnJlbTtcbjU0OiAgICAgICAgIH1cbjU1OiBcbjU2OiAgICAgICAgIHRhYmxlIHtcbjU3OiAgICAgICAgICAgICAmOm50aC1vZi10eXBlKDEpIHtcblxuQmFja3RyYWNlOlxuLi9hc3NldHMvY3NzL3Njc3MvbGVfY2hpY19hX2xhX2ZyYW5jYWlzZS5zY3NzOjUyOmluIGB0ZXh0LWdyYWRpZW50J1xuLi9hc3NldHMvY3NzL3Njc3MvbGVfY2hpY19hX2xhX2ZyYW5jYWlzZS5zY3NzOjUyXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjM1MTppbiBgYmxvY2sgaW4gdmlzaXRfbWl4aW4nXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6OTg6aW4gYGJsb2NrIGluIHdpdGhfbWl4aW4nXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6MTE1OmluIGB3aXRoX2ZyYW1lJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3N0YWNrLnJiOjk4OmluIGB3aXRoX21peGluJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjozNDk6aW4gYHZpc2l0X21peGluJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2MDppbiBgYmxvY2sgaW4gdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYGJsb2NrIGluIHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9zdGFjay5yYjoxMTU6aW4gYHdpdGhfZnJhbWUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTYwOmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMzOmluIGBibG9jayAoMiBsZXZlbHMpIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjQzMzppbiBgbWFwJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjo0MzM6aW4gYGJsb2NrIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE4MTppbiBgd2l0aF9lbnZpcm9ubWVudCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMxOmluIGB2aXNpdF9ydWxlJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2MDppbiBgYmxvY2sgaW4gdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYGJsb2NrIGluIHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9zdGFjay5yYjoxMTU6aW4gYHdpdGhfZnJhbWUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTYwOmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMzOmluIGBibG9jayAoMiBsZXZlbHMpIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjQzMzppbiBgbWFwJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjo0MzM6aW4gYGJsb2NrIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE4MTppbiBgd2l0aF9lbnZpcm9ubWVudCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMxOmluIGB2aXNpdF9ydWxlJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2MDppbiBgYmxvY2sgaW4gdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYGJsb2NrIGluIHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9zdGFjay5yYjoxMTU6aW4gYHdpdGhfZnJhbWUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTYwOmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMzOmluIGBibG9jayAoMiBsZXZlbHMpIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjQzMzppbiBgbWFwJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjo0MzM6aW4gYGJsb2NrIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE4MTppbiBgd2l0aF9lbnZpcm9ubWVudCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMxOmluIGB2aXNpdF9ydWxlJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2MDppbiBgYmxvY2sgaW4gdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYGJsb2NrIGluIHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9zdGFjay5yYjoxMTU6aW4gYHdpdGhfZnJhbWUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTYwOmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL2Jhc2UucmI6NTI6aW4gYGJsb2NrIGluIHZpc2l0X2NoaWxkcmVuJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjo1MjppbiBgbWFwJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjo1MjppbiBgdmlzaXRfY2hpbGRyZW4nXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2OTppbiBgYmxvY2sgaW4gdmlzaXRfY2hpbGRyZW4nXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE4MTppbiBgd2l0aF9lbnZpcm9ubWVudCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTY4OmluIGB2aXNpdF9jaGlsZHJlbidcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL2Jhc2UucmI6MzY6aW4gYGJsb2NrIGluIHZpc2l0J1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjoxODg6aW4gYHZpc2l0X3Jvb3QnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9iYXNlLnJiOjM2OmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTU5OmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6ODppbiBgdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS9yb290X25vZGUucmI6MzY6aW4gYGNzc190cmVlJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvcm9vdF9ub2RlLnJiOjI5OmluIGByZW5kZXJfd2l0aF9zb3VyY2VtYXAnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvZW5naW5lLnJiOjM4MTppbiBgX3JlbmRlcl93aXRoX3NvdXJjZW1hcCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9lbmdpbmUucmI6Mjk4OmluIGByZW5kZXJfd2l0aF9zb3VyY2VtYXAnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjQ5MjppbiBgdXBkYXRlX3N0eWxlc2hlZXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjIxNTppbiBgYmxvY2sgaW4gdXBkYXRlX3N0eWxlc2hlZXRzJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3BsdWdpbi9jb21waWxlci5yYjoyMDk6aW4gYGVhY2gnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjIwOTppbiBgdXBkYXRlX3N0eWxlc2hlZXRzJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3BsdWdpbi9jb21waWxlci5yYjo0NzM6aW4gYG9uX2ZpbGVfY2hhbmdlZCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9wbHVnaW4vY29tcGlsZXIucmI6MzMxOmluIGBibG9jayBpbiB3YXRjaCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1YnkvbGlzdGVuL2V2ZW50L2NvbmZpZy5yYjoyMzppbiBgY2FsbCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1YnkvbGlzdGVuL2V2ZW50L3Byb2Nlc3Nvci5yYjoxMTU6aW4gYF9wcm9jZXNzX2NoYW5nZXMnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L2xpc3Rlbi9ldmVudC9wcm9jZXNzb3IucmI6MTk6aW4gYGJsb2NrIGluIGxvb3BfZm9yJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9saXN0ZW4vZXZlbnQvcHJvY2Vzc29yLnJiOjE1OmluIGBsb29wJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9saXN0ZW4vZXZlbnQvcHJvY2Vzc29yLnJiOjE1OmluIGBsb29wX2Zvcidcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1YnkvbGlzdGVuL2V2ZW50L2xvb3AucmI6ODQ6aW4gYF93YWl0X2Zvcl9jaGFuZ2VzJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9saXN0ZW4vZXZlbnQvbG9vcC5yYjo0MjppbiBgYmxvY2sgaW4gc2V0dXAnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L2xpc3Rlbi9pbnRlcm5hbHMvdGhyZWFkX3Bvb2wucmI6NjppbiBgYmxvY2sgaW4gYWRkJ1xuKi9cbmJvZHk6YmVmb3JlIHtcbiAgd2hpdGUtc3BhY2U6IHByZTtcbiAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcbiAgY29udGVudDogXCJFcnJvcjogVW5kZWZpbmVkIG1peGluICd0ZXh0LWdyYWRpZW50Jy5cXEEgICAgICAgICBvbiBsaW5lIDUyIG9mIC4vYXNzZXRzL2Nzcy9zY3NzL2xlX2NoaWNfYV9sYV9mcmFuY2Fpc2Uuc2NzcywgaW4gYHRleHQtZ3JhZGllbnQnXFxBICAgICAgICAgZnJvbSBsaW5lIDUyIG9mIC4vYXNzZXRzL2Nzcy9zY3NzL2xlX2NoaWNfYV9sYV9mcmFuY2Fpc2Uuc2Nzc1xcQSBcXEEgNDc6ICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogbWFwLWdldCgkbGVDaGljQUxhRnJhbmNhaXNlLCBiZyk7XFxBIDQ4OiBcXEEgNDk6ICAgICAgICAgaGVhZGVyIHtcXEEgNTA6ICAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBtYXAtZ2V0KCRsZUNoaWNBTGFGcmFuY2Fpc2UsIGZvbnQtcHJpbWFyeSksIHNhbnMtc2VyaWY7XFxBIDUxOiAgICAgICAgICAgICBmb250LXNpemU6ICRnbG9iYWwtZm9udC1zaXplKjEuNDtcXEEgNTI6ICAgICAgICAgICAgIEBpbmNsdWRlIHRleHQtZ3JhZGllbnQgKC00NWRlZywgJGxlQ2hpY0FMYUZyYW5jYWlzZSk7XFxBIDUzOiAgICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAycmVtO1xcQSA1NDogICAgICAgICB9XFxBIDU1OiBcXEEgNTY6ICAgICAgICAgdGFibGUge1xcQSA1NzogICAgICAgICAgICAgJjpudGgtb2YtdHlwZSgxKSB7XCI7IH1cbiJdfQ== */

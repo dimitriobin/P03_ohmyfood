@@ -92,32 +92,48 @@
 }
 
 /* grille des cartes dans la page d'acceuil */
-.grid__menu {
-    width: 100%;
+
+.grille {
+    width: 70%;
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    margin: 5% auto 0%;
 
     article {
-        @include thumbnail-size (map-get($thumbnail-width, base));
-        margin: 0 auto 1rem;
+        flex: 1 1 100%;
+        height: 350px;
+        margin-top: 5%;
         @extend %shadow;
+        padding: 2%;
 
         a {
             width: 100%;
             height: 100%;
-            text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
             padding: 0 0.5rem;
+            opacity: 0.7;
+            transform: scale(0.8);
+            transition: all 250ms ease-out;
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         h2 {
             margin-bottom: 0.5rem;
+            font-size: $global-font-size*3.2;
+        }
+
+        p {
+            font-size: $global-font-size*1.8;
         }
     }
 }
@@ -125,13 +141,12 @@
 /* Vignettes des menus */
 #laNoteEnchantee {
 
-    a {
-        background-color: map-get($laNoteEnchantee, bg);
-    }
+    background-color: map-get($laNoteEnchantee, bg);
 
     h2 {
         font-family: map-get($laNoteEnchantee, font-primary), sans-serif;
         color: map-get($laNoteEnchantee, color-primary);
+        margin: 1rem auto;
     }
 
     p {
@@ -140,21 +155,20 @@
         text-transform: uppercase;
     }
 
-
     img {
-        width: 1.5rem;
+        width: 4rem;
     }
 }
 
 #leChicALaFrancaise {
-    a {
-        background-color: map-get($leChicALaFrancaise, bg);
-    }
+
+    background-color: map-get($leChicALaFrancaise, bg);
 
     h2 {
         font-family: map-get($leChicALaFrancaise, font-primary), sans-serif;
-        @include text-gradient (-90deg, $leChicALaFrancaise);
-        font-size: $global-font-size*0.8;
+        @include text-gradient-2 (-90deg, $leChicALaFrancaise);
+        font-size: $global-font-size*2;
+        margin-bottom: 3rem;
 
     }
 
@@ -165,13 +179,13 @@
 }
 
 #leDeliceDesPapilles {
-    a {
-        background-color: map-get($leDeliceDesPapilles, bg);
-    }
+
+    background-color: map-get($leDeliceDesPapilles, bg);
 
     h2 {
         font-family: map-get($leDeliceDesPapilles, font-primary), sans-serif;
-        @include text-gradient (-90deg, $leDeliceDesPapilles);
+        @include text-gradient-3 (-90deg, $leDeliceDesPapilles);
+        margin-bottom: 3rem;
     }
 
     p {
@@ -181,13 +195,13 @@
 }
 
 #laPaletteDuGout {
-    a {
-        background-color: map-get($laPaletteDuGout, bg);
-    }
+
+    background-color: map-get($laPaletteDuGout, bg);
 
     h2 {
         font-family: map-get($laPaletteDuGout, font-primary), sans-serif;
-        @include text-gradient (-90deg, $laPaletteDuGout);
+        @include text-gradient-3 (-90deg, $laPaletteDuGout);
+        margin-bottom: 3rem;
     }
 
     p {
@@ -197,98 +211,120 @@
 }
 
 /* Prochainement */
-.btn {
-    display: block;
-    font-family: $font-primary;
-    font-size: $global-font-size;
-    text-decoration: none;
-    word-break: break-all;
-    color: $font-color-primary;
-    background-color: $color-primary;
-    padding: 0.6rem 2rem;
-    border-radius: 0.6rem;
-}
+#prochainement {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 6vh auto;
 
+    a {
+        width: 70%;
+        background-color: $color-primary;
+        color: $font-color-primary;
+        font-family: $font-primary;
+        font-size: 6vw;
+        letter-spacing: -0.1rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 1rem;
+        padding: 2.5vh 0;
+    }
 
-@media screen and (min-width: map-get($breakpoints, micro)) {
-
-    .grid__menu {
-        article {
-            margin-bottom: 1.5rem;
-            @include thumbnail-size (map-get($thumbnail-width, micro));
-        }
+    span {
+        display: inline;
+        margin-left: 0.2rem;
+        vertical-align: text-bottom;
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, extra-small)) {
-    .grid__menu {
-        article {
-            font-size: $global-font-size*1.1;
-            @include thumbnail-size (map-get($thumbnail-width, extra-small));
 
-            h2 {
-                margin-bottom: 1.5rem;
-            }
-        }
-    }
-}
 
 @media screen and (min-width: map-get($breakpoints, small)) {
+    .grille {
+        margin-top: 10%;
+    }
 
-    .grid__menu {
-        flex-direction: row;
-        justify-content: center;
-        margin: 0 auto 2rem;
+    #leChicALaFrancaise {
+        h2 {
 
-        article {
-            @include thumbnail-size (map-get($thumbnail-width, small));
-
-            &:nth-child(2n) {
-                margin-left: 1rem;
-            }
-
-            &:nth-child(2n+1) {
-                margin-right: 1rem;
-            }
+            font-size: $global-font-size*2.8;
         }
     }
 
-    .btn {
-        font-size: $global-font-size*1.2;
+    #prochainement {
+        margin-bottom: 25%;
+
+        a {
+            font-size: 2rem;
+            border-radius: 2rem;
+            padding: 2.5rem 0;
+        }
+
+        span {
+            font-size: 1.5rem;
+        }
     }
 }
 
 @media screen and (min-width: map-get($breakpoints, medium)) {
+    .grille {
+        width: 85%;
 
-    .grid__menu {
         article {
-            @include thumbnail-size (map-get($thumbnail-width, medium));
-            margin: 0 auto 3rem;
+            flex: 0 0 47.5%;
 
-            &:nth-child(2n) {
-                margin-left: 1.5rem;
+            p {
+                font-size: 3.2rem;
             }
+        }
+    }
 
-            &:nth-child(2n+1) {
-                margin-right: 1.5rem;
-            }
+    #laNoteEnchantee {
+        h2 {
+            margin-bottom: 3rem;
+        }
+    }
+
+    #prochainement {
+        margin: 5% auto;
+
+        a {
+            width: 50%;
+            font-size: $global-font-size*2.3;
         }
     }
 }
 
 @media screen and (min-width: map-get($breakpoints, large)) {
+    .grille {
+        margin-top: 10%;
 
-    .grid__menu {
         article {
-            @include thumbnail-size (map-get($thumbnail-width, large));
+            height: 760px;
+        }
+    }
+
+    #prochainement {
+        a {
+            width: 40%;
+            margin-bottom: 4%;
         }
     }
 }
 
 @media screen and (min-width: map-get($breakpoints, extra-large)) {
-    .grid__menu {
-        article {
-            @include thumbnail-size (map-get($thumbnail-width, extra-large));
+    .grille {
+        width: 76%;
+        margin-top: 5%;
+    }
+
+    #prochainement {
+        margin-bottom: 5%;
+
+        a {
+            width: 33%;
+            margin-bottom: 0%;
+            font-size: $global-font-size*2.8;
         }
     }
 }

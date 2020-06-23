@@ -1,15 +1,14 @@
-// vignettes de la page d'acceuil
-@mixin thumbnail-size ($width) {
-    $height: $width*1.45;
+// dégradé des textes
+@mixin text-gradient-2 ($direction, $restaurant) {
 
-    width: $width;
-    height: $height;
+    background: linear-gradient($direction, map-get($restaurant, color-tertiary) 0%, map-get($restaurant, color-primary) 100%);
+    background-clip: text;
+    color: transparent;
 }
 
-// dégradé des textes
-@mixin text-gradient ($direction, $restaurant) {
+@mixin text-gradient-3 ($direction, $restaurant) {
 
-    background: linear-gradient($direction, map-get($restaurant, color-tertiary) 0%, map-get($restaurant, color-secondary) 50%, map-get($restaurant, color-primary) 100%);
+    background: linear-gradient($direction, map-get($restaurant, color-tertiary) 0%, map-get($restaurant, color-secondary) 34%, map-get($restaurant, color-primary) 66%);
     background-clip: text;
     color: transparent;
 }
