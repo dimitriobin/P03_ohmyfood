@@ -1,59 +1,55 @@
 /* Carte des pages des menus */
 main>section {
-    width: 100%;
-    padding: 2rem 1rem;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @extend %shadow;
+    @extend %shadow-menu;
     text-align: center;
+    padding: 2rem 2rem 4rem 3rem;
+    margin: 5%;
 
     header {
-        font-size: $global-font-size*2;
-        margin-bottom: 2rem;
-    }
-
-    table {
-        width: 100%;
-        margin-bottom: 2.5rem;
-    }
-
-    tbody tr {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0.8rem;
+        font-size: $global-font-size*3.1;
+        padding: 1rem 0;
     }
 
     th {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        margin-bottom: 1rem;
+        margin-top: 5rem;
 
         h3 {
-            margin: 0 0.2rem;
-            font-size: $global-font-size*0.9;
+            font-size: $global-font-size*1.6;
+            font-weight: bold;
         }
 
         img {
-            display: block;
-            width: 30%;
-            height: auto;
+            display: none;
         }
+    }
+
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 0.8rem;
+        padding: 0 5%;
     }
 
     td {
         &:nth-child(odd) {
-            font-size: $global-font-size*0.7;
+            font-size: $global-font-size*1.25;
+            margin-top: 1rem;
         }
 
         &:nth-child(even) {
-            font-size: $global-font-size*0.8;
-            margin-top: 0.3rem;
+            font-size: $global-font-size*1.55;
+            margin-top: 0.5rem;
         }
     }
 
@@ -66,31 +62,7 @@ main>section {
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, extra-small)) {
 
-    main>section {
-        padding: 3rem 1rem;
-
-        header {
-            font-size: $global-font-size*2.7;
-        }
-
-        th h3 {
-            font-size: $global-font-size*0.85;
-        }
-
-        td {
-            &:nth-child(odd) {
-                font-size: $global-font-size*0.7;
-            }
-
-            &:nth-child(even) {
-                font-size: $global-font-size*0.8;
-                margin-top: 0.3rem;
-            }
-        }
-    }
-}
 
 @media screen and (min-width: map-get($breakpoints, small)) {
 

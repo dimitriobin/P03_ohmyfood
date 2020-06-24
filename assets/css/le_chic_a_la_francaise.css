@@ -1,98 +1,136 @@
-/*
-Error: Undefined mixin 'text-gradient'.
-        on line 52 of ./assets/css/scss/le_chic_a_la_francaise.scss, in `text-gradient'
-        from line 52 of ./assets/css/scss/le_chic_a_la_francaise.scss
+main > section {
+  box-shadow: 3px 0 12px lightgrey;
+}
 
-47:         background-color: map-get($leChicALaFrancaise, bg);
-48: 
-49:         header {
-50:             font-family: map-get($leChicALaFrancaise, font-primary), sans-serif;
-51:             font-size: $global-font-size*1.4;
-52:             @include text-gradient (-45deg, $leChicALaFrancaise);
-53:             margin-bottom: 2rem;
-54:         }
-55: 
-56:         table {
-57:             &:nth-of-type(1) {
+/* Carte des pages des menus */
+main > section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 2rem 4rem 3rem;
+  margin: 5%;
+}
+main > section header {
+  font-size: 3.1rem;
+  padding: 1rem 0;
+}
+main > section th {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+main > section th h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+main > section th img {
+  display: none;
+}
+main > section tbody tr {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  padding: 0 5%;
+}
+main > section td:nth-child(odd) {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+main > section td:nth-child(even) {
+  font-size: 1.55rem;
+  margin-top: 0.5rem;
+}
+main > section footer p {
+  display: inline-block;
+  text-align: center;
+}
 
-Backtrace:
-./assets/css/scss/le_chic_a_la_francaise.scss:52:in `text-gradient'
-./assets/css/scss/le_chic_a_la_francaise.scss:52
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `block in with_mixin'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `with_mixin'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
-/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'text-gradient'.\A         on line 52 of ./assets/css/scss/le_chic_a_la_francaise.scss, in `text-gradient'\A         from line 52 of ./assets/css/scss/le_chic_a_la_francaise.scss\A \A 47:         background-color: map-get($leChicALaFrancaise, bg);\A 48: \A 49:         header {\A 50:             font-family: map-get($leChicALaFrancaise, font-primary), sans-serif;\A 51:             font-size: $global-font-size*1.4;\A 52:             @include text-gradient (-45deg, $leChicALaFrancaise);\A 53:             margin-bottom: 2rem;\A 54:         }\A 55: \A 56:         table {\A 57:             &:nth-of-type(1) {"; }
+@media screen and (min-width: 577px) {
+  main > section tbody tr {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  main > section td:nth-child(odd) {
+    text-align: left;
+    margin-right: 0.5rem;
+  }
+  main > section td:nth-child(even) {
+    text-align: right;
+    margin-top: 0;
+  }
+}
+@font-face {
+  font-family: 'croissant_oneregular';
+  src: url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.eot");
+  src: url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.woff2") format("woff2"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.woff") format("woff"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.ttf") format("truetype"), url("../../fonts/le_chic_a_la_francaise/croissantone-regular/croissantone-regular-webfont.svg#croissant_oneregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'serif12_betaregular';
+  src: url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.eot");
+  src: url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.woff2") format("woff2"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.woff") format("woff"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.ttf") format("truetype"), url("../../fonts/le_chic_a_la_francaise/serif12-regular/serif12beta-regular-webfont.svg#serif12_betaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'serif12_betabold';
+  src: url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.eot");
+  src: url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.woff2") format("woff2"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.woff") format("woff"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.ttf") format("truetype"), url("../../fonts/le_chic_a_la_francaise/serif12-bold/serif12beta-bold-webfont.svg#serif12_betabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+#menu_le_chic_a_la_francaise section {
+  background-color: #fff5feff;
+}
+#menu_le_chic_a_la_francaise section header {
+  font-family: "croissant_oneregular", sans-serif;
+  font-size: 1.4rem;
+  background: linear-gradient(-45deg, #6e4ccc 0%, #c67412 100%);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 2rem;
+}
+#menu_le_chic_a_la_francaise section table:nth-of-type(1) {
+  color: #c67412;
+}
+#menu_le_chic_a_la_francaise section table:nth-of-type(2) {
+  color: #a56799;
+}
+#menu_le_chic_a_la_francaise section table:nth-of-type(3) {
+  color: #6e4ccc;
+}
+#menu_le_chic_a_la_francaise section th {
+  font-family: "serif12_betabold", sans-serif;
+  margin-bottom: 1.7rem;
+}
+#menu_le_chic_a_la_francaise section tbody tr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+#menu_le_chic_a_la_francaise section td:nth-child(odd) {
+  font-family: "serif12_betaregular", sans-serif;
+}
+#menu_le_chic_a_la_francaise section td:nth-child(even) {
+  font-family: "serif12_betabold", sans-serif;
+}
+
+@media screen and (min-width: 577px) {
+  #menu_le_chic_a_la_francaise section {
+    padding: 5rem 1rem;
+  }
+  #menu_le_chic_a_la_francaise section header {
+    margin-bottom: 5rem;
+  }
+}
+
+/*# sourceMappingURL=le_chic_a_la_francaise.css.map */

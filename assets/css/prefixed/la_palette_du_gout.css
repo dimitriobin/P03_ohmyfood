@@ -1,100 +1,156 @@
-/*
-Error: Undefined mixin 'text-gradient'.
-        on line 27 of ./assets/css/scss/la_palette_du_gout.scss, in `text-gradient'
-        from line 27 of ./assets/css/scss/la_palette_du_gout.scss
+main > section {
+  -webkit-box-shadow: 3px 0 12px lightgrey;
+          box-shadow: 3px 0 12px lightgrey;
+}
 
-22:         background-color: map-get($laPaletteDuGout, bg);
-23:         color: black;
-24: 
-25:         header {
-26:             font-family: map-get($laPaletteDuGout, font-primary), sans-serif;
-27:             @include text-gradient (-90deg, $laPaletteDuGout);
-28:         }
-29: 
-30:         th {
-31:             font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
-32:             margin-bottom: 1.8rem;
+/* Carte des pages des menus */
+main > section {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem 2rem 4rem 3rem;
+  margin: 5%;
+}
+main > section header {
+  font-size: 3.1rem;
+  padding: 1rem 0;
+}
+main > section th {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+main > section th h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+main > section th img {
+  display: none;
+}
+main > section tbody tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.8rem;
+  padding: 0 5%;
+}
+main > section td:nth-child(odd) {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+main > section td:nth-child(even) {
+  font-size: 1.55rem;
+  margin-top: 0.5rem;
+}
+main > section footer p {
+  display: inline-block;
+  text-align: center;
+}
 
-Backtrace:
-./assets/css/scss/la_palette_du_gout.scss:27:in `text-gradient'
-./assets/css/scss/la_palette_du_gout.scss:27
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `block in with_mixin'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:98:in `with_mixin'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
-/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'text-gradient'.\A         on line 27 of ./assets/css/scss/la_palette_du_gout.scss, in `text-gradient'\A         from line 27 of ./assets/css/scss/la_palette_du_gout.scss\A \A 22:         background-color: map-get($laPaletteDuGout, bg);\A 23:         color: black;\A 24: \A 25:         header {\A 26:             font-family: map-get($laPaletteDuGout, font-primary), sans-serif;\A 27:             @include text-gradient (-90deg, $laPaletteDuGout);\A 28:         }\A 29: \A 30:         th {\A 31:             font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;\A 32:             margin-bottom: 1.8rem;"; }
+@media screen and (min-width: 577px) {
+  main > section tbody tr {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main > section td:nth-child(odd) {
+    text-align: left;
+    margin-right: 0.5rem;
+  }
+  main > section td:nth-child(even) {
+    text-align: right;
+    margin-top: 0;
+  }
+}
+@font-face {
+  font-family: 'kaushan_scriptregular';
+  src: url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.eot");
+  src: url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.woff2") format("woff2"), url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.woff") format("woff"), url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.ttf") format("truetype"), url("../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.svg#kaushan_scriptregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'segoeprint-regular';
+  src: url(../../fonts/la_note_enchantee/segoeprint/segoepr.ttf);
+}
+@font-face {
+  font-family: 'segoeprint-bold';
+  src: url(../../fonts/la_note_enchantee/segoeprint/segoeprb.ttf);
+}
+#menu_la_palette_du_gout section {
+  background-color: #fdfffd;
+  color: black;
+}
+#menu_la_palette_du_gout section header {
+  font-family: "kaushan_scriptregular", sans-serif;
+  background: -webkit-gradient(linear, right top, left top, from(#cefea0), color-stop(34%, #72bf56), color-stop(66%, #3d923a));
+  background: -o-linear-gradient(right, #cefea0 0%, #72bf56 34%, #3d923a 66%);
+  background: linear-gradient(-90deg, #cefea0 0%, #72bf56 34%, #3d923a 66%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+#menu_la_palette_du_gout section th {
+  font-family: "segoeprint-regular", sans-serif;
+  margin-bottom: 1.8rem;
+}
+#menu_la_palette_du_gout section tbody tr {
+  margin: 0 auto 1.1rem;
+  width: 90%;
+}
+#menu_la_palette_du_gout section td:nth-child(odd) {
+  font-family: "segoeprint-regular", sans-serif;
+}
+#menu_la_palette_du_gout section td:nth-child(even) {
+  font-family: "segoeprint-regular", sans-serif;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2xhX3BhbGV0dGVfZHVfZ291dC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztDQTZGQztBQUNEO0VBQ0UsZ0JBQWdCO0VBQ2hCLHNCQUFzQjtFQUN0Qiwwb0JBQTBvQixFQUFFIiwiZmlsZSI6ImxhX3BhbGV0dGVfZHVfZ291dC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuRXJyb3I6IFVuZGVmaW5lZCBtaXhpbiAndGV4dC1ncmFkaWVudCcuXG4gICAgICAgIG9uIGxpbmUgMjcgb2YgLi9hc3NldHMvY3NzL3Njc3MvbGFfcGFsZXR0ZV9kdV9nb3V0LnNjc3MsIGluIGB0ZXh0LWdyYWRpZW50J1xuICAgICAgICBmcm9tIGxpbmUgMjcgb2YgLi9hc3NldHMvY3NzL3Njc3MvbGFfcGFsZXR0ZV9kdV9nb3V0LnNjc3NcblxuMjI6ICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogbWFwLWdldCgkbGFQYWxldHRlRHVHb3V0LCBiZyk7XG4yMzogICAgICAgICBjb2xvcjogYmxhY2s7XG4yNDogXG4yNTogICAgICAgICBoZWFkZXIge1xuMjY6ICAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBtYXAtZ2V0KCRsYVBhbGV0dGVEdUdvdXQsIGZvbnQtcHJpbWFyeSksIHNhbnMtc2VyaWY7XG4yNzogICAgICAgICAgICAgQGluY2x1ZGUgdGV4dC1ncmFkaWVudCAoLTkwZGVnLCAkbGFQYWxldHRlRHVHb3V0KTtcbjI4OiAgICAgICAgIH1cbjI5OiBcbjMwOiAgICAgICAgIHRoIHtcbjMxOiAgICAgICAgICAgICBmb250LWZhbWlseTogbWFwLWdldCgkbGFQYWxldHRlRHVHb3V0LCBmb250LXNlY29uZGFyeSksIHNhbnMtc2VyaWY7XG4zMjogICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogMS44cmVtO1xuXG5CYWNrdHJhY2U6XG4uL2Fzc2V0cy9jc3Mvc2Nzcy9sYV9wYWxldHRlX2R1X2dvdXQuc2NzczoyNzppbiBgdGV4dC1ncmFkaWVudCdcbi4vYXNzZXRzL2Nzcy9zY3NzL2xhX3BhbGV0dGVfZHVfZ291dC5zY3NzOjI3XG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjM1MTppbiBgYmxvY2sgaW4gdmlzaXRfbWl4aW4nXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6OTg6aW4gYGJsb2NrIGluIHdpdGhfbWl4aW4nXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6MTE1OmluIGB3aXRoX2ZyYW1lJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3N0YWNrLnJiOjk4OmluIGB3aXRoX21peGluJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjozNDk6aW4gYHZpc2l0X21peGluJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2MDppbiBgYmxvY2sgaW4gdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYGJsb2NrIGluIHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9zdGFjay5yYjoxMTU6aW4gYHdpdGhfZnJhbWUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTYwOmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMzOmluIGBibG9jayAoMiBsZXZlbHMpIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjQzMzppbiBgbWFwJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjo0MzM6aW4gYGJsb2NrIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE4MTppbiBgd2l0aF9lbnZpcm9ubWVudCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMxOmluIGB2aXNpdF9ydWxlJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2MDppbiBgYmxvY2sgaW4gdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYGJsb2NrIGluIHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9zdGFjay5yYjoxMTU6aW4gYHdpdGhfZnJhbWUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTYwOmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMzOmluIGBibG9jayAoMiBsZXZlbHMpIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjQzMzppbiBgbWFwJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjo0MzM6aW4gYGJsb2NrIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE4MTppbiBgd2l0aF9lbnZpcm9ubWVudCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMxOmluIGB2aXNpdF9ydWxlJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2MDppbiBgYmxvY2sgaW4gdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYGJsb2NrIGluIHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9zdGFjay5yYjoxMTU6aW4gYHdpdGhfZnJhbWUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTYwOmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMzOmluIGBibG9jayAoMiBsZXZlbHMpIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjQzMzppbiBgbWFwJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjo0MzM6aW4gYGJsb2NrIGluIHZpc2l0X3J1bGUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE4MTppbiBgd2l0aF9lbnZpcm9ubWVudCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6NDMxOmluIGB2aXNpdF9ydWxlJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2MDppbiBgYmxvY2sgaW4gdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYGJsb2NrIGluIHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9zdGFjay5yYjoxMTU6aW4gYHdpdGhfZnJhbWUnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYHdpdGhfYmFzZSdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTYwOmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL2Jhc2UucmI6NTI6aW4gYGJsb2NrIGluIHZpc2l0X2NoaWxkcmVuJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjo1MjppbiBgbWFwJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjo1MjppbiBgdmlzaXRfY2hpbGRyZW4nXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE2OTppbiBgYmxvY2sgaW4gdmlzaXRfY2hpbGRyZW4nXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjE4MTppbiBgd2l0aF9lbnZpcm9ubWVudCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTY4OmluIGB2aXNpdF9jaGlsZHJlbidcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL2Jhc2UucmI6MzY6aW4gYGJsb2NrIGluIHZpc2l0J1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjoxODg6aW4gYHZpc2l0X3Jvb3QnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS92aXNpdG9ycy9iYXNlLnJiOjM2OmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTU5OmluIGB2aXNpdCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6ODppbiBgdmlzaXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvdHJlZS9yb290X25vZGUucmI6MzY6aW4gYGNzc190cmVlJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3RyZWUvcm9vdF9ub2RlLnJiOjI5OmluIGByZW5kZXJfd2l0aF9zb3VyY2VtYXAnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvZW5naW5lLnJiOjM4MTppbiBgX3JlbmRlcl93aXRoX3NvdXJjZW1hcCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9lbmdpbmUucmI6Mjk4OmluIGByZW5kZXJfd2l0aF9zb3VyY2VtYXAnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjQ5MjppbiBgdXBkYXRlX3N0eWxlc2hlZXQnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjIxNTppbiBgYmxvY2sgaW4gdXBkYXRlX3N0eWxlc2hlZXRzJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3BsdWdpbi9jb21waWxlci5yYjoyMDk6aW4gYGVhY2gnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjIwOTppbiBgdXBkYXRlX3N0eWxlc2hlZXRzJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9zYXNzL3BsdWdpbi9jb21waWxlci5yYjo0NzM6aW4gYG9uX2ZpbGVfY2hhbmdlZCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1Ynkvc2Fzcy9wbHVnaW4vY29tcGlsZXIucmI6MzMxOmluIGBibG9jayBpbiB3YXRjaCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1YnkvbGlzdGVuL2V2ZW50L2NvbmZpZy5yYjoyMzppbiBgY2FsbCdcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1YnkvbGlzdGVuL2V2ZW50L3Byb2Nlc3Nvci5yYjoxMTU6aW4gYF9wcm9jZXNzX2NoYW5nZXMnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L2xpc3Rlbi9ldmVudC9wcm9jZXNzb3IucmI6MTk6aW4gYGJsb2NrIGluIGxvb3BfZm9yJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9saXN0ZW4vZXZlbnQvcHJvY2Vzc29yLnJiOjE1OmluIGBsb29wJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9saXN0ZW4vZXZlbnQvcHJvY2Vzc29yLnJiOjE1OmluIGBsb29wX2Zvcidcbi91c3IvbGliL3J1YnkvdmVuZG9yX3J1YnkvbGlzdGVuL2V2ZW50L2xvb3AucmI6ODQ6aW4gYF93YWl0X2Zvcl9jaGFuZ2VzJ1xuL3Vzci9saWIvcnVieS92ZW5kb3JfcnVieS9saXN0ZW4vZXZlbnQvbG9vcC5yYjo0MjppbiBgYmxvY2sgaW4gc2V0dXAnXG4vdXNyL2xpYi9ydWJ5L3ZlbmRvcl9ydWJ5L2xpc3Rlbi9pbnRlcm5hbHMvdGhyZWFkX3Bvb2wucmI6NjppbiBgYmxvY2sgaW4gYWRkJ1xuKi9cbmJvZHk6YmVmb3JlIHtcbiAgd2hpdGUtc3BhY2U6IHByZTtcbiAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcbiAgY29udGVudDogXCJFcnJvcjogVW5kZWZpbmVkIG1peGluICd0ZXh0LWdyYWRpZW50Jy5cXEEgICAgICAgICBvbiBsaW5lIDI3IG9mIC4vYXNzZXRzL2Nzcy9zY3NzL2xhX3BhbGV0dGVfZHVfZ291dC5zY3NzLCBpbiBgdGV4dC1ncmFkaWVudCdcXEEgICAgICAgICBmcm9tIGxpbmUgMjcgb2YgLi9hc3NldHMvY3NzL3Njc3MvbGFfcGFsZXR0ZV9kdV9nb3V0LnNjc3NcXEEgXFxBIDIyOiAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IG1hcC1nZXQoJGxhUGFsZXR0ZUR1R291dCwgYmcpO1xcQSAyMzogICAgICAgICBjb2xvcjogYmxhY2s7XFxBIDI0OiBcXEEgMjU6ICAgICAgICAgaGVhZGVyIHtcXEEgMjY6ICAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBtYXAtZ2V0KCRsYVBhbGV0dGVEdUdvdXQsIGZvbnQtcHJpbWFyeSksIHNhbnMtc2VyaWY7XFxBIDI3OiAgICAgICAgICAgICBAaW5jbHVkZSB0ZXh0LWdyYWRpZW50ICgtOTBkZWcsICRsYVBhbGV0dGVEdUdvdXQpO1xcQSAyODogICAgICAgICB9XFxBIDI5OiBcXEEgMzA6ICAgICAgICAgdGgge1xcQSAzMTogICAgICAgICAgICAgZm9udC1mYW1pbHk6IG1hcC1nZXQoJGxhUGFsZXR0ZUR1R291dCwgZm9udC1zZWNvbmRhcnkpLCBzYW5zLXNlcmlmO1xcQSAzMjogICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogMS44cmVtO1wiOyB9XG4iXX0= */
+@media screen and (min-width: 577px) {
+  #menu_la_palette_du_gout section {
+    padding: 4.5rem 2rem 6rem;
+  }
+  #menu_la_palette_du_gout section header {
+    margin-bottom: 4.5rem;
+    font-size: 3.5rem;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvdXRpbHMvX3BsYWNlaG9sZGVyLnNjc3MiLCIuLi9sYV9wYWxldHRlX2R1X2dvdXQuY3NzIiwiLi4vc2Nzcy9wYWdlcy9fbWVudXMuc2NzcyIsIi4uL3Njc3MvbGFfcGFsZXR0ZV9kdV9nb3V0LnNjc3MiLCIuLi9zY3NzL3V0aWxzL192YXJpYWJsZXMuc2NzcyIsIi4uL3Njc3MvdXRpbHMvX21peGlucy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBO0VBQ0ksd0NBQWdDO1VBQWhDLGdDQUFnQztBQ0hwQzs7QUNGQSw4QkFBQTtBQUNBO0VBQ0ksVUFBVTtFQUNWLG9CQUFhO0VBQWIsb0JBQWE7RUFBYixhQUFhO0VBQ2IsNEJBQXNCO0VBQXRCLDZCQUFzQjtNQUF0QiwwQkFBc0I7VUFBdEIsc0JBQXNCO0VBQ3RCLHdCQUF1QjtNQUF2QixxQkFBdUI7VUFBdkIsdUJBQXVCO0VBQ3ZCLHlCQUFtQjtNQUFuQixzQkFBbUI7VUFBbkIsbUJBQW1CO0VBRW5CLGtCQUFrQjtFQUNsQiw0QkFBNEI7RUFDNUIsVUFBVTtBRElkO0FDRkk7RUFDSSxpQkFBZ0M7RUFDaEMsZUFBZTtBREl2QjtBQ0RJO0VBQ0ksb0JBQWE7RUFBYixvQkFBYTtFQUFiLGFBQWE7RUFDYixxQkFBaUI7TUFBakIsaUJBQWlCO0VBQ2pCLHdCQUF1QjtNQUF2QixxQkFBdUI7VUFBdkIsdUJBQXVCO0VBQ3ZCLHlCQUFtQjtNQUFuQixzQkFBbUI7VUFBbkIsbUJBQW1CO0VBQ25CLGdCQUFnQjtBREd4QjtBQ0RRO0VBQ0ksaUJBQWdDO0VBQ2hDLGlCQUFpQjtBREc3QjtBQ0FRO0VBQ0ksYUFBYTtBREV6QjtBQ0VJO0VBQ0ksb0JBQWE7RUFBYixvQkFBYTtFQUFiLGFBQWE7RUFDYiw0QkFBc0I7RUFBdEIsNkJBQXNCO01BQXRCLDBCQUFzQjtVQUF0QixzQkFBc0I7RUFDdEIsdUJBQXNCO01BQXRCLG9CQUFzQjtVQUF0QixzQkFBc0I7RUFDdEIseUJBQW1CO01BQW5CLHNCQUFtQjtVQUFuQixtQkFBbUI7RUFDbkIscUJBQXFCO0VBQ3JCLGFBQWE7QURBckI7QUNJUTtFQUNJLGtCQUFpQztFQUNqQyxnQkFBZ0I7QURGNUI7QUNLUTtFQUNJLGtCQUFpQztFQUNqQyxrQkFBa0I7QURIOUI7QUNTUTtFQUNJLHFCQUFxQjtFQUNyQixrQkFBa0I7QURQOUI7O0FDY0E7RUFHUTtJQUNJLDhCQUFtQjtJQUFuQiw2QkFBbUI7UUFBbkIsdUJBQW1CO1lBQW5CLG1CQUFtQjtJQUNuQix5QkFBOEI7UUFBOUIsc0JBQThCO1lBQTlCLDhCQUE4QjtJQUM5Qix3QkFBdUI7UUFBdkIscUJBQXVCO1lBQXZCLHVCQUF1QjtFRGJqQztFQ2lCVTtJQUNJLGdCQUFnQjtJQUNoQixvQkFBb0I7RURmbEM7RUNrQlU7SUFDSSxpQkFBaUI7SUFDakIsYUFBYTtFRGhCM0I7QUFDRjtBRTlEQTtFQUNJLG9DQUFvQztFQUNwQywwRkFBMEY7RUFDMUYsa2pCQUk2SDtFQUM3SCxtQkFBbUI7RUFDbkIsa0JBQWtCO0FGNER0QjtBRXpEQTtFQUNJLGlDQUFpQztFQUNqQyw4REFBOEQ7QUYyRGxFO0FFeERBO0VBQ0ksOEJBQThCO0VBQzlCLCtEQUErRDtBRjBEbkU7QUVyREk7RUFDSSx5QkNRc0I7RURQdEIsWUFBWTtBRnVEcEI7QUVyRFE7RUFDSSxnREFBZ0U7RUV6QnhFLDRIQUFvSztFQUFwSywyRUFBb0s7RUFBcEsseUVBQW9LO0VBQ3BLLDZCQUFxQjtVQUFyQixxQkFBcUI7RUFDckIsa0JBQWtCO0FKaUZ0QjtBRXREUTtFQUNJLDZDQUFrRTtFQUNsRSxxQkFBcUI7QUZ3RGpDO0FFckRRO0VBQ0kscUJBQXFCO0VBQ3JCLFVBQVU7QUZ1RHRCO0FFbkRZO0VBQ0ksNkNBQWlFO0FGcURqRjtBRWxEWTtFQUNJLDZDQUFrRTtBRm9EbEY7O0FFN0NBO0VBSVE7SUFDSSx5QkFBeUI7RUY2Q25DO0VFM0NVO0lBQ0kscUJBQXFCO0lBQ3JCLGlCQUFnQztFRjZDOUM7QUFDRiIsImZpbGUiOiJsYV9wYWxldHRlX2R1X2dvdXQuY3NzIn0= */

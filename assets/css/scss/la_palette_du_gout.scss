@@ -16,6 +16,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'segoeprint-regular';
+    src: url(../../fonts/la_note_enchantee/segoeprint/segoepr.ttf);
+}
+
+@font-face {
+    font-family: 'segoeprint-bold';
+    src: url(../../fonts/la_note_enchantee/segoeprint/segoeprb.ttf);
+}
+
 #menu_la_palette_du_gout {
 
     section {
@@ -24,7 +34,7 @@
 
         header {
             font-family: map-get($laPaletteDuGout, font-primary), sans-serif;
-            @include text-gradient (-90deg, $laPaletteDuGout);
+            @include text-gradient-3 (-90deg, $laPaletteDuGout);
         }
 
         th {
@@ -44,8 +54,6 @@
 
             &:nth-child(even) {
                 font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
-                font-size: $global-font-size*0.9;
-
             }
         }
 

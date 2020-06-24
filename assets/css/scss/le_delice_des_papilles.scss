@@ -24,7 +24,7 @@
 
         header {
             font-family: map-get($leDeliceDesPapilles, font-primary), sans-serif;
-            @include text-gradient (-90deg, $leDeliceDesPapilles);
+            @include text-gradient-3 (-90deg, $leDeliceDesPapilles);
         }
 
         th {

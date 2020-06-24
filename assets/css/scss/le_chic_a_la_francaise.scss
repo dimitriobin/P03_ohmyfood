@@ -49,7 +49,7 @@
         header {
             font-family: map-get($leChicALaFrancaise, font-primary), sans-serif;
             font-size: $global-font-size*1.4;
-            @include text-gradient (-45deg, $leChicALaFrancaise);
+            @include text-gradient-2 (-45deg, $leChicALaFrancaise);
             margin-bottom: 2rem;
         }
 
