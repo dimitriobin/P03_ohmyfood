@@ -16,6 +16,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'segoeprint-regular';
+    src: url(../../fonts/la_note_enchantee/segoeprint/segoepr.ttf);
+}
+
+@font-face {
+    font-family: 'segoeprint-bold';
+    src: url(../../fonts/la_note_enchantee/segoeprint/segoeprb.ttf);
+}
+
 #menu_le_delice_des_papilles {
 
     section {
@@ -51,17 +61,4 @@
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, small)) {
-
-    #menu_le_delice_des_papilles {
-
-        section {
-            padding-top: 4.5rem;
-
-            header {
-                margin-bottom: 4.5rem;
-            }
-
-        }
-    }
-}
+@media screen and (min-width: map-get($breakpoints, small)) {}

@@ -34,29 +34,43 @@
         background-color: map-get($laNoteEnchantee, bg);
         color: map-get($laNoteEnchantee, color-primary);
 
+
         header {
             font-family: map-get($laNoteEnchantee, font-primary), sans-serif;
             font-size: $global-font-size*3.6;
+            margin: 2rem 0 3rem 0;
 
             img {
                 width: 4rem;
             }
         }
 
-        th h3 {
-            font-family: map-get($laNoteEnchantee, font-secondary), sans-serif;
-            font-size: $global-font-size*2;
-            font-weight: normal;
+        table {
+            margin-bottom: 8rem;
+        }
+
+        th {
+            margin-bottom: 1rem;
+
+            h3 {
+                font-family: map-get($laNoteEnchantee, font-secondary), sans-serif;
+                font-size: $global-font-size*2;
+                font-weight: normal;
+            }
         }
 
         td {
+
+            padding: 0 5%;
+
             &:nth-child(odd) {
                 font-family: map-get($laNoteEnchantee, font-tertiary), sans-serif;
+                margin-top: 2rem;
             }
 
             &:nth-child(even) {
-                font-family: map-get($laNoteEnchantee, font-secondary), sans-serif;
-
+                font-family: "segoeprint-bold", sans-serif;
+                margin-top: 1rem;
             }
         }
 
@@ -64,6 +78,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 2rem;
 
             p {
                 font-family: map-get($laNoteEnchantee, font-primary);
@@ -72,8 +87,8 @@
             }
 
             img {
-                width: 4rem;
-                margin-right: 0.5rem;
+                width: 3.5rem;
+                margin-right: 1rem;
             }
         }
     }
@@ -81,11 +96,42 @@
 
 
 
-@media screen and (min-width: map-get($breakpoints, small)) {
+@media screen and (min-width: map-get($breakpoints, small)) {}
 
-    #menu_la_note_enchantee {
-        section {
-            padding: 3rem 3.5rem 2.5rem;
+@media screen and (min-width: map-get($breakpoints, medium)) {
+    #menu_la_note_enchantee section {
+        header {
+            margin-bottom: 4rem;
+        }
+
+        table {
+            margin-bottom: 9.5rem;
+
+            &:last-of-type {
+                margin-bottom: 7.5rem;
+            }
+        }
+
+        th {
+            margin-bottom: 1.5rem;
+        }
+
+        tbody tr {
+            margin-top: 2.25rem;
+        }
+
+        td {
+            &:nth-child(odd) {
+                margin-top: 0;
+            }
+
+            &:nth-child(even) {
+                margin-top: 0;
+            }
         }
     }
+}
+
+@media screen and (min-width: map-get($breakpoints, large)) {
+    
 }

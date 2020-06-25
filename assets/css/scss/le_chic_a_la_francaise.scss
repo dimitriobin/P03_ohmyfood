@@ -91,15 +91,4 @@
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, small)) {
-
-    #menu_le_chic_a_la_francaise {
-        section {
-            padding: 5rem 1rem;
-
-            header {
-                margin-bottom: 5rem;
-            }
-        }
-    }
-}
+@media screen and (min-width: map-get($breakpoints, small)) {}

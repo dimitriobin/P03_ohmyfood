@@ -7,12 +7,11 @@ main>section {
     align-items: center;
     @extend %shadow-menu;
     text-align: center;
-    padding: 2rem 2rem 4rem 3rem;
+    padding: 5%;
     margin: 5%;
 
     header {
         font-size: $global-font-size*3.1;
-        padding: 1rem 0;
     }
 
     th {
@@ -20,7 +19,6 @@ main>section {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
 
         h3 {
             font-size: $global-font-size*1.6;
@@ -37,51 +35,70 @@ main>section {
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        margin-bottom: 0.8rem;
-        padding: 0 5%;
     }
 
     td {
         &:nth-child(odd) {
             font-size: $global-font-size*1.25;
-            margin-top: 1rem;
         }
 
         &:nth-child(even) {
             font-size: $global-font-size*1.55;
-            margin-top: 0.5rem;
-        }
-    }
-
-    footer {
-
-        p {
-            display: inline-block;
-            text-align: center;
         }
     }
 }
 
-
-
-@media screen and (min-width: map-get($breakpoints, small)) {
-
+@media screen and (min-width: map-get($breakpoints, medium)) {
     main>section {
-        tbody tr {
-            flex-direction: row;
+        width: 80%;
+
+        th {
             justify-content: space-between;
-            align-items: flex-start;
+            padding: 0 5%;
+
+            img {
+                display: inline-block;
+                max-width: 15%;
+                object-fit: scale-down;
+            }
+        }
+
+        tbody tr {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
         }
 
         td {
             &:nth-child(odd) {
                 text-align: left;
-                margin-right: 0.5rem;
+                padding-right: 0;
             }
 
             &:nth-child(even) {
                 text-align: right;
-                margin-top: 0;
+                flex: 1 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, large)) {
+    main>section {
+        th {
+            img {
+                max-width: 25%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, extra-large)) {
+    main>section {
+        th {
+            img {
+                max-width: 30%;
             }
         }
     }

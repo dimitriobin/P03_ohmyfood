@@ -207,16 +207,15 @@ main > h2 {
 
 @media screen and (min-width: 577px) {
   body > header {
-    font-size: 4.5rem;
+    font-size: 4.55rem;
     height: 246px;
-    letter-spacing: -0.3rem;
-  }
-  body > header h1 {
-    transform: scale(1);
+    letter-spacing: -0.35rem;
   }
   body > footer {
     flex-direction: row;
     justify-content: space-between;
+    font-size: 1rem;
+    letter-spacing: -0.15rem;
     padding: 0 1rem;
   }
   body > footer a:first-child {
@@ -237,6 +236,11 @@ main > h2 {
 
   main {
     margin-bottom: 136.5px;
+  }
+}
+@media screen and (min-width: 992px) {
+  main > h2 {
+    margin-top: 8rem;
   }
 }
 

@@ -10,19 +10,17 @@ main > section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem 2rem 4rem 3rem;
+  padding: 5%;
   margin: 5%;
 }
 main > section header {
   font-size: 3.1rem;
-  padding: 1rem 0;
 }
 main > section th {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
 }
 main > section th h3 {
   font-size: 1.6rem;
@@ -36,35 +34,50 @@ main > section tbody tr {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-bottom: 0.8rem;
-  padding: 0 5%;
 }
 main > section td:nth-child(odd) {
   font-size: 1.25rem;
-  margin-top: 1rem;
 }
 main > section td:nth-child(even) {
   font-size: 1.55rem;
-  margin-top: 0.5rem;
-}
-main > section footer p {
-  display: inline-block;
-  text-align: center;
 }
 
-@media screen and (min-width: 577px) {
-  main > section tbody tr {
-    flex-direction: row;
+@media screen and (min-width: 768px) {
+  main > section {
+    width: 80%;
+  }
+  main > section th {
     justify-content: space-between;
-    align-items: flex-start;
+    padding: 0 5%;
+  }
+  main > section th img {
+    display: inline-block;
+    max-width: 15%;
+    object-fit: scale-down;
+  }
+  main > section tbody tr {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
   main > section td:nth-child(odd) {
     text-align: left;
-    margin-right: 0.5rem;
+    padding-right: 0;
   }
   main > section td:nth-child(even) {
     text-align: right;
-    margin-top: 0;
+    flex: 1 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  main > section th img {
+    max-width: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main > section th img {
+    max-width: 30%;
   }
 }
 @font-face {
@@ -92,9 +105,12 @@ main > section footer p {
   background-clip: text;
   color: transparent;
 }
+#menu_la_palette_du_gout section table {
+  margin-bottom: 2rem;
+}
 #menu_la_palette_du_gout section th {
   font-family: "segoeprint-regular", sans-serif;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
 }
 #menu_la_palette_du_gout section tbody tr {
   margin: 0 auto 1.1rem;
@@ -105,16 +121,6 @@ main > section footer p {
 }
 #menu_la_palette_du_gout section td:nth-child(even) {
   font-family: "segoeprint-regular", sans-serif;
-}
-
-@media screen and (min-width: 577px) {
-  #menu_la_palette_du_gout section {
-    padding: 4.5rem 2rem 6rem;
-  }
-  #menu_la_palette_du_gout section header {
-    margin-bottom: 4.5rem;
-    font-size: 3.5rem;
-  }
 }
 
 /*# sourceMappingURL=la_palette_du_gout.css.map */

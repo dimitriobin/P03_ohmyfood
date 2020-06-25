@@ -37,9 +37,13 @@
             @include text-gradient-3 (-90deg, $laPaletteDuGout);
         }
 
+        table {
+            margin-bottom: 2rem;
+        }
+
         th {
             font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
-            margin-bottom: 1.8rem;
+            margin-bottom: 2rem;
         }
 
         tbody tr {
@@ -57,21 +61,5 @@
             }
         }
 
-    }
-}
-
-@media screen and (min-width: map-get($breakpoints, small)) {
-
-    #menu_la_palette_du_gout {
-
-        section {
-            padding: 4.5rem 2rem 6rem;
-
-            header {
-                margin-bottom: 4.5rem;
-                font-size: $global-font-size*3.5;
-            }
-
-        }
     }
 }
