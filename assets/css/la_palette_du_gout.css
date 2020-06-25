@@ -59,11 +59,12 @@ main > section td:nth-child(even) {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
   main > section td:nth-child(odd) {
     text-align: left;
     padding-right: 0;
+    flex: 0 0 80%;
   }
   main > section td:nth-child(even) {
     text-align: right;
@@ -101,7 +102,7 @@ main > section td:nth-child(even) {
 }
 #menu_la_palette_du_gout section header {
   font-family: "kaushan_scriptregular", sans-serif;
-  background: linear-gradient(-90deg, #cefea0 0%, #72bf56 34%, #3d923a 66%);
+  background: linear-gradient(-90deg, #cefea0 10%, #72bf56 34%, #3d923a 66%);
   background-clip: text;
   color: transparent;
 }

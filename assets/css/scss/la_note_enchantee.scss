@@ -34,7 +34,6 @@
         background-color: map-get($laNoteEnchantee, bg);
         color: map-get($laNoteEnchantee, color-primary);
 
-
         header {
             font-family: map-get($laNoteEnchantee, font-primary), sans-serif;
             font-size: $global-font-size*3.6;
@@ -94,10 +93,6 @@
     }
 }
 
-
-
-@media screen and (min-width: map-get($breakpoints, small)) {}
-
 @media screen and (min-width: map-get($breakpoints, medium)) {
     #menu_la_note_enchantee section {
         header {
@@ -130,8 +125,4 @@
             }
         }
     }
-}
-
-@media screen and (min-width: map-get($breakpoints, large)) {
-    
 }

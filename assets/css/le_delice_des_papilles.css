@@ -59,11 +59,12 @@ main > section td:nth-child(even) {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
   main > section td:nth-child(odd) {
     text-align: left;
     padding-right: 0;
+    flex: 0 0 80%;
   }
   main > section td:nth-child(even) {
     text-align: right;
@@ -101,7 +102,7 @@ main > section td:nth-child(even) {
 }
 #menu_le_delice_des_papilles section header {
   font-family: "dancing_scriptregular", sans-serif;
-  background: linear-gradient(-90deg, #229df9 0%, #0670f3 34%, #0228dd 66%);
+  background: linear-gradient(-90deg, #229df9 10%, #0670f3 34%, #0228dd 66%);
   background-clip: text;
   color: transparent;
 }

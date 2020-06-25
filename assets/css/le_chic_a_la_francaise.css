@@ -59,11 +59,12 @@ main > section td:nth-child(even) {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
   main > section td:nth-child(odd) {
     text-align: left;
     padding-right: 0;
+    flex: 0 0 80%;
   }
   main > section td:nth-child(even) {
     text-align: right;
@@ -106,11 +107,16 @@ main > section td:nth-child(even) {
 }
 #menu_le_chic_a_la_francaise section header {
   font-family: "croissant_oneregular", sans-serif;
-  font-size: 1.4rem;
-  background: linear-gradient(-45deg, #6e4ccc 0%, #c67412 100%);
+  font-size: 3.1rem;
+  background: linear-gradient(-45deg, #6e4ccc 25%, #c67412 75%);
   background-clip: text;
   color: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+}
+#menu_le_chic_a_la_francaise section table {
+  width: 100%;
+  margin-bottom: 6rem;
 }
 #menu_le_chic_a_la_francaise section table:nth-of-type(1) {
   color: #c67412;
@@ -120,21 +126,44 @@ main > section td:nth-child(even) {
 }
 #menu_le_chic_a_la_francaise section table:nth-of-type(3) {
   color: #6e4ccc;
+  margin-bottom: 2rem;
 }
 #menu_le_chic_a_la_francaise section th {
   font-family: "serif12_betabold", sans-serif;
-  margin-bottom: 1.7rem;
+  margin-bottom: 3.5rem;
+}
+#menu_le_chic_a_la_francaise section th h3 {
+  font-weight: normal;
 }
 #menu_le_chic_a_la_francaise section tbody tr {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  margin: 0 auto 2rem;
+  padding: 0 15%;
 }
 #menu_le_chic_a_la_francaise section td:nth-child(odd) {
   font-family: "serif12_betaregular", sans-serif;
+  font-size: 1.1rem;
 }
 #menu_le_chic_a_la_francaise section td:nth-child(even) {
   font-family: "serif12_betabold", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  #menu_le_chic_a_la_francaise > section td:nth-child(even) {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  #menu_le_chic_a_la_francaise > section header {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #menu_le_chic_a_la_francaise > section tbody tr {
+    margin-bottom: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=le_chic_a_la_francaise.css.map */

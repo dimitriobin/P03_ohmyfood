@@ -48,12 +48,16 @@
 
         header {
             font-family: map-get($leChicALaFrancaise, font-primary), sans-serif;
-            font-size: $global-font-size*1.4;
+            font-size: 3.1rem;
             @include text-gradient-2 (-45deg, $leChicALaFrancaise);
-            margin-bottom: 2rem;
+            margin-bottom: 5rem;
+            padding: 1rem;
         }
 
         table {
+            width: 100%;
+            margin-bottom: 6rem;
+
             &:nth-of-type(1) {
                 color: map-get($leChicALaFrancaise, color-primary);
             }
@@ -64,31 +68,61 @@
 
             &:nth-of-type(3) {
                 color: map-get($leChicALaFrancaise, color-tertiary);
+                margin-bottom: 2rem;
             }
         }
 
         th {
             font-family: map-get($leChicALaFrancaise, font-secondary), sans-serif;
-            margin-bottom: 1.7rem;
+            margin-bottom: 3.5rem;
+
+            h3 {
+                font-weight: normal;
+            }
         }
 
         tbody tr {
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
+            margin: 0 auto 2rem;
+            padding: 0 15%;
         }
 
         td {
             &:nth-child(odd) {
                 font-family: map-get($leChicALaFrancaise, font-tertiary), sans-serif;
+                font-size: 1.1rem;
             }
 
             &:nth-child(even) {
                 font-family: map-get($leChicALaFrancaise, font-secondary), sans-serif;
+                font-size: 1.3rem;
+                margin-top: 0.8rem;
 
             }
         }
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, small)) {}
+@media screen and (min-width: map-get($breakpoints, medium)) {
+    #menu_le_chic_a_la_francaise>section {
+        td:nth-child(even) {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, large)) {
+    #menu_le_chic_a_la_francaise>section {
+        header {
+            margin-top: 2rem;
+            margin-bottom: 7rem;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, large)) {
+    #menu_le_chic_a_la_francaise>section {
+        tbody tr {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
