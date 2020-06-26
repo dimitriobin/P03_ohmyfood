@@ -91,6 +91,21 @@
     font-style: normal;
 }
 
+/* Animation du bouton "prochainement" */
+@keyframes dots {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /* grille des cartes dans la page d'acceuil */
 
 .grille {
@@ -230,10 +245,22 @@
         padding: 2.5vh 0;
     }
 
+    span:first-of-type {
+        animation: dots $anim-duration-dots ease infinite both;
+        animation-delay: $delay-dots;
+    }
+
     span {
         display: inline;
         margin-left: 0.2rem;
         vertical-align: text-bottom;
+        animation: dots $anim-duration-dots ease infinite both;
+        animation-delay: $delay-dots*2;
+    }
+
+    span:last-of-type {
+        animation: dots $anim-duration-dots ease infinite both;
+        animation-delay: $delay-dots*3;
     }
 }
 

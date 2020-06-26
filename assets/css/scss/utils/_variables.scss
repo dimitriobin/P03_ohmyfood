@@ -12,6 +12,11 @@ sans-serif;
 $global-font-size: 1rem;
 $footer-size: 105px;
 $thumbnail-width: (base:75vw, micro: 175px, extra-small:200px, small: 200px, medium:200px, large: 225px, extra-large:225px);
+
+// animations
+$anim-duration-dots: 1.5s;
+$delay-dots: $anim-duration-dots/3;
+
 // MENUS:
 
 $laNoteEnchantee: (bg: #fcdfdb,
