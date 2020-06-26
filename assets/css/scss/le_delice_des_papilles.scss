@@ -77,11 +77,18 @@
     }
 }
 
+@media screen and (min-width: map-get($breakpoints, medium)) {
+    #menu_le_delice_des_papilles {
+        section td:nth-child(odd) {
+            margin-bottom: 0;
+        }
+    }
+}
+
 @media screen and (min-width: map-get($breakpoints, large)) {
     #menu_le_delice_des_papilles {
         header h2 {
             font-size: 5.6rem;
         }
     }
-
 }

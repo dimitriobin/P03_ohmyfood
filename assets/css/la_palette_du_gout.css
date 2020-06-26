@@ -105,23 +105,41 @@ main > section td:nth-child(even) {
   background: linear-gradient(-90deg, #cefea0 10%, #72bf56 34%, #3d923a 66%);
   background-clip: text;
   color: transparent;
+  padding: 1rem 2rem;
+  margin-bottom: 5rem;
 }
 #menu_la_palette_du_gout section table {
+  width: 100%;
+  margin-bottom: 5.2rem;
+}
+#menu_la_palette_du_gout section table:last-of-type {
   margin-bottom: 2rem;
 }
 #menu_la_palette_du_gout section th {
   font-family: "segoeprint-regular", sans-serif;
-  margin-bottom: 2rem;
+  margin-bottom: 3.3rem;
 }
 #menu_la_palette_du_gout section tbody tr {
-  margin: 0 auto 1.1rem;
-  width: 90%;
+  padding: 0 15%;
+  margin-bottom: 2.2rem;
 }
 #menu_la_palette_du_gout section td:nth-child(odd) {
   font-family: "segoeprint-regular", sans-serif;
+  margin-bottom: 0.7rem;
 }
 #menu_la_palette_du_gout section td:nth-child(even) {
   font-family: "segoeprint-regular", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  #menu_la_palette_du_gout section td:nth-child(odd) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  #menu_la_palette_du_gout header h2 {
+    font-size: 5.6rem;
+  }
 }
 
 /*# sourceMappingURL=la_palette_du_gout.css.map */

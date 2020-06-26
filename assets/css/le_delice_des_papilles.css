@@ -135,6 +135,11 @@ main > section td:nth-child(even) {
   font-family: "segoeprint-regular", sans-serif;
 }
 
+@media screen and (min-width: 768px) {
+  #menu_le_delice_des_papilles section td:nth-child(odd) {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 992px) {
   #menu_le_delice_des_papilles header h2 {
     font-size: 5.6rem;

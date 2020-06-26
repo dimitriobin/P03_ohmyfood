@@ -35,25 +35,33 @@
         header {
             font-family: map-get($laPaletteDuGout, font-primary), sans-serif;
             @include text-gradient-3 (-90deg, $laPaletteDuGout);
+            padding: 1rem 2rem;
+            margin-bottom: 5rem;
         }
 
         table {
-            margin-bottom: 2rem;
+            width: 100%;
+            margin-bottom: 5.2rem;
+
+            &:last-of-type {
+                margin-bottom: 2rem;
+            }
         }
 
         th {
             font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
-            margin-bottom: 2rem;
+            margin-bottom: 3.3rem;
         }
 
         tbody tr {
-            margin: 0 auto 1.1rem;
-            width: 90%;
+            padding: 0 15%;
+            margin-bottom: 2.2rem;
         }
 
         td {
             &:nth-child(odd) {
                 font-family: map-get($laPaletteDuGout, font-tertiary), sans-serif;
+                margin-bottom: 0.7rem;
             }
 
             &:nth-child(even) {
@@ -61,5 +69,21 @@
             }
         }
 
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, medium)) {
+    #menu_la_palette_du_gout {
+        section td:nth-child(odd) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, large)) {
+    #menu_la_palette_du_gout {
+        header h2 {
+            font-size: 5.6rem;
+        }
     }
 }
