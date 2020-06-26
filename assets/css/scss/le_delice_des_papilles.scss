@@ -35,22 +35,38 @@
         header {
             font-family: map-get($leDeliceDesPapilles, font-primary), sans-serif;
             @include text-gradient-3 (-90deg, $leDeliceDesPapilles);
+            margin-top: 1rem;
+            margin-bottom: 6rem;
+
+            h2 {
+                padding: 0 2rem;
+            }
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 5.2rem;
+
+            &:last-of-type {
+                margin-bottom: 2rem;
+            }
         }
 
         th {
             font-family: map-get($leDeliceDesPapilles, font-secondary), sans-serif;
             margin-bottom: 1.8rem;
+            margin-bottom: 3.3rem;
         }
 
         tbody tr {
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
+            padding: 0 15%;
+            margin: 0 auto 2.2rem;
         }
 
         td {
             &:nth-child(odd) {
                 font-family: map-get($leDeliceDesPapilles, font-tertiary), sans-serif;
+                margin-bottom: 0.7rem;
             }
 
             &:nth-child(even) {
@@ -61,4 +77,11 @@
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, small)) {}
+@media screen and (min-width: map-get($breakpoints, large)) {
+    #menu_le_delice_des_papilles {
+        header h2 {
+            font-size: 5.6rem;
+        }
+    }
+
+}

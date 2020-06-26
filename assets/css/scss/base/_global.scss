@@ -45,6 +45,7 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        padding: 0 2%;
 
         a {
             text-align: center;
@@ -89,7 +90,6 @@ main {
             justify-content: space-between;
             font-size: $global-font-size;
             letter-spacing: -0.15rem;
-            padding: 0 1rem;
 
             a {
                 &:first-child {

@@ -105,21 +105,40 @@ main > section td:nth-child(even) {
   background: linear-gradient(-90deg, #229df9 10%, #0670f3 34%, #0228dd 66%);
   background-clip: text;
   color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+#menu_le_delice_des_papilles section header h2 {
+  padding: 0 2rem;
+}
+#menu_le_delice_des_papilles section table {
+  width: 100%;
+  margin-bottom: 5.2rem;
+}
+#menu_le_delice_des_papilles section table:last-of-type {
+  margin-bottom: 2rem;
 }
 #menu_le_delice_des_papilles section th {
   font-family: "segoeprint-regular", sans-serif;
   margin-bottom: 1.8rem;
+  margin-bottom: 3.3rem;
 }
 #menu_le_delice_des_papilles section tbody tr {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  padding: 0 15%;
+  margin: 0 auto 2.2rem;
 }
 #menu_le_delice_des_papilles section td:nth-child(odd) {
   font-family: "segoeprint-regular", sans-serif;
+  margin-bottom: 0.7rem;
 }
 #menu_le_delice_des_papilles section td:nth-child(even) {
   font-family: "segoeprint-regular", sans-serif;
+}
+
+@media screen and (min-width: 992px) {
+  #menu_le_delice_des_papilles header h2 {
+    font-size: 5.6rem;
+  }
 }
 
 /*# sourceMappingURL=le_delice_des_papilles.css.map */
