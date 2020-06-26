@@ -124,13 +124,36 @@ main > section td:nth-child(even) {
 #menu_le_chic_a_la_francaise section table:nth-of-type(2) {
   color: #a56799;
 }
+#menu_le_chic_a_la_francaise section table:nth-of-type(2) th h3::after {
+  background-color: #a56799;
+}
 #menu_le_chic_a_la_francaise section table:nth-of-type(3) {
   color: #6e4ccc;
   margin-bottom: 2rem;
 }
+#menu_le_chic_a_la_francaise section table:nth-of-type(3) th h3::after {
+  background-color: #6e4ccc;
+}
 #menu_le_chic_a_la_francaise section th {
   font-family: "serif12_betabold", sans-serif;
   margin-bottom: 3.5rem;
+}
+#menu_le_chic_a_la_francaise section th h3 {
+  position: relative;
+}
+#menu_le_chic_a_la_francaise section th h3::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  background-color: #c67412;
+  opacity: 0.8;
+  height: 3px;
+  width: 0%;
+  transition: width 0.3s;
+}
+#menu_le_chic_a_la_francaise section th h3:hover::after {
+  width: 100%;
 }
 #menu_le_chic_a_la_francaise section th h3 {
   font-weight: normal;

@@ -115,6 +115,23 @@ main > section td:nth-child(even) {
   margin-bottom: 1rem;
 }
 #menu_la_note_enchantee section th h3 {
+  position: relative;
+}
+#menu_la_note_enchantee section th h3::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  background-color: #3c1218;
+  opacity: 0.8;
+  height: 3px;
+  width: 0%;
+  transition: width 0.3s;
+}
+#menu_la_note_enchantee section th h3:hover::after {
+  width: 100%;
+}
+#menu_la_note_enchantee section th h3 {
   font-family: "segoeprint-bold", sans-serif;
   font-size: 2rem;
   font-weight: normal;

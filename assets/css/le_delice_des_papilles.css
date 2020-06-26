@@ -123,6 +123,29 @@ main > section td:nth-child(even) {
   margin-bottom: 1.8rem;
   margin-bottom: 3.3rem;
 }
+#menu_le_delice_des_papilles section th h3 {
+  position: relative;
+}
+#menu_le_delice_des_papilles section th h3::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  background-color: #0228dd;
+  opacity: 0.8;
+  height: 3px;
+  width: 0%;
+  transition: width 0.3s;
+}
+#menu_le_delice_des_papilles section th h3:hover::after {
+  width: 100%;
+}
+#menu_le_delice_des_papilles section table:nth-of-type(2) th h3::after {
+  background-color: #0670f3;
+}
+#menu_le_delice_des_papilles section table:nth-of-type(3) th h3::after {
+  background-color: #229df9;
+}
 #menu_le_delice_des_papilles section tbody tr {
   padding: 0 15%;
   margin: 0 auto 2.2rem;

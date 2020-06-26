@@ -50,6 +50,7 @@
 
         th {
             margin-bottom: 1rem;
+            @include underline ($laNoteEnchantee);
 
             h3 {
                 font-family: map-get($laNoteEnchantee, font-secondary), sans-serif;
