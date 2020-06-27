@@ -134,6 +134,22 @@ table {
   border-spacing: 0;
 }
 
+/* classes utiles */
+.back {
+  display: none;
+  object-fit: scale-down;
+  width: 100px;
+  position: absolute;
+  left: 75px;
+  top: 350px;
+  border: 1px solid #fdcb46;
+  border-radius: 50%;
+  padding: 15px;
+}
+.back img {
+  width: 100%;
+}
+
 /* Elements généraux à tout le site */
 *,
 *::before,
@@ -267,6 +283,10 @@ main > h2 {
 @media screen and (min-width: 992px) {
   main > h2 {
     margin-top: 8rem;
+  }
+
+  .back {
+    display: inline-block;
   }
 }
 
