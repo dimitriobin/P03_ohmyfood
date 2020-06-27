@@ -16,6 +16,9 @@ main > section {
 main > section header {
   font-size: 3.1rem;
 }
+main > section table {
+  width: 100%;
+}
 main > section th {
   display: flex;
   flex-wrap: nowrap;
@@ -34,6 +37,7 @@ main > section tbody tr {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  width: 100%;
 }
 main > section td:nth-child(odd) {
   font-size: 1.25rem;
