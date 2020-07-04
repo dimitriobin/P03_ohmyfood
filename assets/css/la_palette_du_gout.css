@@ -24,8 +24,6 @@ main > section th {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-}
-main > section th h3 {
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -82,7 +80,8 @@ main > section td:nth-child(even) {
 }
 @media screen and (min-width: 1200px) {
   main > section th img {
-    max-width: 30%;
+    width: 30%;
+    max-width: 300px;
   }
 }
 @font-face {
@@ -123,10 +122,10 @@ main > section td:nth-child(even) {
   font-family: "segoeprint-regular", sans-serif;
   margin-bottom: 3.3rem;
 }
-#menu_la_palette_du_gout section th h3 {
+#menu_la_palette_du_gout section th span {
   position: relative;
 }
-#menu_la_palette_du_gout section th h3::after {
+#menu_la_palette_du_gout section th span::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -137,7 +136,7 @@ main > section td:nth-child(even) {
   width: 0%;
   transition: width 0.3s;
 }
-#menu_la_palette_du_gout section th h3:hover::after {
+#menu_la_palette_du_gout section th span:hover::after {
   width: 100%;
 }
 #menu_la_palette_du_gout section tbody tr {

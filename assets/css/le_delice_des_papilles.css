@@ -24,8 +24,6 @@ main > section th {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-}
-main > section th h3 {
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -82,7 +80,8 @@ main > section td:nth-child(even) {
 }
 @media screen and (min-width: 1200px) {
   main > section th img {
-    max-width: 30%;
+    width: 30%;
+    max-width: 300px;
   }
 }
 @font-face {
@@ -127,10 +126,10 @@ main > section td:nth-child(even) {
   margin-bottom: 1.8rem;
   margin-bottom: 3.3rem;
 }
-#menu_le_delice_des_papilles section th h3 {
+#menu_le_delice_des_papilles section th span {
   position: relative;
 }
-#menu_le_delice_des_papilles section th h3::after {
+#menu_le_delice_des_papilles section th span::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -141,13 +140,13 @@ main > section td:nth-child(even) {
   width: 0%;
   transition: width 0.3s;
 }
-#menu_le_delice_des_papilles section th h3:hover::after {
+#menu_le_delice_des_papilles section th span:hover::after {
   width: 100%;
 }
-#menu_le_delice_des_papilles section table:nth-of-type(2) th h3::after {
+#menu_le_delice_des_papilles section table:nth-of-type(2) span::after {
   background-color: #0670f3;
 }
-#menu_le_delice_des_papilles section table:nth-of-type(3) th h3::after {
+#menu_le_delice_des_papilles section table:nth-of-type(3) span::after {
   background-color: #229df9;
 }
 #menu_le_delice_des_papilles section tbody tr {

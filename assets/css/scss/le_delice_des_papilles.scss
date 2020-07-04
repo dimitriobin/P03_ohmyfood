@@ -56,17 +56,17 @@
             font-family: map-get($leDeliceDesPapilles, font-secondary), sans-serif;
             margin-bottom: 1.8rem;
             margin-bottom: 3.3rem;
-            @include underline ($leDeliceDesPapilles, color-primary, h3);
+            @include underline (span, $leDeliceDesPapilles, color-primary);
         }
 
         table:nth-of-type(2) {
-            th h3::after {
+            span::after {
                 background-color: map-get($leDeliceDesPapilles, color-secondary);
             }
         }
 
         table:nth-of-type(3) {
-            th h3::after {
+            span::after {
                 background-color: map-get($leDeliceDesPapilles, color-tertiary);
             }
         }

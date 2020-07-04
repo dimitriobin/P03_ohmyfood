@@ -24,8 +24,6 @@ main > section th {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-}
-main > section th h3 {
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -82,7 +80,8 @@ main > section td:nth-child(even) {
 }
 @media screen and (min-width: 1200px) {
   main > section th img {
-    max-width: 30%;
+    width: 30%;
+    max-width: 300px;
   }
 }
 @font-face {
@@ -128,24 +127,25 @@ main > section td:nth-child(even) {
 #menu_le_chic_a_la_francaise section table:nth-of-type(2) {
   color: #a56799;
 }
-#menu_le_chic_a_la_francaise section table:nth-of-type(2) th h3::after {
+#menu_le_chic_a_la_francaise section table:nth-of-type(2) th span::after {
   background-color: #a56799;
 }
 #menu_le_chic_a_la_francaise section table:nth-of-type(3) {
   color: #6e4ccc;
   margin-bottom: 2rem;
 }
-#menu_le_chic_a_la_francaise section table:nth-of-type(3) th h3::after {
+#menu_le_chic_a_la_francaise section table:nth-of-type(3) th span::after {
   background-color: #6e4ccc;
 }
 #menu_le_chic_a_la_francaise section th {
   font-family: "serif12_betabold", sans-serif;
   margin-bottom: 3.5rem;
+  font-size: 1.6rem;
 }
-#menu_le_chic_a_la_francaise section th h3 {
+#menu_le_chic_a_la_francaise section th span {
   position: relative;
 }
-#menu_le_chic_a_la_francaise section th h3::after {
+#menu_le_chic_a_la_francaise section th span::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -156,10 +156,10 @@ main > section td:nth-child(even) {
   width: 0%;
   transition: width 0.3s;
 }
-#menu_le_chic_a_la_francaise section th h3:hover::after {
+#menu_le_chic_a_la_francaise section th span:hover::after {
   width: 100%;
 }
-#menu_le_chic_a_la_francaise section th h3 {
+#menu_le_chic_a_la_francaise section th span {
   font-weight: normal;
 }
 #menu_le_chic_a_la_francaise section tbody tr {
@@ -180,16 +180,17 @@ main > section td:nth-child(even) {
   #menu_le_chic_a_la_francaise > section td:nth-child(even) {
     margin-top: 0;
   }
+  #menu_le_chic_a_la_francaise > section table {
+    margin-bottom: 5rem;
+  }
+  #menu_le_chic_a_la_francaise > section tbody tr {
+    margin-bottom: 2.6rem;
+  }
 }
 @media screen and (min-width: 992px) {
   #menu_le_chic_a_la_francaise > section header {
     margin-top: 2rem;
     margin-bottom: 7rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  #menu_le_chic_a_la_francaise > section tbody tr {
-    margin-bottom: 2.5rem;
   }
 }
 

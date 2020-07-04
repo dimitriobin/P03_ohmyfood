@@ -13,7 +13,7 @@
     color: transparent;
 }
 
-@mixin underline ($restaurant, $color: color-primary, $element: "h3") {
+@mixin underline ($element, $restaurant, $color: color-primary) {
     $line: map-get($restaurant, $color);
 
     #{$element} {

@@ -137,17 +137,9 @@ table {
 /* classes utiles */
 .back {
   display: none;
-  object-fit: scale-down;
-  width: 100px;
   position: absolute;
-  left: 75px;
+  left: 10%;
   top: 350px;
-  border: 1px solid #fdcb46;
-  border-radius: 50%;
-  padding: 15px;
-}
-.back img {
-  width: 100%;
 }
 
 /* Elements généraux à tout le site */
@@ -284,9 +276,12 @@ main > h2 {
   main > h2 {
     margin-top: 8rem;
   }
-
+}
+@media screen and (min-width: 1200px) {
   .back {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

@@ -50,13 +50,10 @@
 
         th {
             margin-bottom: 1rem;
-            @include underline ($laNoteEnchantee);
-
-            h3 {
-                font-family: map-get($laNoteEnchantee, font-secondary), sans-serif;
-                font-size: $global-font-size*2;
-                font-weight: normal;
-            }
+            @include underline (span, $laNoteEnchantee);
+            font-family: map-get($laNoteEnchantee, font-secondary), sans-serif;
+            font-size: $global-font-size*2;
+            font-weight: normal;
         }
 
         td {
@@ -94,6 +91,14 @@
     }
 }
 
+@media screen and (min-width: map-get($breakpoints, small)) {
+    #menu_la_note_enchantee section {
+        table {
+            margin-top: 1rem;
+        }
+    }
+}
+
 @media screen and (min-width: map-get($breakpoints, medium)) {
     #menu_la_note_enchantee section {
         header {
@@ -102,6 +107,7 @@
 
         table {
             margin-bottom: 9.5rem;
+            margin-top: 0;
 
             &:last-of-type {
                 margin-bottom: 7.5rem;
@@ -110,6 +116,7 @@
 
         th {
             margin-bottom: 1.5rem;
+            font-size: 2.1rem;
         }
 
         tbody tr {

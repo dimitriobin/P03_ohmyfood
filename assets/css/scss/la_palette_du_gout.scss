@@ -51,7 +51,7 @@
         th {
             font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
             margin-bottom: 3.3rem;
-            @include underline ($laPaletteDuGout, color-secondary, h3);
+            @include underline (span, $laPaletteDuGout, color-secondary);
         }
 
         tbody tr {

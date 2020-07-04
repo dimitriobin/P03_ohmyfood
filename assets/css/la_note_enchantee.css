@@ -24,8 +24,6 @@ main > section th {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-}
-main > section th h3 {
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -82,7 +80,8 @@ main > section td:nth-child(even) {
 }
 @media screen and (min-width: 1200px) {
   main > section th img {
-    max-width: 30%;
+    width: 30%;
+    max-width: 300px;
   }
 }
 @font-face {
@@ -117,11 +116,14 @@ main > section td:nth-child(even) {
 }
 #menu_la_note_enchantee section th {
   margin-bottom: 1rem;
+  font-family: "segoeprint-bold", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
 }
-#menu_la_note_enchantee section th h3 {
+#menu_la_note_enchantee section th span {
   position: relative;
 }
-#menu_la_note_enchantee section th h3::after {
+#menu_la_note_enchantee section th span::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -132,13 +134,8 @@ main > section td:nth-child(even) {
   width: 0%;
   transition: width 0.3s;
 }
-#menu_la_note_enchantee section th h3:hover::after {
+#menu_la_note_enchantee section th span:hover::after {
   width: 100%;
-}
-#menu_la_note_enchantee section th h3 {
-  font-family: "segoeprint-bold", sans-serif;
-  font-size: 2rem;
-  font-weight: normal;
 }
 #menu_la_note_enchantee section td {
   padding: 0 5%;
@@ -167,18 +164,25 @@ main > section td:nth-child(even) {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 577px) {
+  #menu_la_note_enchantee section table {
+    margin-top: 1rem;
+  }
+}
 @media screen and (min-width: 768px) {
   #menu_la_note_enchantee section header {
     margin-bottom: 4rem;
   }
   #menu_la_note_enchantee section table {
     margin-bottom: 9.5rem;
+    margin-top: 0;
   }
   #menu_la_note_enchantee section table:last-of-type {
     margin-bottom: 7.5rem;
   }
   #menu_la_note_enchantee section th {
     margin-bottom: 1.5rem;
+    font-size: 2.1rem;
   }
   #menu_la_note_enchantee section tbody tr {
     margin-top: 2.25rem;
