@@ -1,0 +1,110 @@
+/* Carte des pages des menus */
+main>section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @extend %shadow-menu;
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+
+    header {
+        font-size: $global-font-size*3.1;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: $global-font-size*1.6;
+        font-weight: bold;
+
+
+        img {
+            display: none;
+        }
+    }
+
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+    }
+
+    td {
+        &:nth-child(odd) {
+            font-size: $global-font-size*1.25;
+        }
+
+        &:nth-child(even) {
+            font-size: $global-font-size*1.55;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, medium)) {
+    main>section {
+        width: 80%;
+
+        th {
+            justify-content: space-between;
+            padding: 0 5%;
+
+            img {
+                display: inline-block;
+                max-width: 15%;
+                object-fit: scale-down;
+            }
+        }
+
+        tbody tr {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        td {
+            &:nth-child(odd) {
+                text-align: left;
+                padding-right: 0;
+                flex: 0 0 80%;
+            }
+
+            &:nth-child(even) {
+                text-align: right;
+                flex: 1 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, large)) {
+    main>section {
+        th {
+            img {
+                max-width: 25%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, extra-large)) {
+    main>section {
+        th {
+            img {
+                width: 30%;
+                max-width: 300px;
+            }
+        }
+    }
+}

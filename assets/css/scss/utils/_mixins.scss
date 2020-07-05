@@ -1,0 +1,38 @@
+// dégradé des textes
+@mixin text-gradient-2 ($direction, $restaurant) {
+
+    background: linear-gradient($direction, map-get($restaurant, color-tertiary) 25%, map-get($restaurant, color-primary) 75%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin text-gradient-3 ($direction, $restaurant) {
+
+    background: linear-gradient($direction, map-get($restaurant, color-tertiary) 10%, map-get($restaurant, color-secondary) 34%, map-get($restaurant, color-primary) 66%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin underline ($element, $restaurant, $color: color-primary) {
+    $line: map-get($restaurant, $color);
+
+    #{$element} {
+        position: relative;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            background-color: $line;
+            opacity: 0.8;
+            height: 3px;
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

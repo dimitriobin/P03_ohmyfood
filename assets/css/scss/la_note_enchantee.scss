@@ -1,0 +1,136 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/placeholder';
+@import 'pages/menus';
+
+// La note enchantée
+@font-face {
+    font-family: 'devonshireregular';
+    src: url('../../fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.eot');
+    src: url('../../fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.woff2') format('woff2'),
+        url('../../fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.woff') format('woff'),
+        url('../../fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.ttf') format('truetype'),
+        url('../../fonts/la_note_enchantee/devonshire-regular/devonshire-regular-webfont.svg#devonshireregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'segoeprint-regular';
+    src: url(../../fonts/la_note_enchantee/segoeprint/segoepr.ttf);
+}
+
+@font-face {
+    font-family: 'segoeprint-bold';
+    src: url(../../fonts/la_note_enchantee/segoeprint/segoeprb.ttf);
+}
+
+
+#menu_la_note_enchantee {
+
+    section {
+        background-color: map-get($laNoteEnchantee, bg);
+        color: map-get($laNoteEnchantee, color-primary);
+
+        header {
+            font-family: map-get($laNoteEnchantee, font-primary), sans-serif;
+            font-size: $global-font-size*3.6;
+            margin: 2rem 0 3rem 0;
+
+            img {
+                width: 4rem;
+            }
+        }
+
+        table {
+            margin-bottom: 8rem;
+        }
+
+        th {
+            margin-bottom: 1rem;
+            @include underline (span, $laNoteEnchantee);
+            font-family: map-get($laNoteEnchantee, font-secondary), sans-serif;
+            font-size: $global-font-size*2;
+            font-weight: normal;
+        }
+
+        td {
+
+            padding: 0 5%;
+
+            &:nth-child(odd) {
+                font-family: map-get($laNoteEnchantee, font-tertiary), sans-serif;
+                margin-top: 2rem;
+            }
+
+            &:nth-child(even) {
+                font-family: "segoeprint-bold", sans-serif;
+                margin-top: 1rem;
+            }
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            p {
+                font-family: map-get($laNoteEnchantee, font-primary);
+                font-size: $global-font-size*2.9;
+                text-align: center;
+            }
+
+            img {
+                width: 3.5rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, small)) {
+    #menu_la_note_enchantee section {
+        table {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, medium)) {
+    #menu_la_note_enchantee section {
+        header {
+            margin-bottom: 4rem;
+        }
+
+        table {
+            margin-bottom: 9.5rem;
+            margin-top: 0;
+
+            &:last-of-type {
+                margin-bottom: 7.5rem;
+            }
+        }
+
+        th {
+            margin-bottom: 1.5rem;
+            font-size: 2.1rem;
+        }
+
+        tbody tr {
+            margin-top: 2.25rem;
+        }
+
+        td {
+            &:nth-child(odd) {
+                margin-top: 0;
+            }
+
+            &:nth-child(even) {
+                margin-top: 0;
+            }
+        }
+    }
+}

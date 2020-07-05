@@ -1,0 +1,56 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 5%;
+}
+main h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+main h1,
+main h2 {
+  font-weight: bold;
+  position: relative;
+}
+main h1::after,
+main h2::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  background-color: #fdcb46;
+  opacity: 0.8;
+  height: 3px;
+  width: 0%;
+  transition: width 0.3s;
+}
+main h1:hover::after,
+main h2:hover::after {
+  width: 100%;
+}
+main h3 {
+  font-weight: bold;
+  margin: 1rem auto;
+}
+main p,
+main ul {
+  width: 80%;
+}
+main p a {
+  text-decoration: none;
+  color: #579c87;
+}
+main li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 5%;
+}
+
+/*# sourceMappingURL=mentions_legales.css.map */

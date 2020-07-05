@@ -1,0 +1,59 @@
+// couleurs globales
+$color-primary:#579c87;
+
+// typographies globales
+$font-color-primary: #fdcb46;
+$font-logo: 'Arial',
+sans-serif;
+$font-primary: 'Montserrat',
+sans-serif;
+
+// mesures globales
+$global-font-size: 1rem;
+$footer-size: 105px;
+$thumbnail-width: (base:75vw, micro: 175px, extra-small:200px, small: 200px, medium:200px, large: 225px, extra-large:225px);
+
+// animations
+$anim-duration-dots: 1.5s;
+$delay-dots: $anim-duration-dots/3;
+
+// MENUS:
+
+$laNoteEnchantee: (bg: #fcdfdb,
+    color-primary: #3c1218,
+    font-primary: 'devonshireregular',
+    font-secondary: 'segoeprint-bold',
+    font-tertiary: 'segoeprint-regular'
+);
+
+$leChicALaFrancaise: (bg: #fff5feff,
+    color-primary: #c67412,
+    color-secondary: #a56799,
+    color-tertiary: #6e4ccc,
+    font-primary: 'croissant_oneregular',
+    font-secondary: 'serif12_betabold',
+    font-tertiary: 'serif12_betaregular'
+);
+$leDeliceDesPapilles: (bg: #f9f9f9,
+    color-primary: #0228dd,
+    color-secondary: #0670f3,
+    color-tertiary: #229df9,
+    font-primary: 'dancing_scriptregular',
+    font-secondary: 'segoeprint-regular',
+    font-tertiary: 'segoeprint-regular'
+);
+$laPaletteDuGout: (bg: #fdfffd,
+    color-primary: #3d923a,
+    color-secondary: #72bf56,
+    color-tertiary: #cefea0,
+    font-primary: 'kaushan_scriptregular',
+    font-secondary: 'segoeprint-regular',
+    font-tertiary: 'segoeprint-regular'
+);
+
+// responsive
+
+$breakpoints: (small: 577px,
+    medium: 768px,
+    large: 992px,
+    extra-large: 1200px);

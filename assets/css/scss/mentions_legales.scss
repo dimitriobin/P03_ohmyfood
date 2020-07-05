@@ -1,0 +1,65 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholder';
+
+body {
+    font-family: $font-primary;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 5%;
+
+    h1 {
+        font-size: $global-font-size*4;
+        text-align: center;
+    }
+
+    h1,
+    h2,
+        {
+        font-weight: bold;
+        position: relative;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            background-color: $font-color-primary;
+            opacity: 0.8;
+            height: 3px;
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    h3 {
+        font-weight: bold;
+        margin: 1rem auto;
+    }
+
+    p,
+    ul {
+        width: 80%;
+    }
+
+    p a {
+        text-decoration: none;
+        color: $color-primary;
+    }
+
+    li {
+        list-style-type: disc;
+        list-style-position: inside;
+        padding-left: 5%;
+    }
+}

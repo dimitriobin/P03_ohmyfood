@@ -1,0 +1,90 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/placeholder';
+@import 'pages/menus';
+
+// La palette du gout
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.eot');
+    src: url('../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.woff2') format('woff2'),
+        url('../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.woff') format('woff'),
+        url('../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.ttf') format('truetype'),
+        url('../../fonts/la_palette_du_gout/kaushanscript/kaushanscript-regular-webfont.svg#kaushan_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segoeprint-regular';
+    src: url(../../fonts/la_note_enchantee/segoeprint/segoepr.ttf);
+}
+
+@font-face {
+    font-family: 'segoeprint-bold';
+    src: url(../../fonts/la_note_enchantee/segoeprint/segoeprb.ttf);
+}
+
+#menu_la_palette_du_gout {
+
+    section {
+        background-color: map-get($laPaletteDuGout, bg);
+        color: black;
+
+        header {
+            font-family: map-get($laPaletteDuGout, font-primary), sans-serif;
+            @include text-gradient-3 (-90deg, $laPaletteDuGout);
+            padding: 1rem 2rem;
+            margin-bottom: 5rem;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 5.2rem;
+
+            &:last-of-type {
+                margin-bottom: 2rem;
+            }
+        }
+
+        th {
+            font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
+            margin-bottom: 3.3rem;
+            @include underline (span, $laPaletteDuGout, color-secondary);
+        }
+
+        tbody tr {
+            padding: 0 15%;
+            margin-bottom: 2.2rem;
+        }
+
+        td {
+            &:nth-child(odd) {
+                font-family: map-get($laPaletteDuGout, font-tertiary), sans-serif;
+                margin-bottom: 0.7rem;
+            }
+
+            &:nth-child(even) {
+                font-family: map-get($laPaletteDuGout, font-secondary), sans-serif;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, medium)) {
+    #menu_la_palette_du_gout {
+        section td:nth-child(odd) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, large)) {
+    #menu_la_palette_du_gout {
+        header h2 {
+            font-size: 5.6rem;
+        }
+    }
+}

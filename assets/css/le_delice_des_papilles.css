@@ -1,0 +1,175 @@
+main > section {
+  box-shadow: 3px 0 12px lightgrey;
+}
+
+/* Carte des pages des menus */
+main > section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+  margin: 5%;
+}
+main > section header {
+  font-size: 3.1rem;
+}
+main > section table {
+  width: 100%;
+}
+main > section th {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+main > section th img {
+  display: none;
+}
+main > section tbody tr {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+main > section td:nth-child(odd) {
+  font-size: 1.25rem;
+}
+main > section td:nth-child(even) {
+  font-size: 1.55rem;
+}
+
+@media screen and (min-width: 768px) {
+  main > section {
+    width: 80%;
+  }
+  main > section th {
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  main > section th img {
+    display: inline-block;
+    max-width: 15%;
+    object-fit: scale-down;
+  }
+  main > section tbody tr {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  main > section td:nth-child(odd) {
+    text-align: left;
+    padding-right: 0;
+    flex: 0 0 80%;
+  }
+  main > section td:nth-child(even) {
+    text-align: right;
+    flex: 1 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  main > section th img {
+    max-width: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main > section th img {
+    width: 30%;
+    max-width: 300px;
+  }
+}
+@font-face {
+  font-family: 'dancing_scriptregular';
+  src: url("../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.eot");
+  src: url("../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.woff2") format("woff2"), url("../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.woff") format("woff"), url("../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.ttf") format("truetype"), url("../../fonts/le_delice_des_papilles/dancingscript/dancing_script-webfont.svg#dancing_scriptregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'segoeprint-regular';
+  src: url(../../fonts/la_note_enchantee/segoeprint/segoepr.ttf);
+}
+@font-face {
+  font-family: 'segoeprint-bold';
+  src: url(../../fonts/la_note_enchantee/segoeprint/segoeprb.ttf);
+}
+#menu_le_delice_des_papilles section {
+  background-color: #f9f9f9;
+  color: black;
+}
+#menu_le_delice_des_papilles section header {
+  font-family: "dancing_scriptregular", sans-serif;
+  background: linear-gradient(-90deg, #229df9 10%, #0670f3 34%, #0228dd 66%);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+#menu_le_delice_des_papilles section header h2 {
+  padding: 0 2rem;
+}
+#menu_le_delice_des_papilles section table {
+  width: 100%;
+  margin-bottom: 5.2rem;
+}
+#menu_le_delice_des_papilles section table:last-of-type {
+  margin-bottom: 2rem;
+}
+#menu_le_delice_des_papilles section th {
+  font-family: "segoeprint-regular", sans-serif;
+  margin-bottom: 1.8rem;
+  margin-bottom: 3.3rem;
+}
+#menu_le_delice_des_papilles section th span {
+  position: relative;
+}
+#menu_le_delice_des_papilles section th span::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  background-color: #0228dd;
+  opacity: 0.8;
+  height: 3px;
+  width: 0%;
+  transition: width 0.3s;
+}
+#menu_le_delice_des_papilles section th span:hover::after {
+  width: 100%;
+}
+#menu_le_delice_des_papilles section table:nth-of-type(2) span::after {
+  background-color: #0670f3;
+}
+#menu_le_delice_des_papilles section table:nth-of-type(3) span::after {
+  background-color: #229df9;
+}
+#menu_le_delice_des_papilles section tbody tr {
+  padding: 0 15%;
+  margin: 0 auto 2.2rem;
+}
+#menu_le_delice_des_papilles section td:nth-child(odd) {
+  font-family: "segoeprint-regular", sans-serif;
+  margin-bottom: 0.7rem;
+}
+#menu_le_delice_des_papilles section td:nth-child(even) {
+  font-family: "segoeprint-regular", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  #menu_le_delice_des_papilles section td:nth-child(odd) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  #menu_le_delice_des_papilles header h2 {
+    font-size: 5.6rem;
+  }
+}
+
+/*# sourceMappingURL=le_delice_des_papilles.css.map */

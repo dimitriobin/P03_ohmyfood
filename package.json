@@ -1,0 +1,27 @@
+{
+  "name": "openclassrooms_project_3",
+  "version": "1.0.0",
+  "description": "Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/css/scss/:./assets/css/ --style expanded",
+    "prefix": "postcss ./assets/css/*.css --use autoprefixer -d ./assets/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitriobin/Openclassrooms_Project_3.git"
+  },
+  "author": "dimitriobin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimitriobin/Openclassrooms_Project_3/issues"
+  },
+  "homepage": "https://github.com/dimitriobin/Openclassrooms_Project_3#readme",
+  "browserslist": "last 2 versions",
+
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "prefix": "^1.0.0",
+    "sass": "^1.26.5"
+  }
+}
