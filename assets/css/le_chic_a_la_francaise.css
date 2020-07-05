@@ -112,7 +112,7 @@ main > section td:nth-child(even) {
   font-family: "croissant_oneregular", sans-serif;
   font-size: 3.1rem;
   background: linear-gradient(-45deg, #6e4ccc 25%, #c67412 75%);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 5rem;
   padding: 1rem;

@@ -106,7 +106,7 @@ main > section td:nth-child(even) {
 #menu_la_palette_du_gout section header {
   font-family: "kaushan_scriptregular", sans-serif;
   background: linear-gradient(-90deg, #cefea0 10%, #72bf56 34%, #3d923a 66%);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   padding: 1rem 2rem;
   margin-bottom: 5rem;

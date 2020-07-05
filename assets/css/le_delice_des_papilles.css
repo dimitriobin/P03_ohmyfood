@@ -106,7 +106,7 @@ main > section td:nth-child(even) {
 #menu_le_delice_des_papilles section header {
   font-family: "dancing_scriptregular", sans-serif;
   background: linear-gradient(-90deg, #229df9 10%, #0670f3 34%, #0228dd 66%);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   margin-top: 1rem;
   margin-bottom: 6rem;

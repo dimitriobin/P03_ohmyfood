@@ -2,14 +2,14 @@
 @mixin text-gradient-2 ($direction, $restaurant) {
 
     background: linear-gradient($direction, map-get($restaurant, color-tertiary) 25%, map-get($restaurant, color-primary) 75%);
-    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
 @mixin text-gradient-3 ($direction, $restaurant) {
 
     background: linear-gradient($direction, map-get($restaurant, color-tertiary) 10%, map-get($restaurant, color-secondary) 34%, map-get($restaurant, color-primary) 66%);
-    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 

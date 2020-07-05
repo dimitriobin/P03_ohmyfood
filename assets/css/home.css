@@ -128,7 +128,7 @@
 #leChicALaFrancaise h2 {
   font-family: "croissant_oneregular", sans-serif;
   background: linear-gradient(-90deg, #6e4ccc 25%, #c67412 75%);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -144,7 +144,7 @@
 #leDeliceDesPapilles h2 {
   font-family: "dancing_scriptregular", sans-serif;
   background: linear-gradient(-90deg, #229df9 10%, #0670f3 34%, #0228dd 66%);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 3rem;
 }
@@ -159,7 +159,7 @@
 #laPaletteDuGout h2 {
   font-family: "kaushan_scriptregular", sans-serif;
   background: linear-gradient(-90deg, #cefea0 10%, #72bf56 34%, #3d923a 66%);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 3rem;
 }

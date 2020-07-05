@@ -17,5 +17,11 @@
     "url": "https://github.com/dimitriobin/Openclassrooms_Project_3/issues"
   },
   "homepage": "https://github.com/dimitriobin/Openclassrooms_Project_3#readme",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 2 versions",
+
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "prefix": "^1.0.0",
+    "sass": "^1.26.5"
+  }
 }
